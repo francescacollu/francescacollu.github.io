@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+/* Additional utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Reset styles for links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Prose styles for content */
+.prose {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.prose p {
+  margin-bottom: 1.5em;
+  line-height: 1.7;
+} 
