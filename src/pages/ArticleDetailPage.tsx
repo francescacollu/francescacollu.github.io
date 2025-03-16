@@ -49,6 +49,19 @@ export default function ArticleDetailPage() {
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
             eos qui ratione voluptatem sequi nesciunt.
           </p>
+          
+          {article.url && (
+            <div className="mt-10 pt-6 border-t border-gray-200">
+              <a 
+                href={article.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors duration-300"
+              >
+                Read Original Article
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </PageLayout>

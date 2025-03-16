@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
 import ArticleCard from '../components/ArticleCard';
 import { getAllArticles } from '../lib/articleData';
+import { Article } from '../components/ArticleCard';
 
 export default function HomePage() {
-  const articles = getAllArticles();
+  const [articles, setArticles] = useState<Article[]>([]);
+  
+  // Load articles
+  useEffect(() => {
+    setArticles(getAllArticles());
+  }, []);
   
   return (
     <PageLayout>

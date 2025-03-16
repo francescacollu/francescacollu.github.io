@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ export default function PageLayout({ children, title }: PageLayoutProps) {
       <main className="w-full max-w-6xl mx-auto px-4 flex-grow">
         {children}
       </main>
+      <Footer />
     </div>
   );
 } 
