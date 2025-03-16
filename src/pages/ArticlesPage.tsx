@@ -8,7 +8,7 @@ import { Article } from '../components/ArticleCard';
 export default function ArticlesPage() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<Article[]>([]);
-  const [selectedLanguage, setSelectedLanguage] = useState('');
+  const [selectedLanguage, setSelectedLanguage] = useState('English');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedPlatform, setSelectedPlatform] = useState('');
   const [isFiltering, setIsFiltering] = useState(false);
@@ -17,7 +17,10 @@ export default function ArticlesPage() {
   useEffect(() => {
     const allArticles = getAllArticles();
     setArticles(allArticles);
-    setFilteredArticles(allArticles);
+    
+    // Apply initial English filter
+    const englishArticles = allArticles.filter(article => article.language === 'English');
+    setFilteredArticles(englishArticles);
   }, []);
   
   // Filter articles when filter criteria or articles change
@@ -32,6 +35,7 @@ export default function ArticlesPage() {
       if (selectedLanguage) {
         result = result.filter(article => article.language === selectedLanguage);
       }
+      // When no language is selected, show all articles regardless of language
       
       if (selectedCategory) {
         result = result.filter(article => article.category === selectedCategory);
@@ -86,7 +90,7 @@ export default function ArticlesPage() {
             <p className="text-sm font-montserrat text-gray-600 mb-3">No articles found matching your filters.</p>
             <button 
               onClick={() => {
-                setSelectedLanguage('');
+                setSelectedLanguage('English'); // Reset to English instead of empty
                 setSelectedCategory('');
                 setSelectedPlatform('');
               }}

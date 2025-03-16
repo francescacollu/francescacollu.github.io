@@ -29,6 +29,16 @@ export default function ArticleFilters({
     selectedPlatform
   ].filter(Boolean).length;
   
+  // Handle language toggle
+  const handleLanguageToggle = (language: string) => {
+    if (language === selectedLanguage) {
+      // If clicking on the currently selected language, deactivate it
+      setSelectedLanguage('');
+    } else {
+      setSelectedLanguage(language);
+    }
+  };
+  
   return (
     <div className="flex flex-wrap items-center justify-between w-full">
       <div className="flex flex-wrap items-center gap-6 md:gap-8">
@@ -36,10 +46,21 @@ export default function ArticleFilters({
         <div className="flex items-center">
           <span className="text-xs font-montserrat uppercase tracking-wider text-gray-500 mr-3">Language</span>
           <div className="flex gap-2">
+            {/* All Languages option */}
+            <button
+              onClick={() => setSelectedLanguage('')}
+              className={`px-3 py-1.5 text-xs font-montserrat tracking-wide rounded-md transition-all duration-300 ${
+                selectedLanguage === '' 
+                  ? 'bg-gray-200 text-gray-800 font-medium shadow-sm' 
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              All
+            </button>
             {languages.map(language => (
               <button
                 key={language}
-                onClick={() => setSelectedLanguage(language === selectedLanguage ? '' : language)}
+                onClick={() => handleLanguageToggle(language)}
                 className={`px-3 py-1.5 text-xs font-montserrat tracking-wide rounded-md transition-all duration-300 ${
                   selectedLanguage === language 
                     ? 'bg-purple-50 text-purple-700 font-medium shadow-sm' 
@@ -105,7 +126,7 @@ export default function ArticleFilters({
       {activeFilterCount > 0 && (
         <button 
           onClick={() => {
-            setSelectedLanguage('');
+            setSelectedLanguage('English');
             setSelectedCategory('');
             setSelectedPlatform('');
           }}
