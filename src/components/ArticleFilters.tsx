@@ -22,13 +22,6 @@ export default function ArticleFilters({
   const categories = getUniqueCategories();
   const platforms = getUniquePlatforms();
   
-  // Count active filters
-  const activeFilterCount = [
-    selectedLanguage, 
-    selectedCategory, 
-    selectedPlatform
-  ].filter(Boolean).length;
-  
   // Handle language toggle
   const handleLanguageToggle = (language: string) => {
     if (language === selectedLanguage) {
@@ -40,7 +33,7 @@ export default function ArticleFilters({
   };
   
   return (
-    <div className="flex flex-wrap items-center justify-between w-full">
+    <div className="flex flex-wrap items-center w-full">
       <div className="flex flex-wrap items-center gap-6 md:gap-8">
         {/* Language Filter */}
         <div className="flex items-center">
@@ -121,23 +114,6 @@ export default function ArticleFilters({
           </div>
         </div>
       </div>
-      
-      {/* Reset button - only show when filters are active */}
-      {activeFilterCount > 0 && (
-        <button 
-          onClick={() => {
-            setSelectedLanguage('English');
-            setSelectedCategory('');
-            setSelectedPlatform('');
-          }}
-          className="text-xs font-montserrat text-purple-600 hover:text-purple-800 transition-colors duration-300 flex items-center mt-4 md:mt-0"
-        >
-          <span>Reset</span>
-          <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      )}
     </div>
   );
 } 

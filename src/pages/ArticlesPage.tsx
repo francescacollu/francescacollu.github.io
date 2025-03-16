@@ -87,20 +87,9 @@ export default function ArticlesPage() {
           </div>
         ) : (
           <div className="text-center py-12 bg-gray-50 rounded-lg border border-gray-100">
-            <p className="text-sm font-montserrat text-gray-600 mb-3">No articles found matching your filters.</p>
-            <button 
-              onClick={() => {
-                setSelectedLanguage('English'); // Reset to English instead of empty
-                setSelectedCategory('');
-                setSelectedPlatform('');
-              }}
-              className="text-xs font-montserrat text-purple-600 hover:text-purple-800 transition-colors duration-300 flex items-center mx-auto"
-            >
-              <span>Reset filters</span>
-              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
+            <p className="text-sm font-montserrat text-gray-600">
+              No articles found matching your filters. Try adjusting your filter selections.
+            </p>
           </div>
         )}
       </div>
