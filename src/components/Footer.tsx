@@ -12,7 +12,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/francesca-collu-866610109/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-purple-600 transition-colors duration-300"
+              className="text-gray-600 hover:text-teal-600 transition-colors duration-300"
               title="LinkedIn Profile"
             >
               <FaLinkedin className="text-3xl" />
@@ -22,7 +22,7 @@ export default function Footer() {
               href="https://github.com/francescacollu" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-purple-600 transition-colors duration-300"
+              className="text-gray-600 hover:text-orange-500 transition-colors duration-300"
               title="GitHub Profile"
             >
               <FaGithub className="text-3xl" />
@@ -31,7 +31,7 @@ export default function Footer() {
             <a 
               href="/resume.pdf" 
               download
-              className="text-gray-600 hover:text-purple-600 transition-colors duration-300"
+              className="text-gray-600 hover:text-teal-600 transition-colors duration-300"
               title="Download Resume"
             >
               <FaFileDownload className="text-3xl" />

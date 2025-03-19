@@ -12,8 +12,8 @@ function NavLink({ to, label, isActive }: NavLinkProps) {
       to={to} 
       className={`
         font-playfair text-lg uppercase tracking-widest px-2 py-1 mx-6
-        transition-all duration-200 hover:opacity-80 no-underline text-black
-        ${isActive ? 'border-b-2 border-black font-semibold' : ''}
+        transition-all duration-200 hover:text-teal-600 no-underline text-gray-800
+        ${isActive ? 'border-b-2 border-orange-500 font-semibold text-orange-600' : ''}
       `}
     >
       {label}

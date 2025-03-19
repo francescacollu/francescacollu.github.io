@@ -5,13 +5,14 @@ import Footer from './Footer';
 
 interface PageLayoutProps {
   children: React.ReactNode;
-  title?: string;
+  firstName?: string;
+  lastName?: string;
 }
 
-export default function PageLayout({ children, title }: PageLayoutProps) {
+export default function PageLayout({ children, firstName, lastName }: PageLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col items-center">
-      <Header title={title} />
+      <Header firstName={firstName} lastName={lastName} />
       <Navigation />
       <main className="w-full max-w-6xl mx-auto px-4 flex-grow">
         {children}

@@ -53,19 +53,19 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       </div>
       
       {/* Overlay that appears on hover */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-800/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-2">
-          <span className="inline-block px-2 py-1 text-xs font-medium bg-purple-600 text-white rounded">
+          <span className="inline-block px-2 py-1 text-xs font-medium bg-orange-500 text-white rounded">
             {category}
           </span>
           {platform && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-700 text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-700 text-white rounded">
               {platform}
             </span>
           )}
           {language && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-500 text-white rounded">
               {language}
             </span>
           )}
