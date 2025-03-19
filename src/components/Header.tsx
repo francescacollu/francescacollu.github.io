@@ -4,7 +4,9 @@ interface HeaderProps {
   title?: string;
 }
 
-export default function Header({ title = "FRANCESCA COLLU" }: HeaderProps) {
+export default function Header({ 
+  title = "FRANCESCA COLLU"
+}: HeaderProps) {
   return (
     <header className="w-full text-center py-6">
       <div className="w-full max-w-3xl mx-auto">

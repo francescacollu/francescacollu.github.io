@@ -8,7 +8,7 @@ export const articles: Article[] = [
     category: "Gender Equality",
     image: "/images/women_in_netflix.png",
     slug: "gender-equality",
-    excerpt: "How data journalism is changing the way we understand the world around us.",
+    excerpt: "Analyzing gender representation in Netflix's movies and shows: progress, pitfalls, and persistent imbalances.",
     url: "https://medium.com/@colluf6/women-presence-in-netflix-f06eeb73bede",
     platform: "Medium",
     date: "2022-05-9",
@@ -20,7 +20,7 @@ export const articles: Article[] = [
     category: "Italian Politics",
     image: "/images/tweets_ita_politics.png",
     slug: "italian-politics",
-    excerpt: "Exploring the beauty of mineral formations through data visualization techniques.",
+    excerpt: "An analysis of six Italian leaders' Twitter activity (2018–2022), highlighting engagement, rhetoric, and themes.",
     url: "https://medium.com/@colluf6/italian-politics-in-4-years-tweets-a1131de823ac",
     platform: "Medium",
     date: "2022-09-11",
@@ -32,7 +32,7 @@ export const articles: Article[] = [
     category: "Media",
     image: "/images/talk_shows_guests.png",
     slug: "media",
-    excerpt: "An analysis of voting patterns in the European Parliament over the last decade.",
+    excerpt: "Un'analisi della rappresentazione di genere tra gli ospiti di quattro talk show di La7 (2023-2024).",
     url: "https://medium.com/@colluf6/le-voci-che-ascolto-in-tv-a88d683786ff",
     platform: "Medium",
     date: "2024-07-21",
@@ -44,27 +44,24 @@ export const articles: Article[] = [
     category: "Media",
     image: "/images/talk_shows_guests.png",
     slug: "media",
-    excerpt: "An analysis of voting patterns in the European Parliament over the last decade.",
+    excerpt: "An analysis of gender representation among guests on four La7 political TV shows (2023–2024).",
     url: "https://medium.com/@colluf6/gender-in-the-spotlight-the-voices-i-hear-on-italian-television-talk-shows-0a0106d2a963",
     platform: "Medium",
     date: "2024-07-25",
     language: "English"
   },
-  
-  // Add new articles below this line
-  // Example format:
-  // {
-  //   id: 4,
-  //   title: "Your New Article Title",
-  //   category: "Category",
-  //   image: "/images/your-image.png",
-  //   slug: "your-article-slug",
-  //   excerpt: "Brief description of your article.",
-  //   url: "https://link-to-your-article.com",
-  //   platform: "Platform Name",
-  //   date: "YYYY-MM-DD",
-  //   language: "English" // or "Italian" or other languages
-  // },
+  {
+    id: 5,
+    title: "The Last 25 Years of Dog Fatalities",
+    category: "Animals",
+    image: "/images/dog_fatalities.png",
+    slug: "animals",
+    excerpt: "Data-driven insights into global dog-related fatalities and their causes over the past 25 years.",
+    url: "https://medium.com/@colluf6/the-last-25-years-of-dog-fatalities-0041ca445f38",
+    platform: "Medium",
+    date: "2024-08-08",
+    language: "English"
+  },
 ];
 
 // Get unique categories from articles

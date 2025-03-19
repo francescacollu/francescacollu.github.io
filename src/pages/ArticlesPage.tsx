@@ -9,8 +9,6 @@ export default function ArticlesPage() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<Article[]>([]);
   const [selectedLanguage, setSelectedLanguage] = useState('English');
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedPlatform, setSelectedPlatform] = useState('');
   const [isFiltering, setIsFiltering] = useState(false);
   
   // Load articles
@@ -37,23 +35,15 @@ export default function ArticlesPage() {
       }
       // When no language is selected, show all articles regardless of language
       
-      if (selectedCategory) {
-        result = result.filter(article => article.category === selectedCategory);
-      }
-      
-      if (selectedPlatform) {
-        result = result.filter(article => article.platform === selectedPlatform);
-      }
-      
       setFilteredArticles(result);
       setIsFiltering(false);
     }, 300);
     
     return () => clearTimeout(filterTimeout);
-  }, [articles, selectedLanguage, selectedCategory, selectedPlatform]);
+  }, [articles, selectedLanguage]);
   
   // Determine if any filters are active
-  const hasActiveFilters = selectedLanguage || selectedCategory || selectedPlatform;
+  const hasActiveFilters = selectedLanguage;
   
   return (
     <PageLayout>
@@ -62,16 +52,12 @@ export default function ArticlesPage() {
           <ArticleFilters
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-            selectedPlatform={selectedPlatform}
-            setSelectedPlatform={setSelectedPlatform}
           />
         </div>
         
         {/* Results count - very subtle */}
         {hasActiveFilters && (
-          <div className="text-xs font-montserrat text-gray-500 mt-2 md:mt-0 md:ml-4 whitespace-nowrap">
+          <div className="text-xs font-montserrat text-gray-500 mt-2 md:mt-0 md:ml-4 whitespace-nowrap uppercase tracking-wide">
             {filteredArticles.length} {filteredArticles.length === 1 ? 'article' : 'articles'} found
           </div>
         )}
