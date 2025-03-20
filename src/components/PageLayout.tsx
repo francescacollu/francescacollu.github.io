@@ -11,11 +11,13 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children, firstName, lastName }: PageLayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col items-center">
+    <div className="min-h-screen flex flex-col">
       <Header firstName={firstName} lastName={lastName} />
       <Navigation />
-      <main className="w-full max-w-6xl mx-auto px-4 flex-grow">
-        {children}
+      <main className="w-full px-4 sm:px-6 lg:px-8 flex-grow">
+        <div className="max-w-[1920px] mx-auto w-full">
+          {children}
+        </div>
       </main>
       <Footer />
     </div>

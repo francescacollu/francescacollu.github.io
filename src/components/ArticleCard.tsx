@@ -27,7 +27,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         href={url} 
         target="_blank" 
         rel="noopener noreferrer"
-        className="group relative h-64 block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+        className="group relative aspect-[4/3] block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
       >
         {children}
       </a>
@@ -35,7 +35,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
     ({ children }: { children: React.ReactNode }) => (
       <Link 
         to={`/articles/${slug}`}
-        className="group relative h-64 block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+        className="group relative aspect-[4/3] block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
       >
         {children}
       </Link>
@@ -53,19 +53,19 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       </div>
       
       {/* Overlay that appears on hover */}
-      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-800/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
+      <div className="absolute inset-0 bg-gradient-to-t from-[#2A9D8F]/90 via-[#2A9D8F]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-2">
           <span className="inline-block px-2 py-1 text-xs font-medium bg-orange-500 text-white rounded">
             {category}
           </span>
           {platform && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-700 text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-[#2A9D8F] text-white rounded">
               {platform}
             </span>
           )}
           {language && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-teal-500 text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-[#2A9D8F]/80 text-white rounded">
               {language}
             </span>
           )}

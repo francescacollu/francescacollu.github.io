@@ -16,7 +16,7 @@ function NavLink({ to, label, isActive, onClick }: NavLinkProps) {
       onClick={onClick}
       className={`
         font-playfair text-lg uppercase tracking-widest px-2 py-1 mx-6
-        transition-all duration-200 hover:text-teal-600 no-underline text-gray-800
+        transition-all duration-200 hover:text-[#2A9D8F] no-underline text-gray-800
         ${isActive ? 'border-b-2 border-orange-500 font-semibold text-orange-600' : ''}
       `}
     >
@@ -39,7 +39,7 @@ export default function Navigation() {
       {/* Mobile menu button */}
       <button 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="md:hidden fixed top-4 right-4 z-50 text-gray-600 hover:text-teal-600"
+        className="md:hidden fixed top-4 right-4 z-50 text-gray-600 hover:text-[#2A9D8F]"
       >
         {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
@@ -50,7 +50,7 @@ export default function Navigation() {
         transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
         transition-transform duration-300 ease-in-out z-40
       `}>
-        <div className="flex flex-col md:flex-row justify-center items-center h-full md:h-auto w-full max-w-md mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center h-full md:h-auto w-full max-w-2xl mx-auto">
           {navLinks.map(link => (
             <NavLink 
               key={link.to}
