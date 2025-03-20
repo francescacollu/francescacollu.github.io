@@ -28,7 +28,7 @@ export const articles: Article[] = [
   },
   {
     id: 3,
-    title: "Le voci che ascolto in TV",
+    title: "Le voci che ascolto nel sonno",
     category: "Media",
     image: "/images/talk_shows_guests.png",
     slug: "media",
