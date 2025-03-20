@@ -53,7 +53,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       </div>
       
       {/* Overlay that appears on hover */}
-      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-800/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-800/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-2">
           <span className="inline-block px-2 py-1 text-xs font-medium bg-orange-500 text-white rounded">
@@ -72,12 +72,12 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         </div>
         
         {/* Title */}
-        <h2 className="text-xl font-playfair font-bold mb-2 text-white">
+        <h2 className="text-lg sm:text-xl font-playfair font-bold mb-2 text-white line-clamp-2">
           {title}
         </h2>
         
         {/* Excerpt */}
-        <p className="text-gray-200 text-sm overflow-hidden text-ellipsis line-clamp-3">
+        <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
           {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
         </p>
       </div>

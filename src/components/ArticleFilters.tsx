@@ -27,11 +27,11 @@ export default function ArticleFilters({
       <span className="font-montserrat text-sm uppercase tracking-wider text-teal-700 font-medium mb-3 sm:mb-0 sm:mr-6 border-b border-teal-200 pb-1 sm:pb-0 sm:border-b-0 sm:border-r sm:border-teal-200 sm:pr-6">
         Language
       </span>
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-2 sm:gap-3">
         {/* All Languages option */}
         <button
           onClick={() => setSelectedLanguage('')}
-          className={`px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
+          className={`px-2 sm:px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
             selectedLanguage === '' 
               ? 'bg-teal-100 text-teal-800 font-medium shadow-sm' 
               : 'bg-gray-50 text-gray-600 hover:bg-teal-50'
@@ -43,7 +43,7 @@ export default function ArticleFilters({
           <button
             key={language}
             onClick={() => handleLanguageToggle(language)}
-            className={`px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
+            className={`px-2 sm:px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
               selectedLanguage === language 
                 ? 'bg-orange-100 text-orange-700 font-medium shadow-sm' 
                 : 'bg-gray-50 text-gray-600 hover:bg-orange-50'

@@ -14,12 +14,12 @@ export default function ArticleDetailPage() {
   return (
     <PageLayout>
       <div className="max-w-3xl mx-auto">
-        <div className="mb-8 text-center">
-          <span className="text-sm text-gray-500 mb-2 block">{article.category}</span>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">{article.title}</h1>
+        <div className="mb-6 sm:mb-8 text-center">
+          <span className="text-xs sm:text-sm text-gray-500 mb-2 block">{article.category}</span>
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{article.title}</h1>
         </div>
         
-        <div className="rounded-lg overflow-hidden mb-8 h-64 md:h-80">
+        <div className="rounded-lg overflow-hidden mb-6 sm:mb-8 h-48 sm:h-64 md:h-80">
           <img 
             src={article.image} 
             alt={article.title} 
@@ -27,7 +27,7 @@ export default function ArticleDetailPage() {
           />
         </div>
         
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -38,7 +38,7 @@ export default function ArticleDetailPage() {
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           
-          <h2 className="font-playfair text-2xl font-bold mt-8 mb-4">Key Findings</h2>
+          <h2 className="font-playfair text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4">Key Findings</h2>
           
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
@@ -51,12 +51,12 @@ export default function ArticleDetailPage() {
           </p>
           
           {article.url && (
-            <div className="mt-10 pt-6 border-t border-gray-200">
+            <div className="mt-8 sm:mt-10 pt-4 sm:pt-6 border-t border-gray-200">
               <a 
                 href={article.url} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors duration-300"
+                className="inline-flex items-center px-3 sm:px-4 py-2 border border-transparent text-sm sm:text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors duration-300"
               >
                 Read Original Article
               </a>
