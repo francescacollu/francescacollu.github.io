@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://francescacollu.github.io",
+  "homepage": "https://francescacollu.github.io/personal_website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

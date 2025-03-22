@@ -2,12 +2,8 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true
+    domains: ['images.unsplash.com'],
   },
-  // Disable PWA features
-  experimental: {
-    appDir: false
-  }
 };
 
 module.exports = nextConfig; 
