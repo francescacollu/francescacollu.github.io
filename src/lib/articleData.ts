@@ -1,4 +1,6 @@
 import { Article } from '../components/ArticleCard';
+import SampleArticle from '../components/articles/SampleArticle';
+import ScrollDemo from '../components/articles/ScrollDemo';
 
 // Mock article data
 export const articles: Article[] = [
@@ -62,6 +64,17 @@ export const articles: Article[] = [
     date: "2024-08-08",
     language: "English"
   },
+  {
+    id: 6,
+    title: "Sample Hosted Article",
+    category: "Development",
+    image: "/images/women_in_netflix.png", // Using an existing image for testing
+    slug: "sample-hosted-article",
+    excerpt: "A demonstration of how articles can be hosted directly on the website using custom React components.",
+    content: ScrollDemo,
+    date: "2025-03-21",
+    language: "English"
+  }
 ];
 
 // Get unique categories from articles

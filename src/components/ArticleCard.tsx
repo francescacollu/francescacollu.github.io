@@ -11,6 +11,7 @@ export interface Article {
   platform?: string;
   date?: string; // Date when the article was added/published
   language?: string; // Language of the article (e.g., "English", "Italian")
+  content?: React.ComponentType; // React component to render for hosted articles
 }
 
 interface ArticleCardProps {
