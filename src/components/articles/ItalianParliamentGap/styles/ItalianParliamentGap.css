@@ -1,0 +1,90 @@
+.italian-parliament-gap-container {
+    background: white;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header-title {
+    font-size: 42px;
+    margin: 0 0 20px 0;
+}
+
+.header-description {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.category-four-icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background: white;
+}
+
+.category-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.category-icon {
+    font-size: 2rem;
+}
+
+.scrollytelling-section-container {
+    position: relative;
+}
+
+.chart-container {
+    position: sticky;
+    top: 64px;
+    height: calc(100vh - 64px);
+    width: 100%;
+    z-index: 1;
+}
+
+.chart-container-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrolling-text-boxes-container {
+    position: relative;
+    z-index: 2;
+}
+
+.left-text-box-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+} 
+
+.text-box-inner {
+    background: white;
+    padding: 25px;
+    border-radius: 4px;
+    max-width: 400px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);    
+}
+
+.right-text-box-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+}

@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lombardia",
+        "women": 45,
+        "men": 55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[9.5, 46.5], [9.5, 45.5], [10.5, 45.5], [10.5, 46.5], [9.5, 46.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lazio",
+        "women": 42,
+        "men": 58
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12.5, 42.5], [12.5, 41.5], [13.5, 41.5], [13.5, 42.5], [12.5, 42.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Campania",
+        "women": 38,
+        "men": 62
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[14.5, 41.5], [14.5, 40.5], [15.5, 40.5], [15.5, 41.5], [14.5, 41.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sicilia",
+        "women": 35,
+        "men": 65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.5, 38.5], [13.5, 37.5], [14.5, 37.5], [14.5, 38.5], [13.5, 38.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veneto",
+        "women": 40,
+        "men": 60
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[12.5, 46.5], [12.5, 45.5], [13.5, 45.5], [13.5, 46.5], [12.5, 46.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Emilia-Romagna",
+        "women": 43,
+        "men": 57
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[11.5, 45.5], [11.5, 44.5], [12.5, 44.5], [12.5, 45.5], [11.5, 45.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Piemonte",
+        "women": 41,
+        "men": 59
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[8.5, 45.5], [8.5, 44.5], [9.5, 44.5], [9.5, 45.5], [8.5, 45.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Toscana",
+        "women": 44,
+        "men": 56
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[11.5, 44.5], [11.5, 43.5], [12.5, 43.5], [12.5, 44.5], [11.5, 44.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puglia",
+        "women": 37,
+        "men": 63
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16.5, 41.5], [16.5, 40.5], [17.5, 40.5], [17.5, 41.5], [16.5, 41.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calabria",
+        "women": 36,
+        "men": 64
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16.5, 39.5], [16.5, 38.5], [17.5, 38.5], [17.5, 39.5], [16.5, 39.5]]]
+      }
+    }
+  ]
+} 
