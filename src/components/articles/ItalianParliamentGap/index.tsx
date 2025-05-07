@@ -3,6 +3,8 @@ import { Scrollama, Step } from 'react-scrollama';
 import StickmanChart from './components/StickmanChart';
 import ItalyMap from './components/ItalyMap';
 import './styles/ItalianParliamentGap.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHourglassHalf, faMarsAndVenus, faGraduationCap, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
 
 interface StepEnterEvent {
     data: number;
@@ -39,26 +41,40 @@ const ItalianParliamentGap = () => {
       <header className="header">
         <h1 className='header-title'>The Italian Parliament Gap</h1>
         <p className='header-description'>
-          An exploration of gender representation in Italian politics
+          WHOLE HEADER TO BE REVIEWED: Italy's political system is called a "Parliamentary Republic" and is a representative democracy, which means that the people elect representatives to make decisions on their behalf. The Constitution of Italy states in its first words that the sovereignty belongs to the people, who exercise it in the forms and within the limits of the Constitution. 
+          <br></br>
+          <br></br> 
+          The Consitution affirms the principle of the right to vote, which is inalienable for all citizens, without any distinction based on sex, race, language, or any other status.
+          <br></br>
+          <br></br> 
+          Does this mean that all citizens are represented in the Parliament? 
+          <br></br>
+          <br></br>
+          <span style={{fontWeight: 'bold'}}>No.</span>
         </p>
       </header>
-      
+
+
       <div className='category-four-icons-container'>
         <div className="category-icon-container">
-            <div className="category-icon">👫</div>
-            <div>Gender</div>
+            <div className="category-icon">
+                <FontAwesomeIcon icon={faMarsAndVenus} size="2x" />
+            </div>
         </div>
         <div className="category-icon-container">
-            <div className="category-icon">👵</div>
-            <div>Age</div>
+            <div className="category-icon">
+                <FontAwesomeIcon icon={faHourglassHalf} size='2x'/>
+            </div>
         </div>
         <div className="category-icon-container">
-            <div className="category-icon">🎓</div>
-            <div>Degree</div>
+            <div className="category-icon">
+                <FontAwesomeIcon icon={faGraduationCap} size='2x'/>
+            </div>
         </div>
         <div className="category-icon-container">
-            <div className="category-icon">🌍</div>
-            <div>Geography</div>
+            <div className="category-icon">
+            <FontAwesomeIcon icon={faEarthEurope} size='2x'/>
+            </div>
         </div>
       </div>
 

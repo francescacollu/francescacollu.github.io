@@ -1,11 +1,13 @@
 .italian-parliament-gap-container {
-    background: white;
+    background: black;
     position: relative;
+    font-family: 'Georgia', serif;
 }
 
 .header {
     text-align: center;
     padding: 50px 20px;
+    color: white;
 }
 
 .header-title {
@@ -24,7 +26,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background: white;
+    background: black;
 }
 
 .category-icon-container {

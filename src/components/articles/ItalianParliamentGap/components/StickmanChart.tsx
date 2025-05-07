@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import '../styles/StickmanChart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
 
 interface Category {
   id: string;
@@ -67,14 +70,7 @@ const StickmanChart: React.FC<StickmanChartProps> = ({
     <div 
       ref={containerRef} 
       className="stickman-chart"
-      style={{ 
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        gap: `${gap}px`,
-        width: '100%'
-      }}
-    >
+      style={{gap: `${gap}px`}}>
       {figures.map(index => (
         <div 
           key={index}
@@ -85,19 +81,9 @@ const StickmanChart: React.FC<StickmanChartProps> = ({
             opacity: opacity
           }}
         >
-          <svg 
-            width="100%" 
-            height="100%" 
-            viewBox="0 0 24 24"
-          >
-            <g fill={getColorForIndex(index)}>
-              <circle cx="12" cy="4" r="3.5" />
-              <line x1="12" y1="8" x2="12" y2="16" stroke={getColorForIndex(index)} strokeWidth="2" />
-              <line x1="8" y1="12" x2="16" y2="12" stroke={getColorForIndex(index)} strokeWidth="2" />
-              <line x1="12" y1="16" x2="8" y2="20" stroke={getColorForIndex(index)} strokeWidth="2" />
-              <line x1="12" y1="16" x2="16" y2="20" stroke={getColorForIndex(index)} strokeWidth="2" />
-            </g>
-          </svg>
+          <div style={{ color: getColorForIndex(index) }}>
+            <FontAwesomeIcon icon={faPerson} size="2x" />
+          </div>
         </div>
       ))}
     </div>
