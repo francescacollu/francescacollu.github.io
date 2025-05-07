@@ -15,10 +15,12 @@
     margin: 0 0 20px 0;
 }
 
-.header-description {
+.header-description p {
     font-size: 20px;
     max-width: 800px;
     margin: 0 auto 20px;
+    margin-bottom: 1em;
+    line-height: 1.6;
 }
 
 .category-four-icons-container {
@@ -89,4 +91,8 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 10%;
+}
+
+.footer-container {
+    color: grey;
 }

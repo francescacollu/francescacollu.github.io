@@ -1,10 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import StickmanChart from './components/StickmanChart';
 import ItalyMap from './components/ItalyMap';
 import './styles/ItalianParliamentGap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglassHalf, faMarsAndVenus, faGraduationCap, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
+import ReactMarkdown from 'react-markdown';
+
+interface MarkdownContentProps {
+    src: string;
+    className?: string;
+}
+
+const MarkdownContent: React.FC<MarkdownContentProps> = ({ src, className }) => {
+    const [content, setContent] = useState<string>('');
+
+    useEffect(() => {
+        fetch(src)
+            .then(res => res.text())
+            .then(setContent);
+    }, [src]);
+
+    return (
+        <div className={className}>
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
+      );
+};
 
 interface StepEnterEvent {
     data: number;
@@ -40,18 +62,7 @@ const ItalianParliamentGap = () => {
 
       <header className="header">
         <h1 className='header-title'>The Italian Parliament Gap</h1>
-        <p className='header-description'>
-          WHOLE HEADER TO BE REVIEWED: Italy's political system is called a "Parliamentary Republic" and is a representative democracy, which means that the people elect representatives to make decisions on their behalf. The Constitution of Italy states in its first words that the sovereignty belongs to the people, who exercise it in the forms and within the limits of the Constitution. 
-          <br></br>
-          <br></br> 
-          The Consitution affirms the principle of the right to vote, which is inalienable for all citizens, without any distinction based on sex, race, language, or any other status.
-          <br></br>
-          <br></br> 
-          Does this mean that all citizens are represented in the Parliament? 
-          <br></br>
-          <br></br>
-          <span style={{fontWeight: 'bold'}}>No.</span>
-        </p>
+          <MarkdownContent src='/content/ItalianParliamentGap/intro.md' className='header-description'/>
       </header>
 
 
@@ -174,6 +185,10 @@ const ItalianParliamentGap = () => {
             </Step>
           </Scrollama>
         </div>
+      </div>
+
+      <div className='footer-container'>
+        <p>Footer</p>
       </div>
     </div>
   );
