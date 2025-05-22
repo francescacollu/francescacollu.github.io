@@ -1,0 +1,1 @@
+Not surprisingly, Rome's region - Latium - is one of the most overrepresented. Liguria, Basilicata and Valle d'Aosta (Italy's smallest region also in terms of population) are the most overrepresented. This means that the constituents of these regions vote particularly for their own countrymen.

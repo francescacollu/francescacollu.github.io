@@ -1,0 +1,1 @@
+What about the rest of the young population? If we define _youth_ as up to 35 years old, we find that over 6 million Italians fall into the 26–35 age group — about 10.8% of the population.

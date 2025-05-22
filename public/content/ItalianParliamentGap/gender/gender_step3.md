@@ -1,0 +1,1 @@
+Instead, only 206 parliamentarians are women — just over a third of the entire assembly.

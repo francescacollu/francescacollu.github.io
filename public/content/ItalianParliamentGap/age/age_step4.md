@@ -1,0 +1,1 @@
+In the Italian Parliament, we see just 9 members belonging to that age group - 1.5% of the whole assembly.

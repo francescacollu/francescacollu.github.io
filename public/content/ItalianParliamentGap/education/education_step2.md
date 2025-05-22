@@ -1,0 +1,1 @@
+Italians with at least a graduate certificate are the 21.6% of the entire population. The rest have a high-school diploma (43.9%) and a middle school license (34.5%). For a job like the one of a legislator, it would be important to have a certain degree of knowledge or expertise, even if only at studying per se. 

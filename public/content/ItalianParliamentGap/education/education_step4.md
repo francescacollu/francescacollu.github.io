@@ -1,0 +1,1 @@
+As expected, the graduation field by far the most represented is the legal one. About 6% of the constituents has a law degree. 

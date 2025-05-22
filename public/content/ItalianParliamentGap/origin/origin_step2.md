@@ -1,0 +1,1 @@
+The most underrepresented regions are some of the richest (Piedmont, Veneto, Emilia-Romagna in the North) and two of the poorest (Abruzzo and Molise in the Center).

@@ -1,0 +1,1 @@
+In fact, in the Italian Parliament we see that the people with a university degree is overrepresented (77% of the members of the assembly - 464 members versus the 131 that we would have in a pure descriptive representation scenary).

@@ -1,0 +1,2 @@
+The first thing to note is that the minimum age to run for office in the two houses of Parliament differs: for the Chamber of Deputies, candidates must be at least 25 years old; for the Senate, the minimum age is 40.
+So, it's not surprising that there are no members of Parliament younger than 26.
