@@ -239,7 +239,7 @@ const ItalianParliamentGap = () => {
       <div className='parliament-container'>
         <Parliament 
             image={faPerson}
-            widthFraction={0.1}
+            widthFraction={0.015}
             radiusList={[3, 4, 5]}
             members={605}
         />
@@ -257,6 +257,12 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
+          {/* <Parliament 
+            image={faPerson}
+            widthFraction={0.01}
+            radiusList={[3, 4, 5]}
+            members={605}
+        /> */}
             <StickmanChart 
               opacity={1} 
               categories={educationStickmanSteps[currentStep - 1]?.categories || educationStickmanSteps[0].categories}

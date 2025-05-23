@@ -73,26 +73,27 @@ const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: nu
     const totalLength = radiusPxList.reduce((acc, radius) => acc + radius*maxAngle, 0);
     const points = [];
 
-    
+    const pointsPerRadius = [];
+    let pointsSoFar = 0;
+    for (let i = 0; i < radiusPxList.length-1; i++) {
+        const arcFraction = radiusPxList[i] * maxAngle / totalLength;
+        const currentPoints = Math.floor(nPoints * arcFraction);
+        pointsPerRadius.push(currentPoints);
+        pointsSoFar += currentPoints;
+    }
+    pointsPerRadius.push(nPoints - pointsSoFar);
 
     for (let i = 0; i < radiusPxList.length; i++) {
-        const arcFraction = radiusPxList[i] * maxAngle / totalLength;
-        
-        let currentPoints = 0;
-        if (i == radiusPxList.length-1) {
-            currentPoints = nPoints - points.length;
-        } else {
-            currentPoints = Math.floor(nPoints * arcFraction);
-        }
+        const currentPoints = pointsPerRadius[i];
 
         const radiusNoiseDist = d3.randomNormal(0, 0.001*dimensions.height);
         const deltaAngle = maxAngle / currentPoints; 
-        const angleNoiseDist = d3.randomNormal(0, 0.1*deltaAngle);
+        const angleNoiseDist = d3.randomNormal(0, 0.05*deltaAngle);
         
         for (let j = 0; j < currentPoints; j++) {
             let angle = j * deltaAngle - maxAngle / 2 + deltaAngle/2;
             angle += angleNoiseDist();
-            const radius = radiusPxList[i] + radiusNoiseDist();
+            const radius = radiusPxList[i];// + radiusNoiseDist();
 
             const x = circleParams.x_center + radius * Math.sin(angle);
             const y = circleParams.y_center - radius * Math.cos(angle);

@@ -1,3 +1,1 @@
-Immigrants: their perspectives and hopes
-
-Toni Iwobi's story
+In order to get a sense of the proportions of the MPs that bring migration stories into the Parliament through a descriptive representation, the number of Italian residents born outside of the borders of Italy is taken under consideration. The reader should be aware that this is not the most accurate method to address the question we want to answer, but it can give us a sense of it. First of all, an important thing to know: the electoral system provides that citizens living abroad elect 12 members of Parliament to represent them. Among the ones that are currently in the assembly, just 3 have been born in a foreign country.
