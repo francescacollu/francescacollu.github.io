@@ -10,10 +10,7 @@
 
 .inner-parliament {
     position: relative;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 80vh;
     width: 100vw;
-}
-
-.parliament-member {
 }

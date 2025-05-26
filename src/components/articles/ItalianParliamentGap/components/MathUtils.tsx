@@ -26,6 +26,41 @@ interface ArcHeightBounds {
     maxHeightFraction: number; // Height fraction wrt the height of the container corresponding to the minimum radius circle.
 }
 
+interface PxPoint {
+    x: number;
+    y: number;
+}
+
+interface MemberTypeAndPosition {
+    image: string;
+    pxPoint: PxPoint;
+}
+
+// TODO(fcollu): move to separate file
+interface ImageId {
+    source: string;
+    color: string;
+}
+
+interface ColorNode {
+    color: string;
+    coloredSrc: string;
+}
+
+interface OriginalSrcNode {
+    src: string;
+    colorNodes: ColorNode[];
+}
+
+interface ImageTree {
+    originalSrcNodes: OriginalSrcNode[];
+}
+
+interface Category {
+    label: string;
+    count: number;
+    color: string;
+}
 
 const computeCirleParams = (size: WidgetDimensions, bounds: ArcHeightBounds, radiusList: number[]): CircleParams => {
 
@@ -62,12 +97,16 @@ const computeMaxArcAngle = (size: WidgetDimensions, circleParams: CircleParams, 
     return Math.min(maxRadiusAngle, minRadiusAngle);
 }
 
-interface PxPoint {
-    x: number;
-    y: number;
-}
+
 
 const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: number, circleParams: CircleParams, dimensions: WidgetDimensions): PxPoint[] => {
+
+    console.log('radiusList: ', radiusList);
+    console.log('nPoints: ', nPoints);
+    console.log('maxAngle: ', maxAngle);
+    console.log('circleParams: ', circleParams);
+    console.log('dimensions: ', dimensions);
+
     const radiusPxList = radiusList.map(r => r * circleParams.scale);
 
     const totalLength = radiusPxList.reduce((acc, radius) => acc + radius*maxAngle, 0);
@@ -104,4 +143,37 @@ const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: nu
     return points;
 }
 
-export { computeCirleParams, computeMaxArcAngle, placePointsOnCircle };
+const sampleMemberTypesAndPositions = (points: PxPoint[], imageTree: ImageTree, categories: Category[]): MemberTypeAndPosition[] => {
+    const memberTypeAndPositions = [];
+
+    const getColorForIndex = (index: number): string => {
+        let countSoFar = 0;
+        for (const category of categories) {
+            countSoFar += category.count;
+            if (index < countSoFar) {
+                return category.color;
+            }
+        }
+        throw new Error(`Index out of bounds: ${index}, categories: ${categories}`);
+    }
+
+    for (let i = 0; i < points.length; i++) {
+        const point = points[i];
+        const color = getColorForIndex(i);
+        const originalSrcNode = imageTree.originalSrcNodes[Math.floor(Math.random() * imageTree.originalSrcNodes.length)];
+        
+        const coloredNode = originalSrcNode.colorNodes.find(node => node.color === color);
+        if (!coloredNode) {
+            throw new Error(`Colored node not found for color: ${color}, originalSrcNode: ${originalSrcNode}`);
+        }
+
+        const coloredSrc = coloredNode.coloredSrc;
+
+        memberTypeAndPositions.push({image: coloredSrc, pxPoint: point});
+    }
+    return memberTypeAndPositions;
+}
+
+
+export type { ImageId, Category, ImageTree, OriginalSrcNode, ColorNode, WidgetDimensions };
+export { computeCirleParams, computeMaxArcAngle, placePointsOnCircle, sampleMemberTypesAndPositions };

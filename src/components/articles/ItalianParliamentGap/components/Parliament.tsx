@@ -1,16 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { computeCirleParams, computeMaxArcAngle, placePointsOnCircle } from './MathUtils';
-import userImage from './user_byme.png';
+import { computeCirleParams, 
+    computeMaxArcAngle, 
+    placePointsOnCircle, 
+    sampleMemberTypesAndPositions, 
+    ImageId, 
+    Category, 
+    ImageTree, 
+    OriginalSrcNode, 
+    ColorNode,
+    WidgetDimensions } from './MathUtils';
+import roundedMp from './rounded_mp.png';
+import squaredMp from './squared_mp.png';
+import skirtedMp from './skirted_mp.png';
+import pointedMp from './pointed_mp.png';
 
-interface Category {
-    id: string;
-    label: string;
-    value: number;
-    color: string;
-}
+const images = [roundedMp, squaredMp, skirtedMp, pointedMp];
 
 interface ParliamentMemberInterface {
     key: string;
@@ -18,11 +22,9 @@ interface ParliamentMemberInterface {
     widthFraction: number;
     xPosition: number;
     yPosition: number;
-    color: string;
 }
 
 interface ParliamentInterface {
-    image: IconDefinition;
     widthFraction: number;
     radiusList: number[];
     members: number;
@@ -30,8 +32,7 @@ interface ParliamentInterface {
 }
 
 const convertGrayscaleToColor = (
-    imageSrc: string, 
-    targetColor: string, 
+    imageId: ImageId, 
     callback: (dataUrl: string) => void
   ) => {
     const img = new Image();
@@ -49,22 +50,18 @@ const convertGrayscaleToColor = (
       const imageData = ctx?.getImageData(0, 0, canvas.width, canvas.height);
       if (!imageData) return;
       
-      // Parse target color
       const targetRGB = {
-        r: parseInt(targetColor.slice(1, 3), 16),
-        g: parseInt(targetColor.slice(3, 5), 16),
-        b: parseInt(targetColor.slice(5, 7), 16)
+        r: parseInt(imageId.color.slice(1, 3), 16),
+        g: parseInt(imageId.color.slice(3, 5), 16),
+        b: parseInt(imageId.color.slice(5, 7), 16)
       };
-
-      console.log("targetRGB: ", targetRGB);
       
-      // Modify pixels
       for (let i = 0; i < imageData.data.length; i += 4) {
         const gray = imageData.data[i+3];
         
-        imageData.data[i] = targetRGB.r ;     // R
-        imageData.data[i + 1] = targetRGB.g; // G
-        imageData.data[i + 2] = targetRGB.b; // B
+        imageData.data[i] = targetRGB.r ;    
+        imageData.data[i + 1] = targetRGB.g; 
+        imageData.data[i + 2] = targetRGB.b; 
         imageData.data[i + 3] = gray;
       }
       
@@ -72,21 +69,20 @@ const convertGrayscaleToColor = (
       callback(canvas.toDataURL());
     };
     
-    img.src = imageSrc;
+    img.src = imageId.source;
   };
 
 const Parliament: React.FC<ParliamentInterface> = ({ 
-    image, 
     widthFraction, 
     members,
     categories = [
-        { id: 'id1', label: 'Label1', value: 212, color: '#ff0000' },
-        { id: 'id2', label: 'Label2', value: 393, color: '#0000ff' },
+        { label: 'Label1', count: 4, color: '#ff0000' },
+        { label: 'Label2', count: 6, color: '#888888' },
     ]
     }) => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-    const [coloredImageSrc, setColoredImageSrc] = useState<string>('');
+    const [dimensions, setDimensions] = useState<WidgetDimensions | null>(null);
+    const [imageTree, setImageTree] = useState<ImageTree>();
 
     const radiusScale = 3;
     const radiusList = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1].map(r => r + radiusScale);
@@ -94,49 +90,77 @@ const Parliament: React.FC<ParliamentInterface> = ({
     useEffect(() => {
         if (containerRef.current) {
             const { width, height } = containerRef.current.getBoundingClientRect();
-            setDimensions({ width, height });
+            setDimensions({width: width, height: height });
         }
     }, []);
 
     useEffect(() => {
-        convertGrayscaleToColor(userImage, '#ffffff', setColoredImageSrc);
-      }, []);
+        const convertAllImages = async () => {
+            const promises: Promise<{key: ImageId, value: string}>[] = [];
+            
+            for (const category of categories) {
+                for (const image of images) {
+                    const imageId: ImageId = {source: image, color: category.color};
+                    const promise = new Promise<{key: ImageId, value: string}>((resolve) => {
+                        convertGrayscaleToColor(imageId, (coloredImage) => {
+                            resolve({key: imageId, value: coloredImage});
+                        });
+                    });
+                    promises.push(promise);
+                }
+            }
+            
+            const results = await Promise.all(promises);
+            const originalSrcNodes: OriginalSrcNode[] = images.map((image) => ({src: image, colorNodes: []}));
+            for (const originalSrcNode of originalSrcNodes) {
+                for (const category of categories) {
+                    const coloredSrc = results.find(({key}) => key.source === originalSrcNode.src && key.color === category.color)?.value || '';
+                    if (!coloredSrc) {
+                        throw new Error(`Colored src not found for image: ${originalSrcNode.src}, category: ${category.color}`);
+                    }
+                    const colorNode: ColorNode = {color: category.color, coloredSrc: coloredSrc};
+                    originalSrcNode.colorNodes.push(colorNode);
+                }
+            }
+            const imageTree: ImageTree = {
+                originalSrcNodes: originalSrcNodes,
+            };
+            setImageTree(imageTree);
+        };
+        
+        convertAllImages();
+    }, []);
+
+    if (!dimensions || !imageTree) {
+        return <div className='inner-parliament' ref={containerRef}></div>;
+    }
 
     const circleParams = computeCirleParams(dimensions, { minHeightFraction: 0.2, maxHeightFraction: 0.8 }, radiusList);
-
     const maxArcAngle = computeMaxArcAngle(dimensions, circleParams, radiusList);
-
     const points = placePointsOnCircle(radiusList, members, maxArcAngle, circleParams, dimensions);
 
-    const getColorForIndex = (index: number): string => {
-        let countSoFar = 0;
-        for (const category of categories) {
-            countSoFar += category.value;
-            if (index < countSoFar) {
-                return category.color;
-            }
-        }
-        return 'black';
-    };
+    console.log('points: ', points);
+    console.log('imageTree found: ', imageTree);
+    const memberTypeAndPositions = sampleMemberTypesAndPositions(points, imageTree, categories);
 
-    console.log('widthFraction: ', widthFraction);
+    console.log('memberTypeAndPositions: ', memberTypeAndPositions);
+
     return (
         <div className='inner-parliament' ref={containerRef}>
-            {points.map((point, index) => (
+            {memberTypeAndPositions.map((memberTypeAndPosition, index) => (
                 <ParliamentMember
                     key={index.toString()}
-                    image={coloredImageSrc}
+                    image={memberTypeAndPosition.image}
                     widthFraction={widthFraction}
-                    xPosition={point.x}
-                    yPosition={point.y}
-                    color={getColorForIndex(index)}
+                    xPosition={memberTypeAndPosition.pxPoint.x}
+                    yPosition={memberTypeAndPosition.pxPoint.y}
                 />
                 ))}
         </div>
     );
 };
 
-const ParliamentMember: React.FC<ParliamentMemberInterface> = ({key, image, widthFraction, xPosition, yPosition, color }) => {
+const ParliamentMember: React.FC<ParliamentMemberInterface> = ({key, image, widthFraction, xPosition, yPosition }) => {
     return (
         <img className='parliament-member' key={key}
             src={image} style={{

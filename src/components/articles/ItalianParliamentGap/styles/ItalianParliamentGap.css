@@ -17,10 +17,19 @@
 
 .header-description p {
     font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    margin-bottom: 1em;
+    max-width: 1000px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     line-height: 1.6;
+}
+
+.four-categories-intro {
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
 }
 
 .category-four-icons-container {

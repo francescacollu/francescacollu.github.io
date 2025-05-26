@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import StickmanChart from './components/StickmanChart';
 import ItalyMap from './components/ItalyMap';
-import { ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps } from './components/StickmanSteps';
+import { ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps, genderStickmanSteps } from './components/StickmanSteps';
 import './styles/ItalianParliamentGap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglassHalf, faMarsAndVenus, faGraduationCap, faEarthEurope, faSeedling, faPerson } from '@fortawesome/free-solid-svg-icons';
@@ -69,9 +69,12 @@ const ItalianParliamentGap = () => {
         <MarkdownContent src='/content/ItalianParliamentGap/intro.md' className='header-description'/>
       </header>
 
-      <Scrollama onStepProgress={onIconsStepProgress} offset={0}>
+
+      <Scrollama onStepProgress={onIconsStepProgress} offset={1}>
         <Step data={1}>
-          <div style={{ height: '100vh' }}></div>
+          <div className='four-categories-intro'>
+          <MarkdownContent src='/content/ItalianParliamentGap/four_categories_intro.md' className='four-categories-intro-inner'/>
+          </div>
         </Step>
       </Scrollama>
 
@@ -82,22 +85,22 @@ const ItalianParliamentGap = () => {
         }}>
         <div className="category-icon-container">
             <div className="category-icon">
-                <FontAwesomeIcon icon={faMarsAndVenus} size="2x" />
+                <FontAwesomeIcon icon={faMarsAndVenus} size="3x" />
             </div>
         </div>
         <div className="category-icon-container">
             <div className="category-icon">
-                <FontAwesomeIcon icon={faHourglassHalf} size='2x'/>
+                <FontAwesomeIcon icon={faHourglassHalf} size='3x'/>
             </div>
         </div>
         <div className="category-icon-container">
             <div className="category-icon">
-                <FontAwesomeIcon icon={faGraduationCap} size='2x'/>
+                <FontAwesomeIcon icon={faGraduationCap} size='3x'/>
             </div>
         </div>
         <div className="category-icon-container">
             <div className="category-icon">
-            <FontAwesomeIcon icon={faEarthEurope} size='2x'/>
+            <FontAwesomeIcon icon={faEarthEurope} size='3x'/>
             </div>
         </div>
       </div>
@@ -114,18 +117,9 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
-            <StickmanChart 
+          <StickmanChart 
               opacity={1} 
-              categories={currentStep === 1 ? 
-                [
-                  { id: 'women', label: 'Women', value: 212, color: '#3b82f6' },
-                  { id: 'men', label: 'Men', value: 393, color: '#9ca3af' },
-                ] : 
-                [
-                  { id: 'women', label: 'Women', value: 302, color: '#3b82f6' },
-                  { id: 'men', label: 'Men', value: 303, color: '#9ca3af' },
-                ]
-              }
+              categories={genderStickmanSteps[currentStep - 1]?.categories || genderStickmanSteps[0].categories}
             />
           </div>
         </div>
@@ -160,19 +154,19 @@ const ItalianParliamentGap = () => {
               </div>
             </Step>
 
-            <Step data={5}>
+            <Step data={4}>
               <div className='left-text-box-container'>
               <MarkdownContent src='/content/ItalianParliamentGap/gender/gender_step5.md' className='text-box-inner'/>
               </div>
             </Step>
 
-            <Step data={6}>
+            <Step data={4}>
               <div className='right-text-box-container'>
               <MarkdownContent src='/content/ItalianParliamentGap/gender/gender_step6.md' className='text-box-inner'/>
               </div>
             </Step>
 
-            <Step data={7}>
+            <Step data={4}>
                 <div style={{height: '100vh'}}></div>
             </Step>
           </Scrollama>
@@ -238,10 +232,9 @@ const ItalianParliamentGap = () => {
 
       <div className='parliament-container'>
         <Parliament 
-            image={faPerson}
-            widthFraction={0.015}
+            widthFraction={0.012}
             radiusList={[3, 4, 5]}
-            members={605}
+            members={10}
         />
       </div>
 

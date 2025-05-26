@@ -1,6 +1,35 @@
 type StickmanCategory = { id: string; label: string; value: number; color: string; };
 type StickmanStep = { categories: StickmanCategory[]; };
 
+const genderStickmanSteps: StickmanStep[] = [
+  {
+    categories: [
+      { id: 'all', label: 'All', value: 605, color: 'grey' }
+    ]
+  },
+  {
+    categories: [
+      { id: 'female_pop', label: 'FemalePop', value: 308, color: '#4169E1' },
+      { id: 'rest_pop', label: 'RestPop', value: 297, color: 'grey' }
+    ]
+  },
+  {
+    categories: [
+      { id: 'female_parliament', label: 'FemaleParliament', value: 206, color: '#FFD700' },
+      { id: 'rest_parliament', label: 'RestParliament', value: 399, color: 'grey' }
+    ]
+  },
+  {
+    categories: [
+      { id: 'female_parliament', label: 'FemaleParliament', value: 206, color: '#FFD700' },
+      { id: 'female_pop', label: 'FemalePop', value: 102, color: '#4169E1' },
+      { id: 'rest_parliament', label: 'RestParliament', value: 399, color: 'grey' }
+    ]
+  }
+  // ...add more steps as needed
+];
+
+
 const ageStickmanSteps: StickmanStep[] = [
   {
     categories: [
@@ -82,6 +111,6 @@ const foreignStickmanSteps: StickmanStep[] = [
     ]
   }
 ];
-export { ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps };
+export { genderStickmanSteps, ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps };
 
 
