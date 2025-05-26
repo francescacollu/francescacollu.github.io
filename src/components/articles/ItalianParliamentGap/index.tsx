@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
-import StickmanChart from './components/StickmanChart';
 import ItalyMap from './components/ItalyMap';
-import { ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps, genderStickmanSteps } from './components/StickmanSteps';
+import { ageChartSteps, educationChartSteps, foreignChartSteps, genderChartSteps } from './components/StickmanSteps';
 import './styles/ItalianParliamentGap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglassHalf, faMarsAndVenus, faGraduationCap, faEarthEurope, faSeedling, faPerson } from '@fortawesome/free-solid-svg-icons';
@@ -117,10 +116,9 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
-          <StickmanChart 
-              opacity={1} 
-              categories={genderStickmanSteps[currentStep - 1]?.categories || genderStickmanSteps[0].categories}
-            />
+          <Parliament 
+          categories={genderChartSteps[currentStep - 1]?.categories || genderChartSteps[0].categories}
+      />
           </div>
         </div>
         
@@ -185,9 +183,8 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
-            <StickmanChart 
-              opacity={1} 
-              categories={ageStickmanSteps[currentStep - 1]?.categories || ageStickmanSteps[0].categories}
+            <Parliament 
+              categories={ageChartSteps[currentStep - 1]?.categories || ageChartSteps[0].categories}
             />
           </div>
         </div>
@@ -230,14 +227,6 @@ const ItalianParliamentGap = () => {
         </div>
       </div>
 
-      <div className='parliament-container'>
-        <Parliament 
-            widthFraction={0.012}
-            radiusList={[3, 4, 5]}
-            members={10}
-        />
-      </div>
-
       <div className='category-intro-container'>
         <span className='background-icon'>
             <FontAwesomeIcon icon={faGraduationCap} size='10x'/>
@@ -256,9 +245,8 @@ const ItalianParliamentGap = () => {
             radiusList={[3, 4, 5]}
             members={605}
         /> */}
-            <StickmanChart 
-              opacity={1} 
-              categories={educationStickmanSteps[currentStep - 1]?.categories || educationStickmanSteps[0].categories}
+            <Parliament
+              categories={educationChartSteps[currentStep - 1]?.categories || educationChartSteps[0].categories}
             />
           </div>
         </div>
@@ -375,9 +363,8 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
-            <StickmanChart 
-              opacity={1} 
-              categories={foreignStickmanSteps[currentStep - 1]?.categories || foreignStickmanSteps[0].categories}
+            <Parliament
+              categories={foreignChartSteps[currentStep - 1]?.categories || foreignChartSteps[0].categories}
             />
           </div>
         </div>

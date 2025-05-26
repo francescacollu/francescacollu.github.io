@@ -7,7 +7,7 @@
  * @returns The center and scale of the circle that fits the given radius list.
  */}
 
- import * as d3 from 'd3';
+import SeededRandom from './SeededRandom';
 
 
 interface CircleParams {
@@ -63,7 +63,6 @@ interface Category {
 }
 
 const computeCirleParams = (size: WidgetDimensions, bounds: ArcHeightBounds, radiusList: number[]): CircleParams => {
-
     const maxRadius = Math.max(...radiusList);
     const minRadius = Math.min(...radiusList);
     
@@ -97,15 +96,10 @@ const computeMaxArcAngle = (size: WidgetDimensions, circleParams: CircleParams, 
     return Math.min(maxRadiusAngle, minRadiusAngle);
 }
 
-
-
 const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: number, circleParams: CircleParams, dimensions: WidgetDimensions): PxPoint[] => {
-
-    console.log('radiusList: ', radiusList);
-    console.log('nPoints: ', nPoints);
-    console.log('maxAngle: ', maxAngle);
-    console.log('circleParams: ', circleParams);
-    console.log('dimensions: ', dimensions);
+    const seededRandom = new SeededRandom(12345);
+    const radiusMaxNoise = 0.0*dimensions.height;
+    const angleMaxNoise = 0.002*maxAngle;
 
     const radiusPxList = radiusList.map(r => r * circleParams.scale);
 
@@ -125,14 +119,17 @@ const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: nu
     for (let i = 0; i < radiusPxList.length; i++) {
         const currentPoints = pointsPerRadius[i];
 
-        const radiusNoiseDist = d3.randomNormal(0, 0.001*dimensions.height);
+
         const deltaAngle = maxAngle / currentPoints; 
-        const angleNoiseDist = d3.randomNormal(0, 0.05*deltaAngle);
+ 
         
         for (let j = 0; j < currentPoints; j++) {
             let angle = j * deltaAngle - maxAngle / 2 + deltaAngle/2;
-            angle += angleNoiseDist();
-            const radius = radiusPxList[i];// + radiusNoiseDist();
+            const angleNoise = seededRandom.randomFloat(-angleMaxNoise, angleMaxNoise);
+            angle += angleNoise;
+
+            const radiusNoise = seededRandom.randomFloat(-radiusMaxNoise, radiusMaxNoise);
+            const radius = radiusPxList[i] + radiusNoise;
 
             const x = circleParams.x_center + radius * Math.sin(angle);
             const y = circleParams.y_center - radius * Math.cos(angle);
@@ -144,6 +141,7 @@ const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: nu
 }
 
 const sampleMemberTypesAndPositions = (points: PxPoint[], imageTree: ImageTree, categories: Category[]): MemberTypeAndPosition[] => {
+    const seededRandom = new SeededRandom(42);
     const memberTypeAndPositions = [];
 
     const getColorForIndex = (index: number): string => {
@@ -160,7 +158,7 @@ const sampleMemberTypesAndPositions = (points: PxPoint[], imageTree: ImageTree, 
     for (let i = 0; i < points.length; i++) {
         const point = points[i];
         const color = getColorForIndex(i);
-        const originalSrcNode = imageTree.originalSrcNodes[Math.floor(Math.random() * imageTree.originalSrcNodes.length)];
+        const originalSrcNode = seededRandom.randomChoice(imageTree.originalSrcNodes);
         
         const coloredNode = originalSrcNode.colorNodes.find(node => node.color === color);
         if (!coloredNode) {

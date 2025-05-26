@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { computeCirleParams, 
     computeMaxArcAngle, 
     placePointsOnCircle, 
@@ -22,13 +22,6 @@ interface ParliamentMemberInterface {
     widthFraction: number;
     xPosition: number;
     yPosition: number;
-}
-
-interface ParliamentInterface {
-    widthFraction: number;
-    radiusList: number[];
-    members: number;
-    categories?: Category[];
 }
 
 const convertGrayscaleToColor = (
@@ -72,20 +65,15 @@ const convertGrayscaleToColor = (
     img.src = imageId.source;
   };
 
-const Parliament: React.FC<ParliamentInterface> = ({ 
-    widthFraction, 
-    members,
-    categories = [
-        { label: 'Label1', count: 4, color: '#ff0000' },
-        { label: 'Label2', count: 6, color: '#888888' },
-    ]
-    }) => {
+const Parliament: React.FC<{ categories: Category[] }> = ({ categories }) => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [dimensions, setDimensions] = useState<WidgetDimensions | null>(null);
+    const [dimensions, setDimensions] = useState<WidgetDimensions>();
     const [imageTree, setImageTree] = useState<ImageTree>();
+
 
     const radiusScale = 3;
     const radiusList = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1].map(r => r + radiusScale);
+    const widthFraction = 0.012;
 
     useEffect(() => {
         if (containerRef.current) {
@@ -127,35 +115,47 @@ const Parliament: React.FC<ParliamentInterface> = ({
             };
             setImageTree(imageTree);
         };
-        
         convertAllImages();
-    }, []);
+    }, [categories]);
 
-    if (!dimensions || !imageTree) {
-        return <div className='inner-parliament' ref={containerRef}></div>;
-    }
+    const circleParams = useMemo(() => {
+        if (!dimensions) return null;
+        return computeCirleParams(dimensions, { minHeightFraction: 0.2, maxHeightFraction: 0.8 }, radiusList);
+    }, [dimensions]);
 
-    const circleParams = computeCirleParams(dimensions, { minHeightFraction: 0.2, maxHeightFraction: 0.8 }, radiusList);
-    const maxArcAngle = computeMaxArcAngle(dimensions, circleParams, radiusList);
-    const points = placePointsOnCircle(radiusList, members, maxArcAngle, circleParams, dimensions);
+    const maxArcAngle = useMemo(() => {
+        if (!circleParams || !dimensions) return null;
+        return computeMaxArcAngle(dimensions, circleParams, radiusList);
+    }, [dimensions, circleParams]);
 
-    console.log('points: ', points);
-    console.log('imageTree found: ', imageTree);
-    const memberTypeAndPositions = sampleMemberTypesAndPositions(points, imageTree, categories);
+    const points = useMemo(() => {
+        if (!maxArcAngle || !circleParams || !dimensions) return [];
+        const totalCount = categories.reduce((acc, category) => acc + category.count, 0);
+        return placePointsOnCircle(radiusList, totalCount, maxArcAngle, circleParams, dimensions);
+    }, [maxArcAngle, circleParams, dimensions, categories]);
 
-    console.log('memberTypeAndPositions: ', memberTypeAndPositions);
+    const memberTypeAndPositions = useMemo(() => {
+        if (!imageTree) return [];
+        console.log(imageTree);
+        console.log(categories);
+        return sampleMemberTypesAndPositions(points, imageTree, categories);
+    }, [points, imageTree]);
 
     return (
-        <div className='inner-parliament' ref={containerRef}>
-            {memberTypeAndPositions.map((memberTypeAndPosition, index) => (
-                <ParliamentMember
-                    key={index.toString()}
-                    image={memberTypeAndPosition.image}
-                    widthFraction={widthFraction}
-                    xPosition={memberTypeAndPosition.pxPoint.x}
-                    yPosition={memberTypeAndPosition.pxPoint.y}
-                />
-                ))}
+        <div className='parliament-container'>
+            <div className='inner-parliament' ref={containerRef}>
+                {dimensions && imageTree && (
+                    points.map((point, index) => (
+                        <ParliamentMember
+                            key={index.toString()}
+                            image={memberTypeAndPositions[index].image}
+                            widthFraction={widthFraction}
+                            xPosition={memberTypeAndPositions[index].pxPoint.x}
+                            yPosition={memberTypeAndPositions[index].pxPoint.y}
+                        />
+                    ))
+                )}
+            </div>
         </div>
     );
 };
@@ -170,17 +170,6 @@ const ParliamentMember: React.FC<ParliamentMemberInterface> = ({key, image, widt
             top: `${yPosition}px`,
             transform: 'translate(-50%, -50%)',
             }} />
-        // <FontAwesomeIcon 
-        //         icon={faUser}
-        //         style={{
-        //             position: 'absolute',
-        //             width: `${widthFraction * 100}%`,
-        //             left: `${xPosition}`,
-        //             top: `${yPosition}`,
-        //             transform: 'translate(-50%, -50%)',
-        //             color: color,
-        //         }}
-        //     />
     )
 }
 

@@ -1,116 +1,118 @@
-type StickmanCategory = { id: string; label: string; value: number; color: string; };
-type StickmanStep = { categories: StickmanCategory[]; };
+import { Category } from "./MathUtils";
 
-const genderStickmanSteps: StickmanStep[] = [
+
+type ChartStep = { categories: Category[]; };
+
+const genderChartSteps: ChartStep[] = [
   {
     categories: [
-      { id: 'all', label: 'All', value: 605, color: 'grey' }
+      { label: 'All', count: 605, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'female_pop', label: 'FemalePop', value: 308, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 297, color: 'grey' }
+      { label: 'FemalePop', count: 308, color: '#4169e1' },
+      { label: 'RestPop', count: 297, color: '#666666' }
     ]
   },
   {
     categories: [
-      { id: 'female_parliament', label: 'FemaleParliament', value: 206, color: '#FFD700' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 399, color: 'grey' }
+      { label: 'FemaleParliament', count: 206, color: '#ffd700' },
+      { label: 'RestParliament', count: 399, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'female_parliament', label: 'FemaleParliament', value: 206, color: '#FFD700' },
-      { id: 'female_pop', label: 'FemalePop', value: 102, color: '#4169E1' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 399, color: 'grey' }
+      { label: 'FemaleParliament', count: 206, color: '#ffd700' },
+      { label: 'FemalePop', count: 102, color: '#4169e1' },
+      { label: 'RestParliament', count: 399, color: '#888888' }
     ]
   }
   // ...add more steps as needed
 ];
 
 
-const ageStickmanSteps: StickmanStep[] = [
+const ageChartSteps: ChartStep[] = [
   {
     categories: [
-      { id: 'all', label: 'All', value: 605, color: 'grey' }
+      { label: 'All', count: 605, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'very_young_pop', label: 'VeryYoungPop', value: 136, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 469, color: 'grey' }
+      { label: 'VeryYoungPop', count: 136, color: '#4169e1' },
+      { label: 'RestPop', count: 469, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'young_pop', label: 'YoungPop', value: 65, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 540, color: 'grey' }
+      { label: 'YoungPop', count: 65, color: '#4169e1' },
+      { label: 'RestPop', count: 540, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'young_parliament', label: 'YoungParliament', value: 9, color: '#FFD700' },
-      { id: 'young_pop', label: 'YoungPop', value: 56, color: '#4169E1' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 540, color: 'grey' }
+      { label: 'YoungParliament', count: 9, color: '#ffd700' },
+      { label: 'YoungPop', count: 56, color: '#4169e1' },
+      { label: 'RestParliament', count: 540, color: '#888888' }
     ]
   }
   // ...add more steps as needed
 ];
 
-const educationStickmanSteps: StickmanStep[] = [
+const educationChartSteps: ChartStep[] = [
   {
     categories: [
-      { id: 'all', label: 'All', value: 605, color: 'grey' }
+      { label: 'All', count: 605, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'graduate_pop', label: 'GraduatePop', value: 131, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 474, color: 'grey' }
+      { label: 'GraduatePop', count: 131, color: '#4169e1' },
+      { label: 'RestPop', count: 474, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'graduate_parliament', label: 'GraduateParliament', value: 464, color: '#FFD700' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 141, color: 'grey' }
+      { label: 'GraduateParliament', count: 464, color: '#ffd700' },
+      { label: 'RestParliament', count: 141, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'law_degree_pop', label: 'LawDegreePop', value: 36, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 569, color: 'grey' }
+      { label: 'LawDegreePop', count: 36, color: '#4169e1' },
+      { label: 'RestPop', count: 569, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'law_degree_parliament', label: 'LawDegreeParliament', value: 183, color: '#FFD700' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 422, color: 'grey' }
+      { label: 'LawDegreeParliament', count: 183, color: '#ffd700' },
+      { label: 'RestParliament', count: 422, color: '#888888' }
     ]
   }
   // ...add more steps as needed
 ];
 
-const foreignStickmanSteps: StickmanStep[] = [
+const foreignChartSteps: ChartStep[] = [
   {
     categories: [
-      { id: 'all', label: 'All', value: 605, color: 'grey' }
+      { label: 'All', count: 605, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'foreign_pop', label: 'ForeignPop', value: 61, color: '#4169E1' },
-      { id: 'rest_pop', label: 'RestPop', value: 544, color: 'grey' }
+      { label: 'ForeignPop', count: 61, color: '#4169e1' },
+      { label: 'RestPop', count: 544, color: '#888888' }
     ]
   },
   {
     categories: [
-      { id: 'foreign_parliament', label: 'ForeignParliament', value: 13, color: '#FFD700' },
-      { id: 'foreign_pop', label: 'ForeignPop', value: 48, color: '#4169E1' },
-      { id: 'rest_parliament', label: 'RestParliament', value: 544, color: 'grey' }
+      { label: 'ForeignParliament', count: 13, color: '#ffd700' },
+      { label: 'ForeignPop', count: 48, color: '#4169e1' },
+      { label: 'RestParliament', count: 544, color: '#888888' }
     ]
   }
 ];
-export { genderStickmanSteps, ageStickmanSteps, educationStickmanSteps, foreignStickmanSteps };
+export { genderChartSteps, ageChartSteps, educationChartSteps, foreignChartSteps };
 
 
