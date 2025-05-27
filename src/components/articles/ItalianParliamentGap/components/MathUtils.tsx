@@ -8,6 +8,7 @@
  */}
 
 import SeededRandom from './SeededRandom';
+import { Category } from '../types';
 
 
 interface CircleParams {
@@ -56,12 +57,6 @@ interface ImageTree {
     originalSrcNodes: OriginalSrcNode[];
 }
 
-interface Category {
-    label: string;
-    count: number;
-    color: string;
-}
-
 const computeCirleParams = (size: WidgetDimensions, bounds: ArcHeightBounds, radiusList: number[]): CircleParams => {
     const maxRadius = Math.max(...radiusList);
     const minRadius = Math.min(...radiusList);
@@ -99,7 +94,7 @@ const computeMaxArcAngle = (size: WidgetDimensions, circleParams: CircleParams, 
 const placePointsOnCircle = (radiusList: number[], nPoints: number, maxAngle: number, circleParams: CircleParams, dimensions: WidgetDimensions): PxPoint[] => {
     const seededRandom = new SeededRandom(12345);
     const radiusMaxNoise = 0.0*dimensions.height;
-    const angleMaxNoise = 0.002*maxAngle;
+    const angleMaxNoise = 0.0*maxAngle;
 
     const radiusPxList = radiusList.map(r => r * circleParams.scale);
 
@@ -173,5 +168,5 @@ const sampleMemberTypesAndPositions = (points: PxPoint[], imageTree: ImageTree, 
 }
 
 
-export type { ImageId, Category, ImageTree, OriginalSrcNode, ColorNode, WidgetDimensions };
+export type { ImageId, ImageTree, OriginalSrcNode, ColorNode, WidgetDimensions };
 export { computeCirleParams, computeMaxArcAngle, placePointsOnCircle, sampleMemberTypesAndPositions };

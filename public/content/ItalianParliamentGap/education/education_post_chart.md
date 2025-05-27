@@ -1,0 +1,5 @@
+As previously mentioned, it is positive that the members of the Parliament have a deeper understanding of law and economics than the rest of the citizens. However, we should also consider another aspect related to a person's level of education. 
+
+Access to university - particularly to law school - is closely linked to the socio-economic background of the student's family. Moreover, the professional opportunities that typically follow such a degree often lead to well-paid jobs. This highlights a broader issue in Italian society: the lack of social mobility. 
+
+Several studies show that in Italy, wealth inequalities are increasing: the richest top 0.01% of Italians saw their wealth share almost tripled, while the poorest 50% experienced a 80% drop in their average net wealth over the same period. This seems to be the case where we can suppose that the lacking in the descriptive representation has consequences in the substantive one.

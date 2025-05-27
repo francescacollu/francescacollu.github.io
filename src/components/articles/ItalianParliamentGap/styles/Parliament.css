@@ -6,11 +6,5 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.inner-parliament {
-    position: relative;
-    background-color: black;
-    height: 80vh;
-    width: 100vw;
+    padding: 5vw;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import { getArticleBySlug } from '../lib/articleData';
@@ -6,7 +6,7 @@ import { getArticleBySlug } from '../lib/articleData';
 export default function ArticleDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticleBySlug(slug) : undefined;
-  
+
   if (!article) {
     return <Navigate to="/articles" />;
   }

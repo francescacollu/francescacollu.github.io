@@ -1,28 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
-interface RegionData {
-  region: string;
-  value: number;
-}
-
 interface ItalyMapProps {
-  width?: number;
-  height?: number;
-  highlightedRegion?: string;
+  width: string;
+  height: string;
   dataPath: string;
   currentStep?: number;
 }
 
 const ItalyMap: React.FC<ItalyMapProps> = ({ 
-  width = 800, 
-  height = 600,
-  highlightedRegion,
+  width, 
+  height,
   dataPath,
   currentStep = 0
 }) => {
   const svgRef = useRef<SVGSVGElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [geoData, setGeoData] = useState<any>(null);
+  const [dimensions, setDimensions] = useState<{ width: number, height: number } | null>({ width: 0, height: 0 });
   const [regionData, setRegionData] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -34,6 +29,15 @@ const ItalyMap: React.FC<ItalyMapProps> = ({
       setRegionData(dataMap);
     });
   }, [dataPath]);
+
+  useEffect(() => {
+    if (!containerRef.current) {
+        console.error('ItalyMap containerRef.current is null');
+        return;
+    }
+    const { width, height } = containerRef.current.getBoundingClientRect();
+    setDimensions({ width, height });
+}, []);
   
   useEffect(() => {
     d3.json("/data/it.json").then((data: any) => {
@@ -46,8 +50,8 @@ const ItalyMap: React.FC<ItalyMapProps> = ({
 
     d3.select(svgRef.current).selectAll("*").remove();
     const svg = d3.select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
+      .attr("width", JSON.stringify(width))
+      .attr("height", JSON.stringify(height));
     const g = svg.append("g");
 
     const values = Object.values(regionData);
@@ -58,10 +62,15 @@ const ItalyMap: React.FC<ItalyMapProps> = ({
       .domain([min, mid, max])
       .interpolator(d3.interpolateRdBu);
 
+    if (!dimensions) {
+      return;
+    }
+
+    const minSize = Math.min(dimensions.width, dimensions.height);
     const projection = d3.geoMercator()
       .center([12.5, 42])
-      .scale(2000)
-      .translate([width / 2, height / 2]);
+      .scale(minSize * 4)
+      .translate([dimensions.width / 2, dimensions.height / 2]);
     const path = d3.geoPath().projection(projection);
 
     g.selectAll("path")
@@ -76,16 +85,19 @@ const ItalyMap: React.FC<ItalyMapProps> = ({
         const value = Number(regionData[d.properties.name as keyof typeof regionData]) || 0;
         const thresholds = {
           1: 0.9,
-          2: 1.15,
+          2: 1.15,  
           3: Infinity
         };
-        return value <= (thresholds[currentStep as keyof typeof thresholds] || 0) ? colorScale(value) : "black";
+        const out = value <= (thresholds[currentStep as keyof typeof thresholds] || 0) ? colorScale(value) : "black";
+        return out;
       });
 
-  }, [geoData, width, height, regionData, currentStep]);
-
+  }, [geoData, regionData, dimensions, currentStep]);
+  
   return (
-      <svg ref={svgRef}></svg>
+     <div style={{ width, height }} ref={containerRef}>
+       <svg ref={svgRef}></svg>
+     </div>
   );
 };
 

@@ -1,0 +1,6 @@
+The gap is striking. Despite the gender representation rules introduced and later reinforced by the 2017 electoral law known as the _Rosatellum_, women's underrepresentation remains evident.
+
+On paper, gender quota laws are meant to ensure that at least 40% of parliamentary seats go to women. But this target is not being met, mainly for two reasons: political parties often find ways to circumvent the rules, and voters — both men and women — do not choose female candidates in the numbers one might expect.
+Put differently: women don’t vote for women.
+
+With regard to people who do not identify as either men or women, there have not been any non-binary representatives in the Italian Parliament to date. As far as the trans community, in 2006, the first trans person was elected to the Italian Parliament - and also became the first trans person elected to any European parliament. Her name is Vladimir Luxuria. She spearheaded several legislative initiatives, including a bill on the rights and freedoms of trans people - an example of descriptive and substantive representation working in tandem.
