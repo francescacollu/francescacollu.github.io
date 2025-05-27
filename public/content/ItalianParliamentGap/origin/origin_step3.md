@@ -1,1 +1,1 @@
-Most of the regions are represented equally in a quite homogeneous way.
+The representation of most regions is balanced and homogeneous.

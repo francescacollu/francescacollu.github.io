@@ -1,1 +1,1 @@
-What about the rest of the young population? If we define _youth_ as up to 35 years old, we find that over 6 million Italians fall into the 26–35 age group — about 10.8% of the population.
+But what about the rest of the young population? If we define _youth_ as people up to 35 years old, we find that over 6 million Italians fall into the 26–35 age group — accounting for around 10.8% of the population. In Parliament, there would be 65 people of that age. 

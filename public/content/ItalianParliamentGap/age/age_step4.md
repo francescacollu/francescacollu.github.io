@@ -1,1 +1,1 @@
-In the Italian Parliament, we see just 9 members belonging to that age group - 1.5% of the whole assembly.
+Ifthe Italian Parliament fully implemented a descriptive representation, there would be 200 members under 35 years old. In reality, however, there are just eight members in that age group, accounting for only 1.3% of the entire assembly. 

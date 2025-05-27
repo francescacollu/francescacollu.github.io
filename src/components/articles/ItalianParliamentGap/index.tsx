@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import ItalyMap from './components/ItalyMap';
-import { ageChartSteps, educationChartSteps, foreignChartSteps, genderChartSteps } from './components/StickmanSteps';
+import { ageChartSteps, educationChartSteps, foreignChartSteps, genderChartSteps } from './components/ChartSteps';
 import './styles/ItalianParliamentGap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglassHalf, faMarsAndVenus, faGraduationCap, faEarthEurope, faSeedling, faPerson } from '@fortawesome/free-solid-svg-icons';
@@ -116,11 +116,11 @@ const ItalianParliamentGap = () => {
       <div className='scrollytelling-section-container'>
         <div className='chart-container'>
           <div className='chart-container-inner'>
-          <Parliament 
-          categories={genderChartSteps[currentStep - 1]?.categories || genderChartSteps[0].categories}
-      />
-          </div>
+            <Parliament 
+            categories={genderChartSteps[currentStep]?.categories}
+        />
         </div>
+      </div>
         
         <div className='scrolling-text-boxes-container'>
           <Scrollama 
@@ -184,7 +184,7 @@ const ItalianParliamentGap = () => {
         <div className='chart-container'>
           <div className='chart-container-inner'>
             <Parliament 
-              categories={ageChartSteps[currentStep - 1]?.categories || ageChartSteps[0].categories}
+              categories={ageChartSteps[currentStep]?.categories}
             />
           </div>
         </div>
@@ -246,7 +246,7 @@ const ItalianParliamentGap = () => {
             members={605}
         /> */}
             <Parliament
-              categories={educationChartSteps[currentStep - 1]?.categories || educationChartSteps[0].categories}
+              categories={educationChartSteps[currentStep]?.categories}
             />
           </div>
         </div>
@@ -297,7 +297,7 @@ const ItalianParliamentGap = () => {
 
       {/* Post Scrollytelling - Education Section */}
       <div className='post-scrollytelling-container'>
-        <MarkdownContent src='/content/ItalianParliamentGap/education/education_post_scrollytelling.md' className='post-scrollytelling-inner'/>
+        <MarkdownContent src='/content/ItalianParliamentGap/education/education_post_chart.md' className='post-scrollytelling-inner'/>
       </div>
 
       {/* Geo Section */}
@@ -364,7 +364,7 @@ const ItalianParliamentGap = () => {
         <div className='chart-container'>
           <div className='chart-container-inner'>
             <Parliament
-              categories={foreignChartSteps[currentStep - 1]?.categories || foreignChartSteps[0].categories}
+              categories={foreignChartSteps[currentStep]?.categories}
             />
           </div>
         </div>

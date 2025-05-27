@@ -1,1 +1,0 @@
-Instead, the number of MPs born in a foreign country, thus the ones that we suppose have a migration story or who at least inherited it, are just 13: the 2% of the whole assembly.

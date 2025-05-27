@@ -1,7 +1,8 @@
-What about extra national origins? What about people with a migration past? 
-Parliament has a certain amount of seats for Italian people who lives abroad (North America, South America, et cetera - CHECK)
-Other than them, we also want to check on MPs that live in Itay but come from a migration history. In order to do that, we check on their birth place. 
+What about extra-national borders?
 
-Immigrants: their perspectives and hopes
+Italy is a country deeply shaped by migration. Historically a nation of emigrants, it is now also a key destination for migrants, making migration one of its most contentious political issues. Every year, hundreds of people die attempting to cross the Mediterranean Sea, and yet, legislators have failed to implement effective, humane solutions.
+ 
+The Italian electoral system reserves 12 seats in Parliament for representatives of Italians living abroad, divided by regions: Europe, South America, North and Central America, Africa, Asia, Oceania, and Antarctica. 
 
-Toni Iwobi's story
+But beyond these diaspora representatives, are there members of Parliament living in Italy who come from migrant backgrounds?
+Once again, it's important to remember that a descriptive representation does not necessarely lead to substantive representation. A clear example is Toni Iwobi, the first Black senator in Italian history. Born in Nigeria, Iwobi was elected with the right-wing Lega party, which is known for its tough stance on immigration.

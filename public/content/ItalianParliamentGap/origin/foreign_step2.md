@@ -1,1 +1,1 @@
-In the current scenario of the Italian resident population, more than 6.5 million of people have been born in a foreign country - 10% of the total. If they were perfectly represented in the Parliament, there would be 60 members with that story. 
+Instead, of the 605 MPs, only 13 were born in a foreign country. Thus, we can assume that they have a migration story, or at least inherited one. These MPs make up just 2% of the entire assembly.
