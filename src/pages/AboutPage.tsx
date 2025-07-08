@@ -8,9 +8,9 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row gap-8 mb-10">
           {/* Profile Image */}
           <div className="w-full md:w-1/3 flex justify-center">
-            <div className="relative w-64 h-64 p-1 rounded-full shadow-lg bg-[#2A9D8F]">
-              <div className="absolute inset-0 rounded-full bg-[#2A9D8F]/40 opacity-40 blur-md"></div>
-              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white">
+            <div className="relative w-64 h-64 p-1 rounded-full shadow-lg bg-gray-200">
+              <div className="absolute inset-0 rounded-full bg-gray-300/20 opacity-40 blur-md"></div>
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-gray-300">
                 <img 
                   src="/images/profile.jpg" 
                   alt="Francesca Collu" 

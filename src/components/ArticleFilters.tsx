@@ -24,7 +24,7 @@ export default function ArticleFilters({
   
   return (
     <div className="flex flex-col sm:flex-row sm:items-center mb-6">
-      <span className="font-montserrat text-sm uppercase tracking-wider text-[#2A9D8F] font-medium mb-3 sm:mb-0 sm:mr-6 border-b border-[#2A9D8F]/20 pb-1 sm:pb-0 sm:border-b-0 sm:border-r sm:border-[#2A9D8F]/20 sm:pr-6">
+      <span className="font-montserrat text-sm uppercase tracking-wider text-gray-700 font-medium mb-3 sm:mb-0 sm:mr-6 border-b border-gray-300 pb-1 sm:pb-0 sm:border-b-0 sm:border-r sm:border-gray-300 sm:pr-6">
         Language
       </span>
       <div className="flex flex-wrap gap-2 sm:gap-3">
@@ -33,8 +33,8 @@ export default function ArticleFilters({
           onClick={() => setSelectedLanguage('')}
           className={`px-2 sm:px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
             selectedLanguage === '' 
-              ? 'bg-[#2A9D8F]/10 text-[#2A9D8F] font-medium shadow-sm' 
-              : 'bg-gray-50 text-gray-600 hover:bg-[#2A9D8F]/5'
+              ? 'bg-gray-200 text-gray-800 font-medium shadow-sm' 
+              : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
           }`}
         >
           All
@@ -45,8 +45,8 @@ export default function ArticleFilters({
             onClick={() => handleLanguageToggle(language)}
             className={`px-2 sm:px-3 py-1.5 text-xs font-montserrat uppercase tracking-wide rounded-md transition-all duration-300 ${
               selectedLanguage === language 
-                ? 'bg-orange-100 text-orange-700 font-medium shadow-sm' 
-                : 'bg-gray-50 text-gray-600 hover:bg-orange-50'
+                ? 'bg-gray-800 text-white font-medium shadow-sm' 
+                : 'bg-gray-50 text-gray-600 hover:bg-gray-200'
             }`}
           >
             {language}

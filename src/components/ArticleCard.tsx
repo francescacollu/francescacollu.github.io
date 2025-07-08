@@ -49,24 +49,24 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         <img
           src={image}
           alt={title}
-          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
         />
       </div>
       
-      {/* Overlay that appears on hover */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#2A9D8F]/90 via-[#2A9D8F]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
+      {/* Text overlay that appears on hover */}
+      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-2">
-          <span className="inline-block px-2 py-1 text-xs font-medium bg-orange-500 text-white rounded">
+          <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-800 text-white rounded">
             {category}
           </span>
           {platform && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-[#2A9D8F] text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-700 text-white rounded">
               {platform}
             </span>
           )}
           {language && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-[#2A9D8F]/80 text-white rounded">
+            <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-600 text-white rounded">
               {language}
             </span>
           )}

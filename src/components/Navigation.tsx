@@ -16,8 +16,8 @@ function NavLink({ to, label, isActive, onClick }: NavLinkProps) {
       onClick={onClick}
       className={`
         font-playfair text-lg uppercase tracking-widest px-2 py-1 mx-6
-        transition-all duration-200 hover:text-[#2A9D8F] no-underline text-gray-800
-        ${isActive ? 'border-b-2 border-orange-500 font-semibold text-orange-600' : ''}
+        transition-all duration-200 hover:text-black no-underline text-gray-800
+        ${isActive ? 'border-b-2 border-black font-semibold text-black' : ''}
       `}
     >
       {label}
@@ -39,7 +39,7 @@ export default function Navigation() {
       {/* Mobile menu button */}
       <button 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="md:hidden fixed top-4 right-4 z-50 text-gray-600 hover:text-[#2A9D8F]"
+        className="md:hidden fixed top-4 right-4 z-50 text-gray-600 hover:text-black"
       >
         {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
