@@ -5,7 +5,6 @@ import { faMarsAndVenus, faGraduationCap, faEarthEurope, faSeedling } from '@for
 import { ImageTreeProvider } from './components/ImageTreeContext';
 
 import mp1 from './images/mp1.png';
-import mp2 from './images/mp2.png';
 import mp3 from './images/mp3.png';
 import mp4 from './images/mp4.png';
 import mp5 from './images/mp5.png';
@@ -20,7 +19,7 @@ import MarkdownContent from './components/MarkdownContent';
 
 const ItalianParliamentGap = () => {
     return (
-        <ImageTreeProvider images={[mp1, mp2, mp3, mp4, mp5]} colors={Object.values(mpColors)}>
+        <ImageTreeProvider images={[mp1, mp3, mp4, mp5]} colors={Object.values(mpColors)}>
             <ItalianParliamentGapImpl />
         </ImageTreeProvider>
     );
@@ -55,9 +54,6 @@ const ItalianParliamentGapImpl = () => {
                     { data: 0, src: '/content/ItalianParliamentGap/gender/gender_step1.md', position: 'left' },
                     { data: 1, src: '/content/ItalianParliamentGap/gender/gender_step2.md', position: 'right' },
                     { data: 2, src: '/content/ItalianParliamentGap/gender/gender_step3.md', position: 'left' },
-                    { data: 3, src: '/content/ItalianParliamentGap/gender/gender_step4.md', position: 'right' },
-                    { data: 3, src: '/content/ItalianParliamentGap/gender/gender_step5.md', position: 'left' },
-                    { data: 3, src: '/content/ItalianParliamentGap/gender/gender_step6.md', position: 'right' },
                 ]}
             />
 
@@ -89,9 +85,9 @@ const ItalianParliamentGapImpl = () => {
                 chartSteps={educationChartSteps}
                 steps={[
                     { data: 0, src: '/content/ItalianParliamentGap/education/education_step1.md', position: 'left' },
-                    { data: 1, src: '/content/ItalianParliamentGap/education/education_step2.md', position: 'left' },
+                    { data: 1, src: '/content/ItalianParliamentGap/education/education_step2.md', position: 'right' },
                     { data: 2, src: '/content/ItalianParliamentGap/education/education_step3.md', position: 'left' },
-                    { data: 3, src: '/content/ItalianParliamentGap/education/education_step4.md', position: 'left' },
+                    { data: 3, src: '/content/ItalianParliamentGap/education/education_step4.md', position: 'right' },
                     { data: 4, src: '/content/ItalianParliamentGap/education/education_step5.md', position: 'left' },
                 ]}
             />

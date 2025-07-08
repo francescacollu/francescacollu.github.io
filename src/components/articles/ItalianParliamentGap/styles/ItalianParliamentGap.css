@@ -41,8 +41,6 @@
     transition: opacity 0.2s;
 }
 
-
-
 .category-icon-container {
     display: flex;
     flex-direction: column;
@@ -102,10 +100,6 @@
 } 
 
 .text-box-inner {
-    /*background: white;
-    padding: 25px;
-    max-width: 400px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);*/
     background-color: rgba(0, 0, 0, 0.3);  /* White with 80% opacity */
     backdrop-filter: blur(5px);  /* Blur effect behind the box */
     -webkit-backdrop-filter: blur(5px);  /* For Safari */
@@ -169,6 +163,9 @@
 
 .post-scrollytelling-inner p {
     font-size: 20px;
-    margin-bottom: 1em;
-    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 0 20px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
 }
