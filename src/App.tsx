@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import ArticlesPage from './pages/ArticlesPage';

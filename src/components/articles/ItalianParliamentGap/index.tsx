@@ -1,3 +1,4 @@
+import React from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import { ageChartSteps, educationChartSteps, foreignChartSteps, genderChartSteps } from './components/ChartSteps';
 import './styles/ItalianParliamentGap.css';

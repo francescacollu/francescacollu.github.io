@@ -1,5 +1,6 @@
 import { Article } from '../components/ArticleCard';
 import ItalianParliamentGap from '../components/articles/ItalianParliamentGap';
+import MmsFinal from '../components/articles/mms_final';
 
 // Mock article data
 export const articles: Article[] = [
@@ -63,15 +64,26 @@ export const articles: Article[] = [
     date: "2024-08-08",
     language: "English"
   },
+  // {
+  //   id: 6,
+  //   title: "Sample Hosted Article",
+  //   category: "Development",
+  //   image: "/images/women_in_netflix.png", // Using an existing image for testing
+  //   slug: "sample-hosted-article",
+  //   excerpt: "A demonstration of how articles can be hosted directly on the website using custom React components.",
+  //   content: ItalianParliamentGap,
+  //   date: "2025-03-21",
+  //   language: "English"
+  // },
   {
-    id: 6,
-    title: "Sample Hosted Article",
-    category: "Development",
-    image: "/images/women_in_netflix.png", // Using an existing image for testing
-    slug: "sample-hosted-article",
-    excerpt: "A demonstration of how articles can be hosted directly on the website using custom React components.",
-    content: ItalianParliamentGap,
-    date: "2025-03-21",
+    id: 7,
+    title: "When Immigration Law Forces Women Out of Work",
+    category: "Immigration",
+    image: "/images/visa.jpg", 
+    slug: "mms-final",
+    excerpt: "In Silicon Valley, visa rules bar many spouses of skilled foreign workers from working, wasting talent and causing personal hardship.",
+    content: MmsFinal,
+    date: "2025-08-12",
     language: "English"
   },
 ];
