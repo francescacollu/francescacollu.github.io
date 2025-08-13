@@ -1,0 +1,7 @@
+In a country like Italy, where geographic origin implies differences in class and opportunity, it is natural to wonder if there are geographical differences in parliamentary representation. Although the election dynamics are somewhat  restrained due to the electoral law and the Senate's internal characteristics, political parties have a lot of freedom when creating candidate lists for districts across the country.
+
+The main idea behind dividing the country into constituencies is to give citizens the opportunity to be represented as members of their local communities. However, electoral law provides no constraints regarding candidates' origins. Consequently, political parties sometimes use constituencies merely to "conquer" an area or ensure the election of a specific candidate, even if they have no ties to the corresponding area.
+
+There are several examples of this. For instance, Matteo Salvini, who has spent his entire political career promoting the secession of the north from the south and fueling racist stereotypes about southern citizens, was elected senator in Puglia, one of the southernmost regions of Italy. Another example is Marta Fascina, who is from Milan and was Silvio Berlusconi's fiancée until his death. She was elected in Marsala without even visiting the Sicilian city during the election campaign.
+
+To get a glimpse of the representation balance from the perspective of the MPs' geographical origin, consider the _representation index_ which shows the proportion of MPs born in a certain region compared to its constituents. 

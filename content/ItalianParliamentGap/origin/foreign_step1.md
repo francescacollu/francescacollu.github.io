@@ -1,0 +1,1 @@
+Currently, more than 6.5 million people in Italy are foreign-born — 10% of the total population. If they were fully represented in Parliament, there would be 60 members like them.

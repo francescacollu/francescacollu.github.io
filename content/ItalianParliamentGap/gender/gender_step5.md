@@ -1,0 +1,2 @@
+On paper, gender quota laws are meant to ensure that at least 40% of parliamentary seats go to women. But this target is not being met, mainly for two reasons: political parties often find ways to circumvent the rules, and voters — both men and women — do not choose female candidates in the numbers one might expect.
+Put differently: women don’t vote for women.

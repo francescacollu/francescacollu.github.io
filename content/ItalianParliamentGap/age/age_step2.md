@@ -1,0 +1,1 @@
+And yet, in Italy, there are over 13 million people aged 18-25 — 22.5% of the population — who are under-represented in Parliament. If Parliament reflected this percentage, 136 members would be in that age range. 

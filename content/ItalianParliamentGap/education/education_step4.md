@@ -1,0 +1,1 @@
+As expected, the most represented field of study is law. Among the Italian MPs almost a third (31%) has completed the studies in that field - 187 members of the Parliament. 
