@@ -79,7 +79,7 @@ export const articles: Article[] = [
     id: 7,
     title: "When Immigration Law Forces Women Out of Work",
     category: "Immigration",
-    image: "/images/visa.jpg", 
+    image: "/images/visa.JPG", 
     slug: "mms-final",
     excerpt: "In Silicon Valley, visa rules bar many spouses of skilled foreign workers from working, wasting talent and causing personal hardship.",
     content: MmsFinal,
