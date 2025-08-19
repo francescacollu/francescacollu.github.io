@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.edebc706.css",
-    "main.js": "/static/js/main.ad90bab6.js",
+    "main.css": "/static/css/main.60dd6492.css",
+    "main.js": "/static/js/main.4f5a8faf.js",
     "static/media/video_mms_final.mp4": "/static/media/video_mms_final.93551c94807492577ee4.mp4",
     "static/media/visa.JPG": "/static/media/visa.a2c2080390afaf4ba7cb.JPG",
     "static/media/simona_cervasio_owens_mixdown.mp4": "/static/media/simona_cervasio_owens_mixdown.113b2f691409e2f3cf0f.mp4",
@@ -11,11 +11,11 @@
     "static/media/RN_working.jpg": "/static/media/RN_working.e082cf58efaddc40bfe0.jpg",
     "static/media/RN_hands_on_phone.jpg": "/static/media/RN_hands_on_phone.03bcad567d5f1e05585c.jpg",
     "index.html": "/index.html",
-    "main.edebc706.css.map": "/static/css/main.edebc706.css.map",
-    "main.ad90bab6.js.map": "/static/js/main.ad90bab6.js.map"
+    "main.60dd6492.css.map": "/static/css/main.60dd6492.css.map",
+    "main.4f5a8faf.js.map": "/static/js/main.4f5a8faf.js.map"
   },
   "entrypoints": [
-    "static/css/main.edebc706.css",
-    "static/js/main.ad90bab6.js"
+    "static/css/main.60dd6492.css",
+    "static/js/main.4f5a8faf.js"
   ]
 }
