@@ -7,8 +7,20 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.global_header_website {
+  color: rgb(74, 70, 135);
+  align-items: center;
+  font-style: bold;
+  font-size: 48px;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.global_header_website:hover {
+  color: yellow;
 }
 
 .font-playfair {
