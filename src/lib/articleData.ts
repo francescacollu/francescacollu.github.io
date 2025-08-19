@@ -64,17 +64,17 @@ export const articles: Article[] = [
     date: "2024-08-08",
     language: "English"
   },
-  {
-    id: 6,
-    title: "Is Italy a Representative Democracy?",
-    category: "Inequalities",
-    image: "/images/women_in_netflix.png", // Using an existing image for testing
-    slug: "is-italy-a-representative-democracy",
-    excerpt: "Italy is a republic characterized by a representative democracy, but this does not mean that everybody is represented there.",
-    content: ItalianParliamentGap,
-    date: "2025-03-21",
-    language: "English"
-  },
+  // {
+  //   id: 6,
+  //   title: "Is Italy a Representative Democracy?",
+  //   category: "Inequalities",
+  //   image: "/images/women_in_netflix.png", // Using an existing image for testing
+  //   slug: "is-italy-a-representative-democracy",
+  //   excerpt: "Italy is a republic characterized by a representative democracy, but this does not mean that everybody is represented there.",
+  //   content: ItalianParliamentGap,
+  //   date: "2025-03-21",
+  //   language: "English"
+  // },
   {
     id: 7,
     title: "When Immigration Law Forces Women Out of Work",
