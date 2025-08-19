@@ -7,12 +7,12 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  background-color: #fff8f0;
+  color: #1e1e24;
 }
 
 .global_header_website {
-  color: rgb(74, 70, 135);
+  color: #1e1e24;
   align-items: center;
   font-style: bold;
   font-size: 48px;
@@ -20,7 +20,7 @@ html, body {
 }
 
 .global_header_website:hover {
-  color: yellow;
+  color: #92140c;
 }
 
 .font-playfair {
@@ -40,8 +40,65 @@ html, body {
 
 /* Reset styles for links */
 a {
-  color: inherit;
+  color: #92140c;
   text-decoration: none;
+}
+
+a:hover {
+  color: #92140c;
+  opacity: 0.8;
+}
+
+/* Button and Interactive Element Styles */
+@layer components {
+  /* Primary buttons */
+  .btn-primary {
+    background-color: #92140c;
+    color: #fff8f0;
+    border: 2px solid #92140c;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #fff8f0;
+    color: #92140c;
+    border-color: #92140c;
+  }
+  
+  /* Secondary buttons */
+  .btn-secondary {
+    background-color: #fff8f0;
+    color: #1e1e24;
+    border: 2px solid #1e1e24;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #1e1e24;
+    color: #fff8f0;
+  }
+  
+  /* Active state for filters and navigation */
+  .btn-active {
+    background-color: #92140c;
+    color: #fff8f0;
+    border-color: #92140c;
+  }
+  
+  /* Inactive state for filters */
+  .btn-inactive {
+    background-color: #fff8f0;
+    color: #1e1e24;
+    border: 1px solid #1e1e24;
+    opacity: 0.7;
+  }
+  
+  .btn-inactive:hover {
+    opacity: 1;
+    background-color: #92140c;
+    color: #fff8f0;
+    border-color: #92140c;
+  }
 }
 
 /* Prose styles for content */

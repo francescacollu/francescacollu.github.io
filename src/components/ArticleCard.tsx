@@ -45,40 +45,61 @@ export default function ArticleCard({ article }: ArticleCardProps) {
   
   return (
     <CardWrapper>
-      {/* Image */}
+      {/* Image - now colored by default */}
       <div className="absolute inset-0 bg-gray-100">
         <img
           src={image}
           alt={title}
-          className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+          className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
         />
       </div>
       
-      {/* Text overlay that appears on hover */}
-      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 flex flex-col justify-end">
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-2">
-          <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-800 text-white rounded">
+      {/* Default overlay - always visible with title and summary */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 group-hover:via-black/40 transition-all duration-300 p-4 sm:p-6 flex flex-col justify-end">
+        {/* Tags/Filters - only visible on hover */}
+        <div className="flex flex-wrap gap-2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span 
+            className="inline-block px-2 py-1 text-xs font-medium rounded transition-all duration-200"
+            style={{ 
+              backgroundColor: '#92140c', 
+              color: '#fff8f0',
+              border: `1px solid #92140c`
+            }}
+          >
             {category}
           </span>
           {platform && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-700 text-white rounded">
+            <span 
+              className="inline-block px-2 py-1 text-xs font-medium rounded transition-all duration-200"
+              style={{ 
+                backgroundColor: '#fff8f0', 
+                color: '#1e1e24',
+                border: `1px solid #1e1e24`
+              }}
+            >
               {platform}
             </span>
           )}
           {language && (
-            <span className="inline-block px-2 py-1 text-xs font-medium bg-gray-600 text-white rounded">
+            <span 
+              className="inline-block px-2 py-1 text-xs font-medium rounded transition-all duration-200"
+              style={{ 
+                backgroundColor: '#fff8f0', 
+                color: '#1e1e24',
+                border: `1px solid #1e1e24`
+              }}
+            >
               {language}
             </span>
           )}
         </div>
         
-        {/* Title */}
+        {/* Title - always visible */}
         <h2 className="text-lg sm:text-xl font-playfair font-bold mb-2 text-white line-clamp-2">
           {title}
         </h2>
         
-        {/* Excerpt */}
+        {/* Excerpt - always visible */}
         <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
           {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
         </p>
