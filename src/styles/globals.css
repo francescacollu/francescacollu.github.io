@@ -19,7 +19,21 @@ html, body {
   font-family: 'Playfair Display', 'Times New Roman', serif;
 }
 
-.global_header_website:hover {
+.header_subtitle {
+  font-size: 20px;
+  font-weight: normal;
+  color: #1e1e24;
+  margin-bottom: 1px;
+}
+
+.header_name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e1e24;
+  transition: color 0.3s ease;
+}
+
+.header_name:hover {
   color: #92140c;
 }
 

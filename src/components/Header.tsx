@@ -15,8 +15,8 @@ export default function Header({
       <div className="w-full max-w-3xl mx-auto">
         <Link to="/articles" className="no-underline">
           <h1 className="global_header_website">
-            <span className="header_firstname">{firstName}</span>
-            <span className="header_lastname"> {lastName}</span>
+            <div className="header_subtitle">Data Stories by</div>
+            <div className="header_name uppercase">{firstName} {lastName}</div>
           </h1>
         </Link>
       </div>
