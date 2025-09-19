@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e798eb65.css",
-    "main.js": "/static/js/main.85e6e1af.js",
+    "main.css": "/static/css/main.ef9f9fe6.css",
+    "main.js": "/static/js/main.de7e7c30.js",
     "static/media/video_mms_final.mp4": "/static/media/video_mms_final.93551c94807492577ee4.mp4",
     "static/media/visa.JPG": "/static/media/visa.a2c2080390afaf4ba7cb.JPG",
     "static/media/simona_cervasio_owens_mixdown.mp4": "/static/media/simona_cervasio_owens_mixdown.113b2f691409e2f3cf0f.mp4",
@@ -10,12 +10,16 @@
     "static/media/RN_close_up_serious.jpg": "/static/media/RN_close_up_serious.1e57f93c45c89356f4a9.jpg",
     "static/media/RN_working.jpg": "/static/media/RN_working.e082cf58efaddc40bfe0.jpg",
     "static/media/RN_hands_on_phone.jpg": "/static/media/RN_hands_on_phone.03bcad567d5f1e05585c.jpg",
+    "static/media/mp3.png": "/static/media/mp3.2446b7b58597af8335ce.png",
+    "static/media/mp5.png": "/static/media/mp5.60e9c905e53b174a0377.png",
+    "static/media/mp4.png": "/static/media/mp4.95294854b4072b081f37.png",
+    "static/media/mp1.png": "/static/media/mp1.30f72125e12962c72b7b.png",
     "index.html": "/index.html",
-    "main.e798eb65.css.map": "/static/css/main.e798eb65.css.map",
-    "main.85e6e1af.js.map": "/static/js/main.85e6e1af.js.map"
+    "main.ef9f9fe6.css.map": "/static/css/main.ef9f9fe6.css.map",
+    "main.de7e7c30.js.map": "/static/js/main.de7e7c30.js.map"
   },
   "entrypoints": [
-    "static/css/main.e798eb65.css",
-    "static/js/main.85e6e1af.js"
+    "static/css/main.ef9f9fe6.css",
+    "static/js/main.de7e7c30.js"
   ]
 }

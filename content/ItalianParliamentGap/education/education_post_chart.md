@@ -1,4 +1,4 @@
-As previously mentioned, it is positive that the members of the Parliament have a deeper understanding of law and economics than the rest of the citizens. However, we should also consider another aspect related to a person's level of education. 
+As previously mentioned, it is positive that the members of the Parliament have a deeper understanding of law and economics than the rest of the citizens. However, another aspect related to a person's level of education should be considered. 
 
 Access to university - particularly to law school - is closely linked to the socio-economic background of the student's family. Moreover, the professional opportunities that typically follow such a degree often lead to well-paid jobs. This highlights a broader issue in Italian society: the lack of social mobility. 
 

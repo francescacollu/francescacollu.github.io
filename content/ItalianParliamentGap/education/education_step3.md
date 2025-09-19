@@ -1,1 +1,1 @@
-The Italian Parliament is overrepresented by people with university degrees (77% of the assembly members - 464 members versus the 131 we would expect in a purely descriptive representation scenario).
+Yet 77% of MPs are university graduates — 464 members versus the 131 you'd expect if Parliament matched society.

@@ -1,1 +1,1 @@
-As expected, the most represented field of study is law. Among the Italian MPs almost a third (31%) has completed the studies in that field - 187 members of the Parliament. 
+Just 6% of Italians have law degrees. If Parliament reflected society, only 36 MPs would be lawyers.
