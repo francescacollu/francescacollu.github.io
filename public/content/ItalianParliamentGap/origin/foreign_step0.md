@@ -1,0 +1,1 @@
+More than 6.5 million people in Italy are foreign-born — 10% of the population.
