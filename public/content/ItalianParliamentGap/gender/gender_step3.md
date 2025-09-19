@@ -1,1 +1,1 @@
-Instead, only 206 parliamentarians are women — just over a third of the entire assembly.
+Instead, only 206 are women — just 34%. Despite laws requiring 40% female representation, the target keeps getting missed.

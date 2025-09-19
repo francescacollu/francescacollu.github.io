@@ -1,1 +1,0 @@
-The gap is striking. Despite the gender representation rules introduced and later reinforced by the 2017 electoral law known as the _Rosatellum_, women's underrepresentation remains evident.

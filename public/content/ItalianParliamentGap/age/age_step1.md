@@ -1,2 +1,3 @@
-Firstly, it is worth noting that the minimum age to stand for election in the two houses of Parliament differs. For the Chamber of Deputies, candidates must be at least 25 years old, whereas for the Senate, the minimum age is 40.
-Therefore, it is not surprising that there are no MPs younger than 26.
+Italy sets some of Europe's highest barriers to political office. Candidates need to be at least 25 to run for the Chamber of Deputies, 40 for the Senate. 
+
+The result? Zero MPs under 26.

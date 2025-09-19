@@ -1,1 +1,1 @@
-If Parliament reflected this demographic balance, there would be 308 women among its members.
+If Parliament matched the population, 308 of its 605 members would be women.

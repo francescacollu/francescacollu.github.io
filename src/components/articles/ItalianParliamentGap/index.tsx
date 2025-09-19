@@ -29,20 +29,21 @@ const ItalianParliamentGap = () => {
 const ItalianParliamentGapImpl = () => {
     return (
         <div className="italian-parliament-gap-container">
-            <Intro 
-                title="The Italian Parliament Gap"
-                descriptionSrc="/content/ItalianParliamentGap/intro.md"
-            />
+            <div className='intro-container'>
+                <Intro 
+                    title="The Italian Parliament Gap"
+                    descriptionSrc="/content/ItalianParliamentGap/intro.md"
+                />
+            </div>
+            {/* <div className='four-categories-intro-container-outer'>
+                <div className='four-categories-intro-container'>
+                <div className='four-categories-intro'>
+                            <MarkdownContent src='/content/ItalianParliamentGap/four_categories_intro.md' className='four-categories-intro-inner'/>
+                            </div>
 
-            <Scrollama offset={1}>
-                <Step data={0}>
-                    <div className='four-categories-intro'>
-                        <MarkdownContent src='/content/ItalianParliamentGap/four_categories_intro.md' className='four-categories-intro-inner'/>
-                    </div>
-                </Step>
-            </Scrollama>
-
-            <CategoriesIcon />
+                <CategoriesIcon />
+                </div>
+            </div> */}
 
             <CategoryIntro 
                 icon={faMarsAndVenus}
@@ -77,9 +78,13 @@ const ItalianParliamentGapImpl = () => {
                 ]}
             />
 
+            <div className='post-scrollytelling-container'>
+                <MarkdownContent src='/content/ItalianParliamentGap/age/age_post_chart.md' className='post-scrollytelling-inner'/>
+            </div>
+
             <CategoryIntro 
                 icon={faGraduationCap}
-                title="Education Level"
+                title="The Parliament of Lawyers"
             />
 
             <ParliamentSection 
@@ -99,7 +104,7 @@ const ItalianParliamentGapImpl = () => {
 
             <CategoryIntro 
                 icon={faEarthEurope}
-                title="The Regions"
+                title="The Map of Representation"
             />
 
             <MapSection />
@@ -111,8 +116,9 @@ const ItalianParliamentGapImpl = () => {
             <ParliamentSection 
                 chartSteps={foreignChartSteps}
                 steps={[
-                    { data: 0, src: '/content/ItalianParliamentGap/origin/foreign_step1.md', position: 'right' },
-                    { data: 1, src: '/content/ItalianParliamentGap/origin/foreign_step2.md', position: 'right' },
+                    { data: 0, src: '/content/ItalianParliamentGap/origin/foreign_step0.md', position: 'left' },
+                    { data: 1, src: '/content/ItalianParliamentGap/origin/foreign_step1.md', position: 'right' },
+                    { data: 2, src: '/content/ItalianParliamentGap/origin/foreign_step2.md', position: 'left' },
                 ]}
             />
 

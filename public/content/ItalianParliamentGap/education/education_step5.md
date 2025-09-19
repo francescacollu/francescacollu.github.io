@@ -1,2 +1,1 @@
-With regards to the Italian population, approximately 6% of the constituents have a law degree.
-Based on the proportion in the analyzed assembly, if we had a mere descriptive representation, there would only be 36 MPs with that degree. However, seven times as many members have a law degree.
+Instead, there are five times more — creating a Parliament of legal elites: Among MPs, nearly one-third (31%) studied law — that's 187 members.

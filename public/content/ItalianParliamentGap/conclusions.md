@@ -1,9 +1,25 @@
-There are also two last groups of people in the Italian society that, without a doubt, have no representatives - simply because they never had the chance to choose them. They lack all forms of representation, having never given their authorization or meaning, either formally or symbolically.
+Beyond the gaps in gender, age, education, and geography lies an even starker reality: millions of Italians have no representation at all.
 
-The first group could not do it; the second chose not to.
+Two groups are completely locked out of Italy's democracy: one by law, one by choice.
 
-In Italy, around 9% of residents do not hold citizenship. These are people who have lived in Italy for years, paied taxes, and - among them - about one million children were even born here and went to Italian schools. Yet, they do not get to choose the lawmakers whose rules they must follow. While citizenship remains the formal requirement for election to Parliament, it is worth questioning how well this criterion reflects the actual composition of Italian society today — a society in which millions of residents, many with long-standing lives in Italy, remain excluded from political representation.
+**The Disenfranchised**
 
-The second group is made up of people who no longer recognize the two pillars of formal representation: authorization and accountability. This group includes more than one third of the electorate: 36.1% of registered voters, around 16.6 million people, who, every time they are called to choose their representatives in Parliament, reject the call. And their numbers keep growing.
+Around 9% of Italy's residents — 5.4 million people — cannot vote. They lack citizenship despite living, working, and paying taxes here for years. Among them are one million children born on Italian soil, educated in Italian schools, yet barred from choosing the lawmakers whose rules govern their lives.
 
-Would the gap between the Italian Parliament and the population it claims to represent — already wide in terms of gender, age, education (and therefore class), and origin — shrink if these two excluded groups were part of the picture?
+**The Disenchanted**
+
+The second group chose exclusion. They no longer recognize the two pillars of formal representation: authorization and accountability.
+
+This includes 36.1% of registered voters — around 16.6 million people — who, every election cycle, reject the call to choose their representatives. And their numbers keep growing.
+
+These citizens have withdrawn their consent from a system they see as fundamentally disconnected from their lives and interests.
+
+**The Ultimate Question**
+
+Would the representation gap — already wide across gender, age, education, and origin — shrink if these two excluded groups were part of the picture?
+
+What would Italian democracy look like if the 22 million disenfranchised and disenchanted could participate? Would a Parliament that included non-citizen residents and re-engaged the politically abandoned finally bridge the gap between representatives and represented?
+
+Or has the disconnect grown so vast that even including these voices couldn't restore faith in Italian democracy?
+
+The answer will determine whether Italy remains a true representative democracy — or becomes a government of elites ruling over an increasingly alienated population.

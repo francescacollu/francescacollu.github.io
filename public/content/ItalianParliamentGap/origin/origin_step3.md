@@ -1,1 +1,1 @@
-The representation of most regions is balanced and homogeneous.
+Most regions achieve balanced representation, with MPs roughly matching their population share.

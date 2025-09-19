@@ -1,35 +1,25 @@
-
-Italian national elections are less and less participated each time. Are citizens just lazy or is there a lack of trust in institutions? If so, is this a fatal destiny? Or can this problem be addressed making room for all the parts of the societal spectrum to get involved in decision-making process?
+Only 2 in 3 Italians voted in 2022 — the lowest turnout in decades. Meanwhile, Italy's Parliament looks nothing like the country it represents.
 &nbsp;  
 &nbsp;  
-Italian Parliament consists of two chambers and 605 members, including deputies and senators. Italian voters elect them through elections every five years.
-&nbsp;  
-&nbsp;
-This process occurs because Italy is a republic with a _representative democracy_, meaning citizens elect representatives to serve in an assembly. In Italy, this 
-assembly is called Parliament.
+Women make up 51% of the population but hold just 36% of parliamentary seats. Nearly a quarter of Italians are under 35, yet they occupy only 3% of Parliament. And while just 22% of citizens hold university degrees, 78% of MPs do, most from wealthy families who could afford law school.
 &nbsp;  
 &nbsp;  
-The representation issue may seem trivial, but it is actually a subtle issue to address. In fact, Hanna Pitkin's influential work led to the identification of four views of representation: formalistic, symbolic, descriptive and substantive. 
+This isn't just about fairness. It's about democracy itself.
 &nbsp;  
 &nbsp;  
-_Formalistic representation_ is established by institutional mechanisms based on authorization and accountability. 
-_Symbolic representation_ pertains to the meanining and significance that representatives hold for their constituents. Its legitimacy is based on recognition by constituents. 
-&nbsp;  
-_Descriptive representation_ is based on the idea that sharing demographic characteristics can lead to a better understanding of, and advocacy for, specific groups' interests. 
-&nbsp;  
-_Substantive representation_ focuses on the actions representatives take on behalf of their consituents, emphasizing on the outcomes of representation over mere resemblance or formal processes. 
+When entire groups lack representation, they lose their voice in the laws that govern them. Political scientists call this _descriptive representation_, that is the idea that shared backgrounds help representatives understand and advocate for their constituents' interests.
 &nbsp;  
 &nbsp;  
-Currently, the first two views are fairly prevalent in Italy, although disillusionment toward politics is growing. More and more citizens are staying home on election day, as evidenced by the fact that only 64% of citizens voted in the 2022 elections. 
+Italy's Parliament consists of 605 members across two chambers, elected every five years. But as voter turnout plummets and trust in institutions erodes, a critical question emerges: Can a democracy survive when its representatives don't reflect the people they serve?
 &nbsp;  
 &nbsp;  
-Substantive representation is certainly essential since it focuses on practical results and the representatives acting in the interests of the represented, such as new laws and financing. Is this related to descriptive representation? Pitkin herself is skeptical because looking like the group does not guarantee acting in its interests. 
+The numbers tell a stark story. Across four key demographics — gender, age, education, and regional origin — massive gaps separate Parliament from the population. 
 &nbsp;  
 &nbsp;  
-Conversely, a person can advocate for another even if they do not belong to the same demographic group. For example, in 1978, the Italian parliament, which had fewer than 7% women, passed a fundamental law on abortion. However, we do not know if a greater female presence would have led to its passage before 1978 (later than most European countries). Political scientists argue that _presence_ matters in deliberative settings because it affects what is discussed and how perspectives are received.
+Even more troubling: millions of Italians have no representation at all. Around 9% of residents lack citizenship despite living, working, and paying taxes in Italy for years. Many of their children were born here, yet none can vote for the lawmakers whose rules they must follow.
 &nbsp;  
 &nbsp;  
-Yet, whole portions of the population are not properly represented in the Italian Parliament. Often, this means they lack a voice, which could lead to a lower level of recognition and sense of legitimacy, thus the symbolic representation is undermined.
+Meanwhile, 16.6 million registered voters — more than one-third of the electorate — have given up entirely, staying home on election day.
 &nbsp;  
 &nbsp;  
-If the Italian Parliament truly wants to represent society, then it must address this issue and bridge the gap.
+If Italian democracy is to survive, it must bridge these gaps. The question is whether it's already too late.

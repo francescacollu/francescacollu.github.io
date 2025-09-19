@@ -1,8 +1,7 @@
-What about extra-national borders?
+**What about Italy's borders?**
 
-Italy is a country deeply shaped by migration. Historically a nation of emigrants, it is now also a key destination for migrants, making migration one of its most contentious political issues. Every year, hundreds of people die attempting to cross the Mediterranean Sea, and yet, legislators have failed to implement effective, humane solutions.
- 
-The Italian electoral system reserves 12 seats in Parliament for representatives of Italians living abroad, divided by regions: Europe, South America, North and Central America, Africa, Asia, Oceania, and Antarctica. 
+Italy is a country transformed by migration. Once a nation of emigrants, it's now a key destination for migrants, making immigration one of its most explosive political issues. Every year, hundreds die crossing the Mediterranean, yet legislators consistently fail to craft effective, humane solutions.
 
-But beyond these diaspora representatives, are there members of Parliament living in Italy who come from migrant backgrounds?
-Once again, it's important to remember that a descriptive representation does not necessarely lead to substantive representation. A clear example is Toni Iwobi, the first Black senator in Italian history. Born in Nigeria, Iwobi was elected with the right-wing Lega party, which is known for its tough stance on immigration.
+The electoral system does reserve 12 parliamentary seats for Italians living abroad, spread across continents from Europe to Antarctica. But what about the millions living in Italy who come from migrant backgrounds?
+
+Here's where representation gets truly complex. Consider Toni Iwobi, Italy's first Black senator. Born in Nigeria, he was elected on the Lega party ticket, the same party that built its brand on anti-immigration rhetoric. His presence proves that descriptive representation doesn't automatically translate to advocacy for one's community.

@@ -1,6 +1,16 @@
-The gap is striking. Despite the gender representation rules introduced and later reinforced by the 2017 electoral law known as the _Rosatellum_, women's underrepresentation remains evident.
-
-On paper, gender quota laws are meant to ensure that at least 40% of parliamentary seats go to women. But this target is not being met, mainly for two reasons: political parties often find ways to circumvent the rules, and voters — both men and women — do not choose female candidates in the numbers one might expect.
-Put differently: women don’t vote for women.
-
-With regard to people who do not identify as either men or women, there have not been any non-binary representatives in the Italian Parliament to date. As far as the trans community, in 2006, the first trans person was elected to the Italian Parliament - and also became the first trans person elected to any European parliament. Her name is Vladimir Luxuria. She spearheaded several legislative initiatives, including a bill on the rights and freedoms of trans people - an example of descriptive and substantive representation working in tandem.
+The numbers expose a harsh reality: Italy's gender quota laws are failing.
+&nbsp;  
+&nbsp;  
+The 2017 Rosatellum law promised at least 40% female representation. Yet women hold just 34% of seats, barely better than before the law existed.
+&nbsp;  
+&nbsp;  
+Political parties exploit loopholes, placing women in unwinnable positions or at the bottom of candidate lists. But voters share the blame. Electoral data shows that when given the choice, Italian voters — both men and women — systematically favor male candidates.
+&nbsp;  
+&nbsp;  
+This pattern has consequences beyond representation. When Italy's male-dominated Parliament finally legalized abortion in 1978, it came years after most European countries. The delay raises a troubling question: How many other issues affecting women have been sidelined by their absence from power?
+&nbsp;  
+&nbsp;  
+The LGBTQ+ community faces even starker exclusion. No non-binary person has ever served in Parliament. The sole exception was Vladimir Luxuria, who in 2006 became Europe's first transgender MP — and immediately began pushing legislation to protect trans rights.
+&nbsp;  
+&nbsp;  
+Her example proves a key point: when marginalized groups gain representation, they fight for their communities' interests. The question is whether Italy will ever give them that chance.

@@ -1,1 +1,1 @@
-Some of the richest regions are the most underrepresented (Piedmont, Veneto, and Emilia-Romagna in the north), as are two of the poorest (Abruzzo and Molise in the center).
+Some of Italy's richest regions are underrepresented. Piedmont, Veneto, and Emilia-Romagna, economic powerhouses in the north, send fewer natives to Parliament than their populations warrant. The same happens to two of the poorest regions, Abruzzo and Molise.

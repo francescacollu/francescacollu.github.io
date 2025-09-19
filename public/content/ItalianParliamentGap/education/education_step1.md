@@ -1,1 +1,1 @@
-The present category is an example of over-representation of a group society in the Italian Parliament. 
+Unlike gender and age, education shows the opposite problem: extreme over-representation of Italy's elite.

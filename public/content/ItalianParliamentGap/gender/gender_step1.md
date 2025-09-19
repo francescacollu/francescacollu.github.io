@@ -1,1 +1,1 @@
-In Italy, there are over 30 million women - around 51% of the population.
+Women make up 51% of Italy's population — over 30 million people.

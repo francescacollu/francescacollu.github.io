@@ -25,11 +25,30 @@
     line-height: 1.6;
 }
 
+.intro-container {
+    position: relative;
+}
+
 .four-categories-intro {
     font-size: 30px;
     text-align: center;
     padding: 50px 20px;
     color: white;
+    position: relative;
+    top: 0;
+}
+
+.four-categories-intro-container-outer {
+    position: relative;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.four-categories-intro-container {
+    position: sticky;
+    top: 50vh;
+    z-index: 1;
+    transform: translateY(-50%);
 }
 
 .category-four-icons-container {
@@ -50,6 +69,13 @@
 
 .category-icon {
     font-size: 2rem;
+    text-align: center;
+}
+
+.category-icon p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .scrollytelling-section-container {
@@ -159,6 +185,8 @@
     display: flex;
     position: relative;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .post-scrollytelling-inner p {
