@@ -1,5 +1,5 @@
 .vittime-anziane-femminicidio-container {
-    background-color: #dfe2f7;
+    background-color: #ffffff;
 }
 
 .vittime-anziane-femminicidio-content {
@@ -21,6 +21,7 @@
     margin-bottom: 1.5rem;
     line-height: 1.2;
     color: #1e1e24;
+    padding: 1.5rem 0;
 }
 
 .vittime-anziane-femminicidio-container .lead {
@@ -67,7 +68,7 @@
 }
 
 .vittime-anziane-femminicidio-container .markdown-content blockquote {
-    border-left: 4px solid #92140c;
+    border-left: 4px solid #240046;
     padding-left: 1.5rem;
     margin: 2rem 0;
     font-style: italic;
@@ -75,18 +76,37 @@
 }
 
 .vittime-anziane-femminicidio-container .markdown-content a {
-    color: #92140c;
+    color: #240046;
     text-decoration: underline;
 }
 
 .vittime-anziane-femminicidio-container .markdown-content a:hover {
-    color: #6d0e08;
+    color: #240046;
 }
 
 /* Chart container styling */
 .vittime-anziane-femminicidio-container .plotly-chart-container {
     justify-content: center;
     align-items: center;
+}
+
+.vittime-anziane-femminicidio-container .chart-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.vittime-anziane-femminicidio-container .section-separator {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #240046;
+    margin: 3rem 0;
+    font-weight: bold;
 }
 
 /* Responsive design */
@@ -109,6 +129,17 @@
 
     .vittime-anziane-femminicidio-container .markdown-content h3 {
         font-size: 1.25rem;
+    }
+
+    .vittime-anziane-femminicidio-container .plotly-chart-container iframe {
+        max-width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .vittime-anziane-femminicidio-container .chart-caption {
+        font-size: 0.8rem;
+        max-width: 100%;
     }
 }
 
