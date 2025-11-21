@@ -8,17 +8,16 @@ import { Article } from '../components/ArticleCard';
 export default function ArticlesPage() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<Article[]>([]);
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const [selectedLanguage, setSelectedLanguage] = useState('');
   const [isFiltering, setIsFiltering] = useState(false);
   
   // Load articles
   useEffect(() => {
     const allArticles = getAllArticles();
     setArticles(allArticles);
-    
-    // Apply initial English filter
-    const englishArticles = allArticles.filter(article => article.language === 'English');
-    setFilteredArticles(englishArticles);
+
+    // Show all articles initially (All flag selected)
+    setFilteredArticles(allArticles);
   }, []);
   
   // Filter articles when filter criteria or articles change
