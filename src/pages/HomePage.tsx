@@ -7,11 +7,10 @@ import { Article } from '../components/ArticleCard';
 export default function HomePage() {
   const [articles, setArticles] = useState<Article[]>([]);
   
-  // Load articles and filter for English only
+  // Load all articles (All flag selected by default)
   useEffect(() => {
     const allArticles = getAllArticles();
-    const englishArticles = allArticles.filter(article => article.language === 'English');
-    setArticles(englishArticles);
+    setArticles(allArticles);
   }, []);
   
   return (
