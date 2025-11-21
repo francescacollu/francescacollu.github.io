@@ -1,6 +1,7 @@
 import { Article } from '../components/ArticleCard';
 import ItalianParliamentGap from '../components/articles/ItalianParliamentGap';
 import MmsFinal from '../components/articles/mms_final';
+import VittimeAnzianeFemminicidio from '../components/articles/vittime-anziane-femminicidio';
 
 // Mock article data
 export const articles: Article[] = [
@@ -85,6 +86,17 @@ export const articles: Article[] = [
     content: MmsFinal,
     date: "2025-08-12",
     language: "English"
+  },
+  {
+    id: 8,
+    title: "Una vittima di femminicidio su tre ha più di 65 anni. Ma i giornali non la raccontano",
+    category: "Gender Inequalities",
+    image: "/images/visa.JPG", 
+    slug: "vittime-anziane-femminicidio",
+    excerpt: "Un terzo delle vittime di femminicidio è una donna anziana, ma non trova uno spazio proporzionato sui giornali nazionali.",
+    content: VittimeAnzianeFemminicidio,
+    date: "2025-11-19",
+    language: "Italian"
   },
 ];
 

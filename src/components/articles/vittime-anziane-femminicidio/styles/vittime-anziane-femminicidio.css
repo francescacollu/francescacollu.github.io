@@ -1,0 +1,114 @@
+.vittime-anziane-femminicidio-container {
+    background-color: #dfe2f7;
+}
+
+.vittime-anziane-femminicidio-content {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #1e1e24;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.vittime-anziane-femminicidio-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #1e1e24;
+}
+
+.vittime-anziane-femminicidio-container .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+    font-style: italic;
+}
+
+/* Markdown content styling */
+.vittime-anziane-femminicidio-container .markdown-content {
+    margin: 2rem 0;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content p {
+    margin-bottom: 1.5rem;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1e1e24;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1e1e24;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content ul,
+.vittime-anziane-femminicidio-container .markdown-content ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content li {
+    margin-bottom: 0.75rem;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content blockquote {
+    border-left: 4px solid #92140c;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #4a4a4a;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content a {
+    color: #92140c;
+    text-decoration: underline;
+}
+
+.vittime-anziane-femminicidio-container .markdown-content a:hover {
+    color: #6d0e08;
+}
+
+/* Chart container styling */
+.vittime-anziane-femminicidio-container .plotly-chart-container {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .vittime-anziane-femminicidio-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .vittime-anziane-femminicidio-container h1 {
+        font-size: 2rem;
+    }
+
+    .vittime-anziane-femminicidio-container .lead {
+        font-size: 1.125rem;
+    }
+
+    .vittime-anziane-femminicidio-container .markdown-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .vittime-anziane-femminicidio-container .markdown-content h3 {
+        font-size: 1.25rem;
+    }
+}
+

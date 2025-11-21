@@ -1,0 +1,1 @@
+Ad aggravare il quadro, 11 vittime anziane su 68 analizzate (il 16%) non hanno ricevuto alcuna copertura su nessuna delle due testate. 
