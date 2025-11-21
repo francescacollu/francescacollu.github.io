@@ -18,10 +18,19 @@
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     line-height: 1.2;
     color: #1e1e24;
     padding: 1.5rem 0;
+}
+
+.vittime-anziane-femminicidio-container .article-byline {
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 .vittime-anziane-femminicidio-container .lead {

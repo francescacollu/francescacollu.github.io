@@ -8,7 +8,8 @@ const VittimeAnzianeFemminicidio = () => {
             <div className="vittime-anziane-femminicidio-container">
                 <article className="vittime-anziane-femminicidio-content">
                     <h1>Una vittima di femminicidio su tre ha più di 65 anni. <br /> Ma i giornali non la raccontano</h1>
-                
+
+                    <p className="article-byline">Di Francesca Collu</p>
 
                     {/* Intro */}
                     <MarkdownContent src="/content/VittimeAnzianeFemminicidio/intro.md" className="markdown-content" />
