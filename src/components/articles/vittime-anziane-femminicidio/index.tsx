@@ -9,14 +9,14 @@ const VittimeAnzianeFemminicidio = () => {
                 <article className="vittime-anziane-femminicidio-content">
                     <h1>Una vittima di femminicidio su tre ha più di 65 anni. <br /> Ma i giornali non la raccontano</h1>
 
-                    <p className="article-byline">Di Francesca Collu</p>
+                    <p className="article-byline">di Francesca Collu</p>
 
-                    {/* Intro */}
-                    <MarkdownContent src="/content/VittimeAnzianeFemminicidio/intro.md" className="markdown-content" />
+                    {/* Section 1 */}
+                    <MarkdownContent src="/content/VittimeAnzianeFemminicidio/section1.md" className="markdown-content" />
 
                     {/* Chart 1 */}
                     <PlotlyChart src="/charts/vittime-anziane-femminicidio/age_groups.html" className="plotly-chart" minHeight="600px" 
-                    caption="<b>Figura 1.</b> Distribuzione dei 629 femminicidi per gruppo di età (Gennaio 2020 - Ottobre 2025). Il 34% delle vittime ha più di 65 anni. Fonte: elaborazione su dati Non Una Di Meno" />
+                    caption="<b>Figura 1.</b> Distribuzione dei 629 femminicidi per gruppo di età (Gennaio 2020 - Ottobre 2025). Il 34% delle vittime ha più di 65 anni.<br /> Fonte: elaborazione su dati forniti da Non Una Di Meno." />
 
                     {/* Section 2 */}
                     <MarkdownContent src="/content/VittimeAnzianeFemminicidio/section2.md" className="markdown-content" />

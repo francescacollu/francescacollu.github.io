@@ -1,5 +1,0 @@
-Concetta Di Pasquale è stata uccisa a bastonate dal marito all'età di 79 anni. Poco prima di morire ha rivelato ai carabinieri di avere subito violenze durante i suoi ultimi 50 anni. Una storia di maltrattamenti e silenzi che non ha trovato **neanche una menzione** nei due principali quotidiani nazionali italiani, La Repubblica e il Corriere della Sera. 
-
-In Italia, **un terzo delle donne vittime di femminicidio ha più di 65 anni**. Ma nell'immaginario collettivo e nella copertura mediatica, queste storie rimangono spesso nell'ombra. 
-
-Sulla base dei dati forniti dall'associazione *Non Una Di Meno* (NUDM), concentrandoci sui **629 omicidi avvenuti tra Gennaio 2020 e Ottobre 2025**, è possibile osservare la distribuzione per gruppi anagrafici. Il 34% delle vittime ha più di 65 anni. Una vittima di femminicidio su tre è cioè una **donna anziana**.
