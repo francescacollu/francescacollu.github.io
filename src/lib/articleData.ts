@@ -71,7 +71,7 @@ export const articles: Article[] = [
     category: "Inequalities",
     image: "/images/camera_dei_deputati.jpg",
     slug: "is-italy-a-representative-democracy",
-    excerpt: "Italy is a republic characterized by a representative democracy, but this does not mean that everybody is represented there.",
+    excerpt: "Italy is a republic founded on representative democracy, yet this does not guarantee that all citizens are truly represented.",
     content: ItalianParliamentGap,
     date: "2025-03-21",
     language: "English"
