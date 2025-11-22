@@ -1,7 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import { getArticleBySlug } from '../lib/articleData';
+
+const BASE_URL = 'https://francescacollu.github.io';
+const AUTHOR_NAME = 'Francesca Collu';
+
+function getAbsoluteImageUrl(imagePath: string): string {
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    return imagePath;
+  }
+  return `${BASE_URL}${imagePath.startsWith('/') ? imagePath : `/${imagePath}`}`;
+}
 
 export default function ArticleDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -10,14 +21,54 @@ export default function ArticleDetailPage() {
   if (!article) {
     return <Navigate to="/articles" />;
   }
+
+  const articleUrl = `${BASE_URL}/articles/${article.slug}`;
+  const imageUrl = getAbsoluteImageUrl(article.image);
+  const description = article.excerpt || `Read ${article.title} by ${AUTHOR_NAME}`;
+
+  const metaTags = (
+    <Helmet>
+      {/* Primary Meta Tags */}
+      <title>{article.title} | {AUTHOR_NAME}</title>
+      <meta name="title" content={article.title} />
+      <meta name="description" content={description} />
+      <meta name="author" content={AUTHOR_NAME} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content={articleUrl} />
+      <meta property="og:title" content={article.title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:site_name" content={AUTHOR_NAME} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={articleUrl} />
+      <meta name="twitter:title" content={article.title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={imageUrl} />
+      <meta name="twitter:creator" content={AUTHOR_NAME} />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href={articleUrl} />
+    </Helmet>
+  );
   
   if (article.content) {
-    return <article.content />;
+    return (
+      <>
+        {metaTags}
+        <article.content />
+      </>
+    );
   }
 
   return (
-    <PageLayout>
-      <div className="max-w-7xl mx-auto">
+    <>
+      {metaTags}
+      <PageLayout>
+        <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Image Section */}
           <div className="order-2 lg:order-1">
@@ -81,5 +132,6 @@ export default function ArticleDetailPage() {
         </div>
       </div>
     </PageLayout>
+    </>
   );
 } 
