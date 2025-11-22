@@ -22,7 +22,8 @@ export default function ArticleDetailPage() {
     return <Navigate to="/articles" />;
   }
 
-  const articleUrl = `${BASE_URL}/articles/${article.slug}`;
+  // Use trailing slash for consistency with GitHub Pages
+  const articleUrl = `${BASE_URL}/articles/${article.slug}/`;
   const imageUrl = getAbsoluteImageUrl(article.image);
   const description = article.excerpt || `Read ${article.title} by ${AUTHOR_NAME}`;
 

@@ -24,7 +24,8 @@ function getAbsoluteImageUrl(imagePath: string): string {
 }
 
 function generateArticleHTML(article: typeof articlesRaw[0], baseHTML: string): string {
-  const articleUrl = `${BASE_URL}/articles/${article.slug}`;
+  // Use trailing slash for consistency with GitHub Pages and React Router
+  const articleUrl = `${BASE_URL}/articles/${article.slug}/`;
   const imageUrl = getAbsoluteImageUrl(article.image);
   const description = article.excerpt || `Read ${article.title} by ${AUTHOR_NAME}`;
   
