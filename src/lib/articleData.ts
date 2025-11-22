@@ -92,7 +92,7 @@ export const articles: Article[] = [
     title: "Una vittima di femminicidio su tre ha più di 65 anni. Ma i giornali non la raccontano",
     category: "Gender Inequalities",
     image: "/images/femminicidi-italia-vittime-anziane.jpg", 
-    slug: "vittime-anziane-femminicidio",
+    slug: "ageismo-femminicidi",
     excerpt: "Un terzo delle vittime di femminicidio è una donna anziana, ma non trova uno spazio proporzionato sui giornali nazionali.",
     content: VittimeAnzianeFemminicidio,
     date: "2025-11-19",
