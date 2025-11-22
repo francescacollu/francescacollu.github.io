@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8b15f4f0.css",
-    "main.js": "/static/js/main.a38a5bd3.js",
+    "main.js": "/static/js/main.dec6acbc.js",
     "static/media/video_mms_final.mp4": "/static/media/video_mms_final.93551c94807492577ee4.mp4",
     "static/media/visa.JPG": "/static/media/visa.a2c2080390afaf4ba7cb.JPG",
     "static/media/simona_cervasio_owens_mixdown.mp4": "/static/media/simona_cervasio_owens_mixdown.113b2f691409e2f3cf0f.mp4",
@@ -16,10 +16,10 @@
     "static/media/mp1.png": "/static/media/mp1.30f72125e12962c72b7b.png",
     "index.html": "/index.html",
     "main.8b15f4f0.css.map": "/static/css/main.8b15f4f0.css.map",
-    "main.a38a5bd3.js.map": "/static/js/main.a38a5bd3.js.map"
+    "main.dec6acbc.js.map": "/static/js/main.dec6acbc.js.map"
   },
   "entrypoints": [
     "static/css/main.8b15f4f0.css",
-    "static/js/main.a38a5bd3.js"
+    "static/js/main.dec6acbc.js"
   ]
 }
