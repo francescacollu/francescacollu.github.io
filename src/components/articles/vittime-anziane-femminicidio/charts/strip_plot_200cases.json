@@ -1,0 +1,1242 @@
+{
+  "data": [
+    {
+      "customdata": {
+        "dtype": "i2",
+        "bdata": "AQABAAEACAAAAAUAfwAJAAQAAwAPAA4AAgBEABoAAwAEAAgAAwAEAAAAGQAFAB8AFQAWAAQABAAJABwACAABAAEAXwANAAAAGgADAAsAAwA4AAYACAAJAAoABQJHABAAAwAUAKsGSgAnAAQAWAA/ADUACQATAAEAGgDuAKkACwAFACUA"
+      },
+      "hovertemplate": "<b>%{text}</b><br>Articoli: %{customdata}<extra></extra>",
+      "marker": {
+        "color": "#D97D55",
+        "opacity": 0.6,
+        "size": 8
+      },
+      "mode": "markers",
+      "name": "Giovani (≤35)",
+      "text": [
+        "Fatima Zeeshan",
+        "Anna Marochkina Sergeevina",
+        "Barbara Rauch",
+        "Anastasia Rossi",
+        "Gea Gualtieri",
+        "Ruxandra Vesco",
+        "Eleonora Manta",
+        "Maria Tedesco",
+        "Aycha El Abioui",
+        "Aurelia Laurenti",
+        "Ylenia Bonavera",
+        "Khrystyna Novak",
+        "Sharon Barni",
+        "Roberta Siragusa",
+        "Sonia Di Maggio",
+        "Elena Raluca Serban",
+        "Ylenia Lombardo",
+        "Blessing Tunde",
+        "Alessandra Piga",
+        "Sharon Micheletti",
+        "Adrieli -",
+        "Elisa Campeol",
+        "Stefania Chiarisse Staltari",
+        "Vanessa Zappalà",
+        "Rita Amenze",
+        "Alessandra Zorzin",
+        "Sabadi -",
+        "Sandani -",
+        "Juana Loayza",
+        "Anna Borsa",
+        "Anastasiia Bondarenko",
+        "Sconosciuto Sconosciuto",
+        "Sconosciuto Sconosciuto",
+        "Alice Scagni",
+        "Romina De Cesare",
+        "Dayana -",
+        "Nevila Pjetri",
+        "Renata Alexandra Trandafir",
+        "Alexandra Elena Mocanu",
+        "Francesca Compagnone",
+        "Alice Neri",
+        "Sharmin Sultana",
+        "Danjela Neza",
+        "Jessica Malaj",
+        "Yirelis Peña Santana",
+        "Giulia Tramontano",
+        "Sofia Castelli",
+        "Celine Frei Matzohl",
+        "Vera Maria Schiopu",
+        "Klodiana Vefa",
+        "Giulia Cecchettin",
+        "Vanessa Ballan",
+        "Renée Amato",
+        "Alessandra Mazza",
+        "Sofia Stefani",
+        "Giada Zanola",
+        "Ana Maria Andrei",
+        "Ana Yuleisi Manyoma Casanova",
+        "Roua Nabi",
+        "Eleonor Toci",
+        "Eleonora Guidi",
+        "Ilaria Sula",
+        "Martina Carbonaro",
+        "Andromeda Ford",
+        "Geraldine Yadana Sanchez",
+        "Cinzia Pinna"
+      ],
+      "x": {
+        "dtype": "f8",
+        "bdata": "/1jy6aGcwb+IvyJCi7/CPzg7u25/TrU/gIIK+nxeq7+wzcJhZf6Rv8ADxC9bUnc/qHZqkXIGpj+FgLeWgd7Av3Yabuyh+8Y/ZhfO1iHXxz+Yu7uRc5S/Px20hV5kmcS/ODF86Y7dsj+AumpDd4OYvwBdclXNm1+/mFx3g+0hkz8+ZsqL8ArIP7RaWx9xLLw/hmd9CJeZxT9CLyYJthHFv5BUVXmgIb+/pJ0/AMxIx78gkBEghMymv6S8Sqzyabe/vICwTUBWrb8tRaGeq262vwXITCZzyMW/pubodbntyD/g5dfV/Nm+v2wa1+tEl8I/XEBtKodYxr9IBKIg+SusPyYkMV1G08M/iLjdihXWtT9owwnWUrS6PyhNSD9hGZk/4Eh69j2/uz8gzfh7a5+CP4DyrumdFWw/Pq5KJw7exD8FOJHim6jFvxKXVV0wDMC/+k0xAe6isr93I0KeIPfDv1iUX2ZN252/sj/be0hIwD8Uc0Yj0qCwvxT0/wmhGrK/YNF/pVvJfj9A86/Q4Gq5v21nBwBHCLa/uAz9ktv2xr/A3eQ91Udxv8SmNsXdabq/cClgzKIYqz/IIpxwzVirP23dtO0mg8e/lK/RQr4usj+wgKk1PLutP8j2SXhRjbM/WhYTPWrJuL/USj3C4mGwP/x0BY1I1cS/phv56WJWxD/4tdSEWUKrP7w+kP7EqLw/"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "7zn6/kIu5j/vOfr+Qi7mP+85+v5CLuY/CwOteuqTAUAAAAAAAAAAAAIgKvoLq/w/sfIan3poE0AWVbW7sWsCQDON7fdBwPk/7zn6/kIu9j/vOfr+Qi4GQB9ITTkWqgVACwOteuqT8T+7GpSdue8QQJCEA7jfXQpA7zn6/kIu9j8zje33QcD5PwsDrXrqkwFA7zn6/kIu9j8zje33QcD5PwAAAAAAAAAAzRrw6pQQCkACICr6C6v8P2vIuL7TuQtAyMU9d3S6CEDws9H9fRUJQDON7fdBwPk/M43t90HA+T8WVbW7sWsCQB/+zcs48ApACwOteuqTAUDvOfr+Qi7mP+85+v5CLuY/+KQHfuRBEkCnu9cWyhwFQAAAAAAAAAAAkIQDuN9dCkDvOfr+Qi72P32e07wW4QNA7zn6/kIu9j9Zmq2hFSwQQFdaMq5yIv8/CwOteuqTAUAWVbW7sWsCQEw3f7fjLgNAskGJgvn/GEA/V/RcThsRQHp/+sFrqgZA7zn6/kIu9j+xrm+ULlsIQB+RXVa2xR1AXAeimhtFEUANcjI704INQDON7fdBwPk/9oquF130EUBzqzs/sqIQQAwTwndw6Q9AFlW1u7FrAkCR43N7QvcHQO85+v5CLuY/kIQDuN9dCkCaILUP5ucVQEjq174OixRAfZ7TvBbhA0ACICr6C6v8P6hBw8XGGQ1A"
+      },
+      "type": "scatter"
+    },
+    {
+      "customdata": {
+        "dtype": "i1",
+        "bdata": "CgIDAQQDAAEAAAEDCAQBCWcpBgQADAUCAgYICQcEAwQJAQgBBAIBAwYPAjskEgUWAwoMDwkMBAQKARwJHQQBBgMD"
+      },
+      "hovertemplate": "<b>%{text}</b><br>Articoli: %{customdata}<extra></extra>",
+      "marker": {
+        "color": "#B8C4A9",
+        "opacity": 0.6,
+        "size": 8
+      },
+      "mode": "markers",
+      "name": "Età media (36-64)",
+      "text": [
+        "Francesca Fantoni",
+        "Rosalia Mifsud",
+        "Speranza Ponti",
+        "Gina Lorenza Rota",
+        "Maria Di Marco",
+        "Stefania Maria Rosa Dusi",
+        "Zsuzsanna Susy Majlat",
+        "Maria Drabikova",
+        "Gerarda Di Gregorio",
+        "Paola Malavasi",
+        "Luana Antonazzo",
+        "Marcella Boraso",
+        "Emanuela Urso",
+        "Caterina Di Stefano",
+        "Simona Porceddu",
+        "Tiziana Gentile",
+        "Ilenia Fabbri",
+        "Ornella Pinto",
+        "Barbara Castellani",
+        "Silvia Del Signore",
+        "Teresa Perera Priyadarshawie Donashantini Liyanage Badda",
+        "Ada Rotini",
+        "Fatna Moukhrif",
+        "Silvana Laurent",
+        "Vincenza Ribecco",
+        "Naima Zahir",
+        "Viviana Micheluzzi",
+        "Fabiola Colnaghi",
+        "Angela Avitabile",
+        "Elisabetta Molaro",
+        "Brunilda Halla",
+        "Giuseppina Fumarola",
+        "Lilia Patranjel",
+        "Li Yan Rong",
+        "Vera Myrtaj",
+        "Georgeta Ancuta Pop",
+        "Margherita Margani",
+        "Carmelina Marino",
+        "Sigrid Grober",
+        "Rubina Kousar",
+        "Anila Ruci",
+        "Floriana Floris",
+        "Simona Lidulli",
+        "Marisa Leo",
+        "Vincenza Angrisano",
+        "Rossella Cominotti",
+        "Ewa Kaminska",
+        "Nicoletta Zomparelli",
+        "Marta Favro",
+        "Aneta Danelczyk",
+        "Joy Omoragbon",
+        "Anna Sviridenko",
+        "Hanna Herasimchyk",
+        "Lorena Vezzosi",
+        "Francesca Ferrigno",
+        "Carmela Girasole",
+        "Flavia Mello Agonigi",
+        "Celeste Rita Palmieri",
+        "Jhoanna Nataly Quintanilla",
+        "Laura Papadia",
+        "Tania Bellinetti",
+        "Teresa Stabile",
+        "Daniela Luminita Coman",
+        "Fatimi Hayat",
+        "Zinoviya Knihnitska",
+        "Assunta (Tina) Sgarbini"
+      ],
+      "x": {
+        "dtype": "f8",
+        "bdata": "vdUTXqSh8D+7jMJJw5jrP1a1VartV+o/LhsXIA3d6T8hdy165gHzPzE3wIysIPI/D7hmjmRR7D9Sz/xvZ+3rP0hVx32Kfu0/A1k9T+ZT7T9EcyhL5lbtP3DYsXc70/E/P9vPG+Qn7D84/sV6aZfwP5XwbCbCf+0/ydr5sH4p6z+aAkfISArqPwrYffuR6ew/oPF6zQOX7T8JbabBVPfrP9D68JfihvI/dvdEgZoa8j8bUwUJ9EXwP7Bpe8E6jOo/XD+P+wLK8D+wjqt6oJTtPzxMrM8vePE/y9icMPSk7z8y0FqGfCHrPyv2dl6r6+8/ksCAteTs6T8XW2Gsft/wP1NRgIKun+0/XTGCaVOH7D+uyE+8Dk/tP7x3GUIEwPI/I85Il5Ha8D9cTCrdmWDyP1+J+UyJ8fE/ILKBLSuD8j94K3y79IjyP4SecV8FT/I/EcjTvpsR8D8MG7lSoEzxP8ACyJyCs/A/x8ftqWME8D8gEnM6ZHTrP4Y7cZCwG/M/irRLOKOs8T+CY5ZrSqTsP9qu19/odfE/WAF0/Zw68D9azRMmdsHqP7RbA2y7tO0/xWI/MtAT8D+uNvUGyH/sPyoS1LjajO4/8Fx41YnL8j8kf46YO2ryP4K/YqK8B/I/M2gD5nBa8D9c0ZtalDDwP8YQmAEasuw/B/9GrjRy8T/bLHwdoIryP+DXUtAzevI/"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "TDd/t+MuA0ALA6166pPxP+85+v5CLvY/7zn6/kIu5j8zje33QcD5P+85+v5CLvY/AAAAAAAAAADvOfr+Qi7mPwAAAAAAAAAAAAAAAAAAAADvOfr+Qi7mP+85+v5CLvY/CwOteuqTAUAzje33QcD5P+85+v5CLuY/FlW1u7FrAkDimzY125MSQC09LlS/5g1AV1oyrnIi/z8zje33QcD5PwAAAAAAAAAAUYwxKwSFBEACICr6C6v8PwsDrXrqk/E/CwOteuqT8T9XWjKuciL/PwsDrXrqkwFAFlW1u7FrAkBzqzs/sqIAQDON7fdBwPk/7zn6/kIu9j8zje33QcD5PxZVtbuxawJA7zn6/kIu5j8LA6166pMBQO85+v5CLuY/M43t90HA+T8LA6166pPxP+85+v5CLuY/7zn6/kIu9j9XWjKuciL/P+85+v5CLgZACwOteuqT8T+LMmXcm2AQQL3HOu4o4wxALLMEBjaOB0ACICr6C6v8P/Cz0f19FQlA7zn6/kIu9j9MN3+34y4DQFGMMSsEhQRA7zn6/kIuBkAWVbW7sWsCQFGMMSsEhQRAM43t90HA+T8zje33QcD5P0w3f7fjLgNA7zn6/kIu5j8f/s3LOPAKQBZVtbuxawJAm9YL+aY1C0Azje33QcD5P+85+v5CLuY/V1oyrnIi/z/vOfr+Qi72P+85+v5CLvY/"
+      },
+      "type": "scatter"
+    },
+    {
+      "customdata": {
+        "dtype": "i2",
+        "bdata": "BgAAAAIAAQAEAAAABAACAAMAAAAAABYAAAAFAAAAAAACAAcAAwAEAAMAFgACAAAAAwACAAYABAADAAIAAwAEAAMAAwAGAAEABAAFABUAAQAHABwAAAACAAYADQABAAUAuQAAAAMABQAEAAkABAABAAYAAQAUAAgAAgAEAAgAEAABAAAABAABAA=="
+      },
+      "hovertemplate": "<b>%{text}</b><br>Articoli: %{customdata}<extra></extra>",
+      "marker": {
+        "color": "#6FA4AF",
+        "opacity": 0.6,
+        "size": 8
+      },
+      "mode": "markers",
+      "name": "Anziane (65+)",
+      "text": [
+        "Carla Quattro Bossi",
+        "Concetta Di Pasquale",
+        "Rosa Santucci",
+        "Cesarina Bianca Marzoli",
+        "Giuseppa Pardo",
+        "Luciana Torri",
+        "Maria Luisa Lombardi",
+        "Maria Pia Reale",
+        "Fiorella Scarponi",
+        "Francesca Galatro",
+        "Dilva Francescati",
+        "Clara Ceccarelli",
+        "Giuseppina Moiso",
+        "Anna Petronelli",
+        "Filomena Silvestri",
+        "Rachele Olivieri",
+        "Francesca Oliva",
+        "Graziella Bartolotta",
+        "Lucia Massimo",
+        "Anna Bernardi",
+        "Fiorella Totti",
+        "Anna Turina",
+        "Maria Baran",
+        "Emanuela Rompietti",
+        "Nadia Bergamini",
+        "Maria Trentina",
+        "Flora Mattucci",
+        "Maria Ballardini",
+        "Alda Pivano",
+        "Caterina D'Andrea",
+        "Domenica Caligiuri",
+        "Silvana Arena",
+        "Ermenegilda Candreva",
+        "Antonia Sacchet",
+        "Marta Castaño Torres",
+        "Maria Bianchi",
+        "Oriana Brunelli",
+        "Agnese Oliva",
+        "Brunetta Ridolfi",
+        "Mariuccia Godasso",
+        "Giuseppina De Francesco",
+        "Margherita Ceschin",
+        "Norma Ricini",
+        "Laura Pin",
+        "Maria Costantini",
+        "Nerina Fontana",
+        "Rosaria Di Marino",
+        "Carla Schiffo",
+        "Pierina Paganelli",
+        "Giuseppina Anselmino",
+        "Rita Talamelli",
+        "Rosa D'Ascenzo",
+        "Teresa Sartori",
+        "Santina Delai",
+        "Brunetta Salvestrini",
+        "Loredana Molinari",
+        "Serenella Mugnai",
+        "Laura Guazzotti",
+        "Lucia Felici",
+        "Grazia Franco",
+        "Cesira Bianchet",
+        "Maria Esterina Riccardi",
+        "Silvana La Rocca",
+        "Margherita Colombo",
+        "Piera Stefanina Riva",
+        "Piera Ulivelli",
+        "Luisa Trabucchi",
+        "Kaur Jaan"
+      ],
+      "x": {
+        "dtype": "f8",
+        "bdata": "/lTWT3Iy/z+iyBKkOXEBQLtw6acMvgBA+G3bWtVSAEBqDxg6Svn9PwqGzcxHFABAI7kErH+Q/z+EWI9AoVsAQKCOCcRYsf0/2FDjg+cY/T/eHWlqYTf9PwWlwbVQTwFAv7+zZCOFAECq5K6RcBAAQDoQwpsJaAFAzEUXHTNQAEBMXBM70uH+P0StPLSws/0/LLndTI/3AEAvCcLdBd8AQMp7nPHY1fw/78J6Dm0CAUA0pBUhdakAQGFQt0iauwBAeqbXgzneAED9I1I5HBj/P9b7VM6jiv0/1iOtffHq/j8c+yGSlOH+P9+1FoBIif8/TLaPvpF9/T8Cp+onSwD9P3piFYo9Zf4/bMKh3ytt/z9U/kf1WNEAQN9RtOjx1P0/qRLrhmn8AEDpnIeqOiAAQBAapt/a+wBAnqWEvD9C/j+1uCG8MNj8P6fk/KmveP8/ZJxakbM4/j9dk536L5H9P0DVquXUagFAOUoNHJIg/z/XmbPfe4IBQLVHGTrWegFAft+R8H37/z84h1FPwrn+P2gJnU48Cf0/eXgTmVWV/j+9jtqPc04BQPjO8VZMVf4/UhTVcAONAEDm6vk5YCf/P5IIqQeuEgFAbk1bVWT+/T9r+rqhdUoAQIRxXj365/w/TmuNYXvq/T/SlL1DHa79P0xfY2Wa+/4/kwReC7eG/T+JPgS16FsBQC/IwMAFSAFAF1BsM0T4/j+4O1zp8Qj/Pw=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "V1oyrnIi/z8AAAAAAAAAAAsDrXrqk/E/7zn6/kIu5j8zje33QcD5PwAAAAAAAAAAM43t90HA+T8LA6166pPxP+85+v5CLvY/AAAAAAAAAAAAAAAAAAAAAPCz0f19FQlAAAAAAAAAAAACICr6C6v8PwAAAAAAAAAAAAAAAAAAAAALA6166pPxP3OrOz+yogBA7zn6/kIu9j8zje33QcD5P+85+v5CLvY/8LPR/X0VCUALA6166pPxPwAAAAAAAAAA7zn6/kIu9j8LA6166pPxP1daMq5yIv8/M43t90HA+T/vOfr+Qi72PwsDrXrqk/E/7zn6/kIu9j8zje33QcD5P+85+v5CLvY/7zn6/kIu9j9XWjKuciL/P+85+v5CLuY/M43t90HA+T8CICr6C6v8P8jFPXd0ughA7zn6/kIu5j9zqzs/sqIAQB/+zcs48ApAAAAAAAAAAAALA6166pPxP1daMq5yIv8/p7vXFsocBUDvOfr+Qi7mPwIgKvoLq/w/rh3TIirnFEAAAAAAAAAAAO85+v5CLvY/AiAq+gur/D8zje33QcD5PxZVtbuxawJAM43t90HA+T/vOfr+Qi7mP1daMq5yIv8/7zn6/kIu5j+xrm+ULlsIQAsDrXrqkwFACwOteuqT8T8zje33QcD5PwsDrXrqkwFAen/6wWuqBkDvOfr+Qi7mPwAAAAAAAAAAM43t90HA+T/vOfr+Qi7mPw=="
+      },
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "white",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "white",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "#C8D4E3",
+              "linecolor": "#C8D4E3",
+              "minorgridcolor": "#C8D4E3",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "#C8D4E3",
+              "linecolor": "#C8D4E3",
+              "minorgridcolor": "#C8D4E3",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "choropleth": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "choropleth"
+          }
+        ],
+        "contourcarpet": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "contourcarpet"
+          }
+        ],
+        "contour": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "type": "contour"
+          }
+        ],
+        "heatmap": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "type": "heatmap"
+          }
+        ],
+        "histogram2dcontour": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "type": "histogram2dcontour"
+          }
+        ],
+        "histogram2d": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "type": "histogram2d"
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "mesh3d": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "mesh3d"
+          }
+        ],
+        "parcoords": [
+          {
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "parcoords"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ],
+        "scatter3d": [
+          {
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatter3d"
+          }
+        ],
+        "scattercarpet": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattercarpet"
+          }
+        ],
+        "scattergeo": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattergeo"
+          }
+        ],
+        "scattergl": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattergl"
+          }
+        ],
+        "scattermapbox": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattermapbox"
+          }
+        ],
+        "scattermap": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattermap"
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterpolargl"
+          }
+        ],
+        "scatterpolar": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterpolar"
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "scatterternary": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterternary"
+          }
+        ],
+        "surface": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "type": "surface"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ]
+      },
+      "layout": {
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "autotypenumbers": "strict",
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ],
+          "sequential": [
+            [
+              0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1,
+              "#f0f921"
+            ]
+          ]
+        },
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "geo": {
+          "bgcolor": "white",
+          "lakecolor": "white",
+          "landcolor": "white",
+          "showlakes": true,
+          "showland": true,
+          "subunitcolor": "#C8D4E3"
+        },
+        "hoverlabel": {
+          "align": "left"
+        },
+        "hovermode": "closest",
+        "mapbox": {
+          "style": "light"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "polar": {
+          "angularaxis": {
+            "gridcolor": "#EBF0F8",
+            "linecolor": "#EBF0F8",
+            "ticks": ""
+          },
+          "bgcolor": "white",
+          "radialaxis": {
+            "gridcolor": "#EBF0F8",
+            "linecolor": "#EBF0F8",
+            "ticks": ""
+          }
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          },
+          "yaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          },
+          "zaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "ternary": {
+          "aaxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          },
+          "bgcolor": "white",
+          "caxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          }
+        },
+        "title": {
+          "x": 0.05
+        },
+        "xaxis": {
+          "automargin": true,
+          "gridcolor": "#EBF0F8",
+          "linecolor": "#EBF0F8",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "#EBF0F8",
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "automargin": true,
+          "gridcolor": "#EBF0F8",
+          "linecolor": "#EBF0F8",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "#EBF0F8",
+          "zerolinewidth": 2
+        }
+      }
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "dash": "dashdot",
+          "width": 2
+        },
+        "type": "line",
+        "x0": -0.3,
+        "x1": 0.3,
+        "y0": 2.302585092994046,
+        "y1": 2.302585092994046
+      },
+      {
+        "line": {
+          "color": "black",
+          "dash": "dashdot",
+          "width": 2
+        },
+        "type": "line",
+        "x0": 0.7,
+        "x1": 1.3,
+        "y0": 1.6094379124341003,
+        "y1": 1.6094379124341003
+      },
+      {
+        "line": {
+          "color": "black",
+          "dash": "dashdot",
+          "width": 2
+        },
+        "type": "line",
+        "x0": 1.7,
+        "x1": 2.3,
+        "y0": 1.3862943611198906,
+        "y1": 1.3862943611198906
+      }
+    ],
+    "xaxis": {
+      "tickfont": {
+        "size": 14,
+        "weight": "bold"
+      },
+      "tickmode": "array",
+      "tickvals": [
+        0,
+        1,
+        2
+      ],
+      "ticktext": [
+        "Giovani (≤35)",
+        "Età media (36-64)",
+        "Anziane (65+)"
+      ],
+      "showgrid": false
+    },
+    "yaxis": {
+      "tickfont": {
+        "size": 14,
+        "weight": "bold"
+      },
+      "title": {
+        "text": ""
+      },
+      "type": "linear",
+      "tickmode": "array",
+      "tickvals": [
+        0,
+        0.6931471805599453,
+        1.0986122886681098,
+        1.791759469228055,
+        2.3978952727983707,
+        3.044522437723423,
+        3.9318256327243257,
+        4.61512051684126,
+        5.303304908059076,
+        6.2166061010848646,
+        6.90875477931522
+      ],
+      "ticktext": [
+        "0",
+        "1",
+        "2",
+        "5",
+        "10",
+        "20",
+        "50",
+        "100",
+        "200",
+        "500",
+        "1000"
+      ],
+      "showgrid": true,
+      "gridcolor": "lightgray",
+      "range": [
+        -0.1,
+        7.815232293065942
+      ]
+    },
+    "title": {
+      "text": "<b>Ogni punto rappresenta una vittima</b><br><sub>Numero di articoli per ognuna delle 200 vittime di femminicidio (scala logaritmica)</sub>",
+      "font": {
+        "size": 22,
+        "color": "#000000"
+      },
+      "x": 0.5
+    },
+    "showlegend": false,
+    "height": 800,
+    "annotations": [
+      {
+        "bgcolor": "rgba(255,255,255,0.8)",
+        "borderpad": 2,
+        "font": {
+          "color": "black",
+          "family": "Georgia, sans-serif",
+          "size": 11,
+          "weight": "bold"
+        },
+        "showarrow": false,
+        "text": "Mediana: 9",
+        "x": 0.3,
+        "xanchor": "left",
+        "xshift": -12,
+        "y": 2.302585092994046,
+        "yanchor": "bottom"
+      },
+      {
+        "bgcolor": "rgba(255,255,255,0.8)",
+        "borderpad": 2,
+        "font": {
+          "color": "black",
+          "family": "Georgia, sans-serif",
+          "size": 11,
+          "weight": "bold"
+        },
+        "showarrow": false,
+        "text": "Mediana: 4",
+        "x": 1.3,
+        "xanchor": "left",
+        "xshift": -12,
+        "y": 1.6094379124341003,
+        "yanchor": "bottom"
+      },
+      {
+        "bgcolor": "rgba(255,255,255,0.8)",
+        "borderpad": 2,
+        "font": {
+          "color": "black",
+          "family": "Georgia, sans-serif",
+          "size": 11,
+          "weight": "bold"
+        },
+        "showarrow": false,
+        "text": "Mediana: 3",
+        "x": 2.3,
+        "xanchor": "left",
+        "xshift": -12,
+        "y": 1.3862943611198906,
+        "yanchor": "bottom"
+      }
+    ],
+    "autosize": true,
+    "font": {
+      "family": "Georgia, sans-serif",
+      "size": 20,
+      "color": "#000000"
+    },
+    "margin": {
+      "l": 50,
+      "r": 50,
+      "t": 80,
+      "b": 50,
+      "pad": 4
+    },
+    "width": 1000,
+    "plot_bgcolor": "rgba(0,0,0,0)",
+    "paper_bgcolor": "rgba(0,0,0,0)",
+    "meta": {
+      "desktop_title": "<b>Ogni punto rappresenta una vittima</b><br><sub>Numero di articoli per ognuna delle 200 vittime di femminicidio (scala logaritmica)</sub>",
+      "mobile_title": "<b>Ogni punto rappresenta<br>una vittima</b>"
+    }
+  },
+  "config": {
+    "responsive": true
+  }
+}
