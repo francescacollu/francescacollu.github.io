@@ -16,14 +16,14 @@ const VittimeAnzianeFemminicidio = () => {
 
                     {/* Chart 1 */}
                     <PlotlyChart src="/charts/vittime-anziane-femminicidio/age_groups.html" className="plotly-chart" minHeight="600px" 
-                    caption="<b>Figura 1.</b> Distribuzione dei 629 femminicidi per gruppo di età (Gennaio 2020 - Ottobre 2025). Il 34% delle vittime ha più di 65 anni.<br /> Fonte: elaborazione su dati forniti da Non Una Di Meno." />
+                    caption="<b>Figura 1.</b> Distribuzione dei 627 femminicidi di età nota(su 629 totali) per gruppo di età (Gennaio 2020 - Ottobre 2025). Il 34% delle vittime ha più di 65 anni.<br /> Fonte: elaborazione su dati forniti da Non Una Di Meno." />
 
                     {/* Section 2 */}
                     <MarkdownContent src="/content/VittimeAnzianeFemminicidio/section2.md" className="markdown-content" />
 
                     {/* Chart 2 */}
                     <PlotlyChart src="/charts/vittime-anziane-femminicidio/strip_plot_200cases.html" minHeight="800px"
-                    caption="<b>Figura 2.</b> Distribuzione del numero di articoli per gruppo di età. Ogni punto rappresenta un caso di femminicidio dei 200 esaminati. Come evidente dal grafico, ci sono alcuni casi che, essendo diventati decisamente più mediatici di altri, sbilanciano di molto il valore medio della distribuzione. Per questa ragione, la misura qui considerata è la mediana. Passando il mouse si possono leggere i nomi delle vittime e il numero di relativi articoli pubblicati." />
+                    caption="<b>Figura 2.</b> Distribuzione del numero di articoli per gruppo di età. Ogni punto rappresenta un caso di femminicidio dei 200 esaminati. Come evidente dal grafico, ci sono alcuni casi che, essendo diventati decisamente più mediatici di altri, sbilanciano di molto il valore medio della distribuzione. Per questa ragione, la misura qui considerata è la mediana. Passando il mouse si possono leggere i nomi delle vittime e il numero di relativi articoli pubblicati. Per leggibilità, la scala dell'asse verticale è logaritmica." />
 
                     {/* Section 3 */}
                     <MarkdownContent src="/content/VittimeAnzianeFemminicidio/section3.md" className="markdown-content" />
