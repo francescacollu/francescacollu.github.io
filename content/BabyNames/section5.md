@@ -1,0 +1,3 @@
+Perhaps nowhere is the shift more visible than in biblical names. In 1880, nearly a quarter of all American babies (23.7%) received a biblical name. These were the anchors of tradition: Mary, John, Sarah, Joseph. Names with millennia of history behind them.
+
+By 2024, that figure had fallen to 11.5%. Biblical names have not disappeared, but they have lost their dominance. They compete now with names drawn from everywhere and nowhere: pop culture, nature, invented syllables, surnames transformed into first names. The sacred has given way to the creative.

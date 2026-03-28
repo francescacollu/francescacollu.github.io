@@ -1,0 +1,11 @@
+It’s important to note that correlation does not imply causation. These results do not mean that poverty directly causes lower vegetation, or vice versa, but they do reveal a consistent pattern of environmental inequality.
+
+What the data show is a divide in the everyday environments where students learn. **Schools serving predominantly low-income communities are, on average, less green**. In contrast, schools with fewer economically disadvantaged students tend to be surrounded by more vegetation. This pattern reflects broader inequalities in Silicon Valley, where access to resources and quality environments often tracks income, as [local reporting](https://sanjosespotlight.com/silicon-valley-santa-clara-county-remains-blind-to-its-disparities-inequalities-sv-pain-index/) has shown.
+
+The implications go beyond aesthetics. Green spaces and tree canopy are often associated with neighborhood investment and quality of life. Environmental factors can influence how welcoming a school feels, how students engage with their surroundings, and their overall sense of well-being. A growing body of research, including [studies](https://www.apa.org/monitor/2020/04/nurtured-nature) from the American Psychological Association, shows that natural environments support psychological restoration and are **linked to lower stress, depression, and anxiety in children**.
+
+Beyond mental health, vegetation also plays a crucial role in **regulating temperature**. Trees provide shade and reduce the urban heat island effect. In a region increasingly affected by heat waves in regions like the South Bay, students in less green schools may be disproportionately exposed to **unhealthy high temperatures**. 
+
+A campus with trees, shade, and greenery subtly shapes how students perceive their place within the education system. Research published in the [Proceedings of the National Academy of Sciences](https://www.pnas.org/doi/10.1073/pnas.1503402112) has linked exposure to green space with improved cognitive development in children. This raises questions about **whether environmental disparities may reinforce existing educational inequalities**. 
+
+Overall, the pattern is clear: greener schools are disproportionately attended by more affluent students.
