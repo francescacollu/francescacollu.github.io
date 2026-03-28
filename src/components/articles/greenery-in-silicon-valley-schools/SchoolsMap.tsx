@@ -27,6 +27,30 @@ interface SchoolsMapProps {
 
 const frpmToPercent = (x: number) => Math.round(x * 100);
 
+const GREENERY_INDEX_COLOR_MIN = '#f18f01';
+const GREENERY_INDEX_COLOR_MAX = '#2a9d8f';
+
+function parseHexRgb(hex: string): [number, number, number] {
+  const h = hex.replace('#', '');
+  return [
+    parseInt(h.slice(0, 2), 16),
+    parseInt(h.slice(2, 4), 16),
+    parseInt(h.slice(4, 6), 16),
+  ];
+}
+
+const GREENERY_RGB_MIN = parseHexRgb(GREENERY_INDEX_COLOR_MIN);
+const GREENERY_RGB_MAX = parseHexRgb(GREENERY_INDEX_COLOR_MAX);
+
+function greeneryIndexColor(value: number, minV: number, maxV: number): string {
+  const t = maxV <= minV ? 0 : (value - minV) / (maxV - minV);
+  const u = Math.max(0, Math.min(1, t));
+  const r = Math.round(GREENERY_RGB_MIN[0] + (GREENERY_RGB_MAX[0] - GREENERY_RGB_MIN[0]) * u);
+  const g = Math.round(GREENERY_RGB_MIN[1] + (GREENERY_RGB_MAX[1] - GREENERY_RGB_MIN[1]) * u);
+  const b = Math.round(GREENERY_RGB_MIN[2] + (GREENERY_RGB_MAX[2] - GREENERY_RGB_MIN[2]) * u);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
 const SchoolsMap: React.FC<SchoolsMapProps> = ({
   className = '',
   minHeight = '480px',
@@ -35,6 +59,18 @@ const SchoolsMap: React.FC<SchoolsMapProps> = ({
   const bounds = useMemo(() => {
     if (data.length === 0) return null;
     return L.latLngBounds(data.map((p) => [p.lat, p.lon] as [number, number]));
+  }, []);
+
+  const greeneryExtent = useMemo(() => {
+    if (data.length === 0) return { min: 0, max: 1 };
+    let min = Infinity;
+    let max = -Infinity;
+    for (const p of data) {
+      const v = p.greenery_index_ndvi_nlcd;
+      if (v < min) min = v;
+      if (v > max) max = v;
+    }
+    return { min, max };
   }, []);
 
   const [frpmLowPct, setFrpmLowPct] = useState(0);
@@ -90,7 +126,11 @@ const SchoolsMap: React.FC<SchoolsMapProps> = ({
                 center={[p.lat, p.lon]}
                 radius={7}
                 pathOptions={{
-                  fillColor: p.marker_color,
+                  fillColor: greeneryIndexColor(
+                    p.greenery_index_ndvi_nlcd,
+                    greeneryExtent.min,
+                    greeneryExtent.max
+                  ),
                   color: 'rgba(255,255,255,0.38)',
                   weight: 1,
                   fillOpacity: 0.92,
@@ -105,8 +145,10 @@ const SchoolsMap: React.FC<SchoolsMapProps> = ({
                   <div className="greenery-tooltip-inner">
                     <div className="greenery-tooltip-inner__name">{p.school_name}</div>
                     <div>{p.city}</div>
-                    <div>FRPM (K-12): {pctLabel(p.percent_eligible_frpm_k12)}</div>
-                    <div>Greenery index: {p.greenery_index_ndvi_nlcd.toFixed(3)}</div>
+                    <div>FRPM share: {pctLabel(p.percent_eligible_frpm_k12)}</div>
+                    <div className="greenery-tooltip-inner__metric">
+                      Greenery Index: {p.greenery_index_ndvi_nlcd.toFixed(1)}
+                    </div>
                   </div>
                 </Tooltip>
                 <Popup>
@@ -114,7 +156,7 @@ const SchoolsMap: React.FC<SchoolsMapProps> = ({
                     <strong>{p.school_name}</strong>
                     <div>{p.city}</div>
                     <div>FRPM-eligible (K-12): {pctLabel(p.percent_eligible_frpm_k12)}</div>
-                    <div>Greenery index: {p.greenery_index_ndvi_nlcd.toFixed(3)}</div>
+                    <div>Greenery index: {p.greenery_index_ndvi_nlcd.toFixed(1)}</div>
                     <div>Quartile: {p.frpm_quartile_label}</div>
                   </div>
                 </Popup>
@@ -125,22 +167,19 @@ const SchoolsMap: React.FC<SchoolsMapProps> = ({
 
         <div className="greenery-map-overlay">
           <div className="greenery-map-legend">
-            <div className="greenery-map-legend__title">Greenery index</div>
+            <div className="greenery-map-legend__title">Greenery Index</div>
             <div className="greenery-map-legend__bar" />
             <div className="greenery-map-legend__labels">
               <span>Low</span>
               <span>High</span>
             </div>
-            <p className="greenery-map-legend__note">
-              Marker fill reflects relative greenery (greyer = lower, greener = higher).
-            </p>
           </div>
 
           <div className="greenery-map-frpm">
             <div className="greenery-map-frpm__header">
-              <span className="greenery-map-frpm__label">Filter by FRPM share (K-12)</span>
+              <span className="greenery-map-frpm__label">Filter by FRPM share</span>
               <span className="greenery-map-frpm__count">
-                {filtered.length} / {data.length} schools
+                ({filtered.length} / {data.length} schools)
               </span>
             </div>
             <div className="greenery-map-frpm__values">

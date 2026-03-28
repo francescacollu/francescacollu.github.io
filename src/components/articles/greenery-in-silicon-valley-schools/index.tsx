@@ -17,36 +17,42 @@ const GreeneryInSiliconValleySchools = () => {
         {/* Section 1 */}
         <MarkdownContent src="/content/GreeneryInSiliconValleySchools/section1.md" className="markdown-content" />
 
-        <GreeneryFrpmScatterChart
-          minHeight="440px"
-          caption="<b>Figure 4.</b> Greenery index versus share of students eligible for free or reduced-price
-          meals (FRPM), by school. Hover a point for school name and values."
-        />
-
-        <SchoolSatelliteCompare
-          caption="<b>Figure 1.</b> NAIP aerial imagery at comparable extent around two campuses:
-          <i>Lexington Elementary</i> (Los Gatos), high school-site greenery, and <i>Robert F. Kennedy
-          Elementary</i> (San Jose), low school-site greenery; the latter enrolls a much higher share of
-          students eligible for free or reduced-price meals. Drag the divider to compare. Imagery: USDA
-          National Agriculture Imagery Program (NAIP)."
-        />
-
         <SchoolsMap
           minHeight="480px"
-          caption="<b>Figure 2.</b> School locations; marker color encodes greenery index (see legend). Use the
-          FRPM range control to show only schools within a given eligibility share. Dark basemap &copy;
-          OpenStreetMap, &copy; CARTO."
+          caption="<b>Figure 1.</b> 298 public, non-charter K–12 schools; marker color shows greenery index
+          (composite of standardized NDVI and NLCD tree canopy within a 100&nbsp;m buffer). Use the FRPM range control to limit schools by share of students eligible for free or reduced-price meals. When the share of FRPM eligible students is low, the school is surrounded by more vegetation. When the share of FRPM eligible students is high, the school is surrounded by less vegetation. <br>Dark basemap
+          &copy; OpenStreetMap, &copy; CARTO."
         />
+
+        <MarkdownContent src="/content/GreeneryInSiliconValleySchools/section2.md" className="markdown-content" />
+
+        <GreeneryFrpmScatterChart
+          minHeight="600px"
+          caption="<b>Figure 2.</b> On the vertical axis: greenery index (higher = greener
+          relative to other schools in the sample). On the horizontal axis: share of students eligible for free or
+          reduced-price meals (FRPM). Hover for school name and values."
+        />
+
+        <MarkdownContent src="/content/GreeneryInSiliconValleySchools/section3.md" className="markdown-content" />
 
         <ConditionalProbabilityChart
-          minHeight="420px"
-          caption="<b>Figure 3.</b> Conditional distribution of greenery index bins given FRPM eligibility
-          group (equal-width bins on 0&ndash;1). Compares <i>FRPM-eligible</i> versus <i>Non-eligible</i> schools."
+          caption="<b>Figure 3.</b> Among FRPM-eligible and non-eligible students (student-weighted), the share attending schools in the bottom vs top half of greenery index in this sample. Two-bin split at the sample median. The probability that a student goes to a school with little greenery, given that the student is FRPM-eligible, is 60.35%, 1.25 times higher than the probability that a student goes to a school with little greenery, given that the student is not FRPM-eligible. The probability that a student goes to a school with high greenery, given that the student is FRPM-eligible, is 39.65%, 1.37 times higher than the probability that a student goes to a school with high greenery, given that the student is not FRPM-eligible."
         />
 
-        
+        <MarkdownContent src="/content/GreeneryInSiliconValleySchools/section4.md" className="markdown-content" />
+
+        <SchoolSatelliteCompare
+          caption="<b>Figure 4.</b> NAIP imagery at comparable scale around <i>Lexington Elementary</i> (Los Gatos;
+          low FRPM share; high school-site greenness) and <i>Robert F. Kennedy Elementary</i> (San Jose; high FRPM
+          share; low school-site greenness). Drag the divider to compare. Imagery: USDA National Agriculture
+          Imagery Program (NAIP)."
+        />
+
+        <MarkdownContent src="/content/GreeneryInSiliconValleySchools/section5.md" className="markdown-content" />
 
         <div className="section-separator"> • • • </div>
+
+        <MarkdownContent src="/content/GreeneryInSiliconValleySchools/methodology.md" className="markdown-content" />
       </article>
     </div>
   );

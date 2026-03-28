@@ -1,5 +1,5 @@
 import React from 'react';
-import ResponsivePlotlyChart from '../ResponsivePlotlyChart';
+import ResponsivePlotlyChart from '../../shared/ResponsivePlotlyChart';
 import chartData from './main_characters_movies_time_series_percentage.json';
 
 interface MainCharactersMoviesChartProps {

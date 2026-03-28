@@ -1,0 +1,3 @@
+But the pattern is not absolute. Shirakawa Elementary School in San Jose, despite a high share of low-income students (83% FRPM), is surrounded by relatively high levels of greenery. This shows how local factors can shape school environments beyond income alone. Conversely, Homestead High School in Cupertino has a relatively low FRPM rate (16%) but ranks among the least green schools in the area.
+
+Taken together, these examples illustrate a trend – with important exceptions – highlighting how environmental inequality plays out unevenly across schools. This unequal distribution of school vegetation and shade tracks income and wealth. 

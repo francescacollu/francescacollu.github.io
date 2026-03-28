@@ -232,8 +232,8 @@ const SpellingVariationsChart: React.FC<SpellingVariationsChartProps> = ({
             <div ref={plotRef} style={{ width: '100%', minHeight }} />
 
             {caption && (
-                <p 
-                    className="chart-caption" 
+                <p
+                    className="chart-caption chart-caption--left"
                     dangerouslySetInnerHTML={{ __html: caption }}
                 />
             )}

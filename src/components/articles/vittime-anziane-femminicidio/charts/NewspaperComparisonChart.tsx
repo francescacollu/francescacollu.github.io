@@ -1,5 +1,5 @@
 import React from 'react';
-import ResponsivePlotlyChart from '../ResponsivePlotlyChart';
+import ResponsivePlotlyChart from '../../shared/ResponsivePlotlyChart';
 import chartData from './newspaper_comparison.json';
 
 interface NewspaperComparisonChartProps {

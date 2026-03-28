@@ -44,16 +44,6 @@
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
-.spelling-variations-container .chart-caption {
-    max-width: 1000px;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 1rem;
-    line-height: 1.6;
-    text-align: left;
-}
-
 /* Word Cloud Modal */
 .word-cloud-modal {
     position: fixed;
@@ -186,11 +176,6 @@
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
         min-width: 100px;
-    }
-
-    .spelling-variations-container .chart-caption {
-        font-size: 0.8rem;
-        padding: 0 1rem;
     }
 
     .word-cloud-modal {

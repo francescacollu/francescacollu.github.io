@@ -1,5 +1,5 @@
 import React from 'react';
-import ResponsivePlotlyChart from '../ResponsivePlotlyChart';
+import ResponsivePlotlyChart from '../../shared/ResponsivePlotlyChart';
 import chartData from './strip_plot_200cases.json';
 
 interface StripPlotChartProps {

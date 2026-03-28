@@ -1,0 +1,3 @@
+Satellite images reveal evident differences in the environments surrounding Silicon Valley schools. 
+
+*Los Gatos’ Lexington Elementary School*, which has a low share of economically disadvantaged students (5.2% FRPM), is surrounded by dense vegetation and tree cover, ranking among the greenest schools in the dataset. At the other end of the spectrum, *Robert F. Kennedy Elementary School* in San Jose serves a predominantly low-income student population (90.3% FRPM) and is located in one of the least green environments in the sample, with limited canopy and sparse vegetation.

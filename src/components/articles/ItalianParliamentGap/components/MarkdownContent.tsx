@@ -1,10 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { type Components } from 'react-markdown';
 
 interface MarkdownContentProps {
     src: string;
     className?: string;
 }
+
+function isExternalAbsoluteHref(href: string | undefined): boolean {
+    if (!href || href.startsWith('#')) return false;
+    return /^https?:\/\//i.test(href) || href.startsWith('//');
+}
+
+const markdownComponents: Components = {
+    a({ href, children, ...props }) {
+        const external = isExternalAbsoluteHref(href);
+        return (
+            <a
+                href={href}
+                {...props}
+                {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
+                {children}
+            </a>
+        );
+    },
+};
 
 const MarkdownContent: React.FC<MarkdownContentProps> = ({ src, className }) => {
     const [content, setContent] = useState<string>('');
@@ -17,7 +37,7 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ src, className }) => 
 
     return (
         <div className={className}>
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown components={markdownComponents}>{content}</ReactMarkdown>
         </div>
     );
 };

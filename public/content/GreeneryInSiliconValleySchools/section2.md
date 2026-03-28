@@ -1,0 +1,1 @@
+Across the dataset, a clear negative correlation emerges: schools with higher shares of low-income students tend to have less surrounding vegetation. 

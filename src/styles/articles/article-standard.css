@@ -6,6 +6,7 @@
     --article-muted: #666;
     --article-lead-color: #4a4a4a;
     --article-accent: #240046;
+    --article-link: #081f1d;
 
     --article-max-width: 1200px;
     --article-content-padding-x: 1rem;
@@ -13,7 +14,7 @@
 
     --article-font-family: 'Georgia', serif;
     --article-body-size: 20px;
-    --article-line-height: 1.8;
+    --article-line-height: 1.55;
 
     --article-h1-size: 2.5rem;
     --article-h1-line-height: 1.2;
@@ -28,6 +29,13 @@
 
     --article-chart-caption-size: 0.9rem;
     --article-chart-caption-max-width: 1000px;
+    --article-chart-plot-max-width: var(--article-chart-caption-max-width);
+
+    /* Plotly template.simple_white cartesian grid (e.g. vittime AgeGroups / shared Plotly JSON) */
+    --article-chart-grid-color: #ebf0f8;
+    /* Plotly layout.title.font + body subtitle scale (AgeGroupsChart) */
+    --article-chart-plot-title-size: 22px;
+    --article-chart-plot-subtitle-size: 16px;
 
     --article-section-separator-size: 1.5rem;
 
@@ -84,7 +92,7 @@
 }
 
 .article-standard .markdown-content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .article-standard .markdown-content h2 {
@@ -105,12 +113,30 @@
 
 .article-standard .markdown-content ul,
 .article-standard .markdown-content ol {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     padding-left: 2rem;
+    list-style-position: outside;
+}
+
+/* Tailwind Preflight sets list-style: none on ul/ol; restore markers for article markdown */
+.article-standard .markdown-content ul {
+    list-style-type: disc;
+}
+
+.article-standard .markdown-content ol {
+    list-style-type: decimal;
+}
+
+.article-standard .markdown-content ul ul {
+    list-style-type: circle;
+}
+
+.article-standard .markdown-content ul ul ul {
+    list-style-type: square;
 }
 
 .article-standard .markdown-content li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.45rem;
 }
 
 .article-standard .markdown-content blockquote {
@@ -122,12 +148,13 @@
 }
 
 .article-standard .markdown-content a {
-    color: var(--article-accent);
+    color: var(--article-link);
     text-decoration: underline;
 }
 
 .article-standard .markdown-content a:hover {
-    color: var(--article-accent);
+    color: var(--article-link);
+    text-decoration-thickness: 2px;
 }
 
 /* Inline images in markdown */
@@ -188,7 +215,7 @@
 
 .article-standard .markdown-content .footnote-ref a,
 .article-standard .markdown-content a[data-footnote-ref] {
-    color: var(--article-accent);
+    color: var(--article-link);
     text-decoration: none;
 }
 
@@ -215,19 +242,78 @@
 }
 
 .article-standard .plotly-chart-container {
-    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.article-standard .plotly-chart-container__plot {
+    width: 100%;
+    max-width: var(--article-chart-plot-max-width);
+    margin-inline: auto;
+}
+
+/* D3 chart grid: match Plotly template.simple_white y-axis grid */
+.article-standard svg .article-chart-grid line {
+    stroke: var(--article-chart-grid-color);
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+/* Plotly-aligned block title for D3 / custom charts */
+.article-standard .article-chart-plot-head {
+    width: 100%;
+    max-width: var(--article-chart-plot-max-width);
+    margin-inline: auto;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.article-standard .article-chart-plot-title {
+    font-family: var(--article-font-family);
+    font-size: var(--article-chart-plot-title-size);
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.article-standard .article-chart-plot-subtitle {
+    font-family: var(--article-font-family);
+    font-size: var(--article-chart-plot-subtitle-size);
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.35;
+    margin: 0.35rem 0 0;
+}
+
+/* Avoid double-shrinking vs Plotly titles: subtitle block is already scaled */
+.article-standard .article-chart-plot-subtitle sub {
+    font-size: 1em;
+    line-height: inherit;
+    vertical-align: baseline;
 }
 
 .article-standard .chart-caption {
     text-align: center;
     font-size: var(--article-chart-caption-size);
     color: var(--article-muted);
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.4;
     max-width: var(--article-chart-caption-max-width);
     width: 100%;
+}
+
+.article-standard .chart-caption.chart-caption--left {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .article-standard .section-separator {
@@ -247,6 +333,8 @@
         --article-md-h3-size: 1.25rem;
         --article-chart-caption-size: 0.8rem;
         --article-chart-caption-max-width: 100%;
+        --article-chart-plot-title-size: 1.125rem;
+        --article-chart-plot-subtitle-size: 0.9rem;
     }
 
     .article-standard .plotly-chart-container iframe {
@@ -258,5 +346,9 @@
     .article-standard .chart-caption {
         font-size: var(--article-chart-caption-size);
         max-width: var(--article-chart-caption-max-width);
+    }
+
+    .article-standard .chart-caption.chart-caption--left {
+        padding: 0 1rem;
     }
 }

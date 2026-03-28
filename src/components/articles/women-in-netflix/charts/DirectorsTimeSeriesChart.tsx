@@ -1,5 +1,5 @@
 import React from 'react';
-import ResponsivePlotlyChart from '../ResponsivePlotlyChart';
+import ResponsivePlotlyChart from '../../shared/ResponsivePlotlyChart';
 import chartData from './directors_time_series.json';
 
 interface DirectorsTimeSeriesChartProps {

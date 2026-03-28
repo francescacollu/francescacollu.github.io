@@ -9,15 +9,16 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent.parent
 OUT_DIR = REPO / "public" / "images" / "articles" / "greenery-sv-schools"
 
-TARGET_W, TARGET_H = 1600, 1610
+# Square output, smaller than the previous 1600x1610 slider assets
+TARGET_W, TARGET_H = 900, 900
 
 JOBS = [
     (
-        ROOT / "43695266047534_NAIP_RGB_Lexington_Elementary.tif",
+        ROOT / "naip_lexington_school_square.tif",
         "lexington-satellite.webp",
     ),
     (
-        ROOT / "43694506067201_NAIP_RGB_Robert_F_Kennedy_Elementary.tif",
+        ROOT / "naip_kennedy_school_square.tif",
         "rfk-satellite.webp",
     ),
 ]

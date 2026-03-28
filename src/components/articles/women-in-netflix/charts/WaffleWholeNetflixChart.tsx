@@ -1,5 +1,5 @@
 import React from 'react';
-import ResponsivePlotlyChart from '../ResponsivePlotlyChart';
+import ResponsivePlotlyChart from '../../shared/ResponsivePlotlyChart';
 import chartData from './whole_netflix_gender_distribution.json';
 
 interface WaffleWholeNetflixChartProps {

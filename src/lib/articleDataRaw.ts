@@ -107,11 +107,11 @@ export const articlesRaw: ArticleRaw[] = [
   },
   {
     id: 9,
-    title: "Greenery in Silicon Valley Schools",
+    title: "For Silicon Valley Students, the Grass Is Greener on the Wealthier Side",
     category: "Education",
-    image: "/images/greenery-in-silicon-valley-schools.png",
+    image: "/images/articles/greenery-sv-schools/greenery-in-sv-schools-thumbnail.png",
     slug: "greenery-in-silicon-valley-schools",
-    excerpt: "",
+    excerpt: "In Silicon Valley, schools serving more low-income students tend to have less greenery, reflecting a subtle everyday divide.",
     date: "2026-03-27",
     language: "English"
   },
