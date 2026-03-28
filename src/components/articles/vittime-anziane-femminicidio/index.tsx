@@ -8,8 +8,8 @@ import './styles/vittime-anziane-femminicidio.css';
 
 const VittimeAnzianeFemminicidio = () => {
     return (
-            <div className="vittime-anziane-femminicidio-container">
-                <article className="vittime-anziane-femminicidio-content">
+            <div className="article-standard article-standard--vittime-anziane-femminicidio">
+                <article className="article-body">
                     <h1>Una vittima di femminicidio su tre ha più di 65 anni. <br /> Ma i giornali non la raccontano</h1>
 
                     <p className="article-byline">di Francesca Collu</p>

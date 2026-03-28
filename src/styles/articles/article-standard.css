@@ -1,0 +1,262 @@
+/* Long-form article baseline (ageismo / vittime-anziane). Scope all rules under .article-standard. */
+
+.article-standard {
+    --article-bg: #ffffff;
+    --article-text: #1e1e24;
+    --article-muted: #666;
+    --article-lead-color: #4a4a4a;
+    --article-accent: #240046;
+
+    --article-max-width: 1200px;
+    --article-content-padding-x: 1rem;
+    --article-content-padding-y: 2rem;
+
+    --article-font-family: 'Georgia', serif;
+    --article-body-size: 20px;
+    --article-line-height: 1.8;
+
+    --article-h1-size: 2.5rem;
+    --article-h1-line-height: 1.2;
+    --article-h1-padding-y: 1.5rem;
+
+    --article-byline-size: 1.1rem;
+
+    --article-lead-size: 1.25rem;
+
+    --article-md-h2-size: 2rem;
+    --article-md-h3-size: 1.5rem;
+
+    --article-chart-caption-size: 0.9rem;
+    --article-chart-caption-max-width: 1000px;
+
+    --article-section-separator-size: 1.5rem;
+
+    --article-figure-title-size: 1.5rem;
+    --article-figure-subtitle-size: 1.15rem;
+    --article-figure-caption-size: 0.9rem;
+
+    --article-footnote-size: 0.85rem;
+
+    background-color: var(--article-bg);
+}
+
+.article-standard .article-body {
+    font-family: var(--article-font-family);
+    font-size: var(--article-body-size);
+    line-height: var(--article-line-height);
+    color: var(--article-text);
+    max-width: var(--article-max-width);
+    margin: 0 auto;
+    padding: var(--article-content-padding-y) var(--article-content-padding-x);
+    justify-content: center;
+    align-items: center;
+}
+
+.article-standard h1 {
+    text-align: center;
+    font-size: var(--article-h1-size);
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: var(--article-h1-line-height);
+    color: var(--article-text);
+    padding: var(--article-h1-padding-y) 0;
+}
+
+.article-standard .article-byline {
+    text-align: center;
+    font-size: var(--article-byline-size);
+    font-style: italic;
+    color: var(--article-muted);
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.article-standard .lead {
+    font-size: var(--article-lead-size);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--article-lead-color);
+    font-style: italic;
+}
+
+.article-standard .markdown-content {
+    margin: 2rem 0;
+}
+
+.article-standard .markdown-content p {
+    margin-bottom: 1.5rem;
+}
+
+.article-standard .markdown-content h2 {
+    font-size: var(--article-md-h2-size);
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--article-text);
+}
+
+.article-standard .markdown-content h3 {
+    font-size: var(--article-md-h3-size);
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--article-text);
+}
+
+.article-standard .markdown-content ul,
+.article-standard .markdown-content ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.article-standard .markdown-content li {
+    margin-bottom: 0.75rem;
+}
+
+.article-standard .markdown-content blockquote {
+    border-left: 4px solid var(--article-accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--article-lead-color);
+}
+
+.article-standard .markdown-content a {
+    color: var(--article-accent);
+    text-decoration: underline;
+}
+
+.article-standard .markdown-content a:hover {
+    color: var(--article-accent);
+}
+
+/* Inline images in markdown */
+.article-standard .markdown-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.article-standard .markdown-content figure {
+    margin: 2rem auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.article-standard .markdown-content figcaption {
+    font-size: var(--article-figure-caption-size);
+    color: var(--article-muted);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Optional HTML classes for editorial media blocks */
+.article-standard .article-figure-title {
+    font-size: var(--article-figure-title-size);
+    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+    color: var(--article-text);
+    text-align: center;
+}
+
+.article-standard .article-figure-subtitle {
+    font-size: var(--article-figure-subtitle-size);
+    font-style: italic;
+    color: var(--article-muted);
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.article-standard .article-figure-caption {
+    font-size: var(--article-figure-caption-size);
+    color: var(--article-muted);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    text-align: center;
+    max-width: var(--article-chart-caption-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footnotes (e.g. remark-gfm); harmless if markup not present */
+.article-standard .markdown-content sup {
+    font-size: 0.75em;
+    line-height: 0;
+}
+
+.article-standard .markdown-content .footnote-ref a,
+.article-standard .markdown-content a[data-footnote-ref] {
+    color: var(--article-accent);
+    text-decoration: none;
+}
+
+.article-standard .markdown-content .footnote-ref a:hover,
+.article-standard .markdown-content a[data-footnote-ref]:hover {
+    text-decoration: underline;
+}
+
+.article-standard .markdown-content .footnotes {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(30, 30, 36, 0.15);
+    font-size: var(--article-footnote-size);
+    line-height: 1.5;
+    color: var(--article-muted);
+}
+
+.article-standard .markdown-content .footnotes ol {
+    padding-left: 1.25rem;
+}
+
+.article-standard .markdown-content .footnotes li {
+    margin-bottom: 0.5rem;
+}
+
+.article-standard .plotly-chart-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.article-standard .chart-caption {
+    text-align: center;
+    font-size: var(--article-chart-caption-size);
+    color: var(--article-muted);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    max-width: var(--article-chart-caption-max-width);
+    width: 100%;
+}
+
+.article-standard .section-separator {
+    text-align: center;
+    font-size: var(--article-section-separator-size);
+    color: var(--article-accent);
+    margin: 3rem 0;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .article-standard {
+        padding: 1rem 0.5rem;
+        --article-h1-size: 2rem;
+        --article-lead-size: 1.125rem;
+        --article-md-h2-size: 1.75rem;
+        --article-md-h3-size: 1.25rem;
+        --article-chart-caption-size: 0.8rem;
+        --article-chart-caption-max-width: 100%;
+    }
+
+    .article-standard .plotly-chart-container iframe {
+        max-width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .article-standard .chart-caption {
+        font-size: var(--article-chart-caption-size);
+        max-width: var(--article-chart-caption-max-width);
+    }
+}

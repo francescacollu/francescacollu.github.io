@@ -1,0 +1,3 @@
+But even 32,000 names is not enough. Parents have discovered a new frontier of uniqueness: creative spelling. The name Kaylee, in all its phonetic variations, can now be spelled 66 different ways: Kaylee, Kayleigh, Kaylie, Kaleigh, Kailee, Caylee, and on and on. Each spelling is a small declaration: my child is not like the others.
+
+This spelling explosion reveals something deeper. Parents want uniqueness even within the same sound. It's not enough for a name to be uncommon; it must look different on paper too. The visual identity of a name has become as important as its pronunciation.

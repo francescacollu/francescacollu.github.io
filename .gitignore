@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated from article-data/ by scripts/sync-article-assets.ts (prebuild/prestart/pretest)
+public/data/articles/
+src/components/articles/baby_names/charts/*.json
+src/components/articles/women-in-netflix/charts/*.json
+src/components/articles/vittime-anziane-femminicidio/charts/*.json
+src/components/articles/greenery-in-silicon-valley-schools/charts/*.json

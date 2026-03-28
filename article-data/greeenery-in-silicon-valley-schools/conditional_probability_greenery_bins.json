@@ -1,0 +1,162 @@
+[
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "0-10%",
+    "group": "FRPM-eligible",
+    "probability": 0.0
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "10-20%",
+    "group": "FRPM-eligible",
+    "probability": 0.0
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "20-30%",
+    "group": "FRPM-eligible",
+    "probability": 0.0804833031
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "30-40%",
+    "group": "FRPM-eligible",
+    "probability": 0.2311820452
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "40-50%",
+    "group": "FRPM-eligible",
+    "probability": 0.3490763575
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "50-60%",
+    "group": "FRPM-eligible",
+    "probability": 0.1808974299
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "60-70%",
+    "group": "FRPM-eligible",
+    "probability": 0.119646984
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "70-80%",
+    "group": "FRPM-eligible",
+    "probability": 0.0234982086
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "80-90%",
+    "group": "FRPM-eligible",
+    "probability": 0.0071968111
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "90-100%",
+    "group": "FRPM-eligible",
+    "probability": 0.0080188606
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "0-10%",
+    "group": "Non-eligible",
+    "probability": 0.0
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "10-20%",
+    "group": "Non-eligible",
+    "probability": 0.0
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "20-30%",
+    "group": "Non-eligible",
+    "probability": 0.0698726463
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "30-40%",
+    "group": "Non-eligible",
+    "probability": 0.1536213767
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "40-50%",
+    "group": "Non-eligible",
+    "probability": 0.3194546449
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "50-60%",
+    "group": "Non-eligible",
+    "probability": 0.2326431752
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "60-70%",
+    "group": "Non-eligible",
+    "probability": 0.1495663724
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "70-80%",
+    "group": "Non-eligible",
+    "probability": 0.0495585593
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "80-90%",
+    "group": "Non-eligible",
+    "probability": 0.0181576686
+  },
+  {
+    "metric_col": "greenery_index_ndvi_nlcd",
+    "bin_strategy": "equal_width_0_1",
+    "bin_width_pct": 10.0,
+    "bin_label": "90-100%",
+    "group": "Non-eligible",
+    "probability": 0.0071255567
+  }
+]

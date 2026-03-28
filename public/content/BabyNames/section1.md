@@ -1,0 +1,3 @@
+Once upon a time, there was a baby. They called them after a grandparent, or the saint their parents prayed to for their arrival. Once upon a time, this is what happened. Not anymore. Forget the Buendìa family, where under a tiny umbrella of three names you could call every member of the whole family tree. We are not in Macondo, but in the United States, where more and more parents strive to find the most unique name for their child.
+
+Walk into a US elementary classroom in the early 1900s, and chances were that 1 in 5 kids shared the same most popular name. Today, this happens to just 1 in 23 kids. The popular name is not so popular anymore, it's just another name among many others.

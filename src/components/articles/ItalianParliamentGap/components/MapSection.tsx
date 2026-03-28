@@ -20,7 +20,7 @@ const MapSection: React.FC<MapSectionProps> = ({
                     <ItalyMap 
                         width="50%" 
                         height="100%" 
-                        dataPath="/data/region_comparison_analysis.csv" 
+                        dataPath="/data/articles/is-italy-a-representative-democracy/region_comparison_analysis.csv" 
                         currentStep={currentStep}
                     />
                 </div>

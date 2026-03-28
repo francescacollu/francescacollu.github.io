@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "type": "heatmap",
+      "z": [[1, 2]],
+      "colorscale": [[0, "#1F77B4"], [0.5, "#1F77B4"], [1, "#FF7F0E"]],
+      "showscale": true
+    }
+  ],
+  "layout": {
+    "title": { "text": "Gender Distribution on US Netflix Catalogue" },
+    "xaxis": { "showticklabels": false },
+    "yaxis": { "showticklabels": false },
+    "plot_bgcolor": "white"
+  },
+  "config": {}
+}

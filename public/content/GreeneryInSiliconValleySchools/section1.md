@@ -1,0 +1,5 @@
+In Silicon Valley, the global center of technological innovation and wealth, not all students experience the same school environment. A K-12 student from a low-income household is about 1.3 times more likely to attend a school with scarce vegetation than a student from a wealthier family.
+
+The analysis examines 298 public, non-charter K-12 schools across cities including Mountain View, Palo Alto, San Jose, and Cupertino. Each school is characterized by the share of students eligible for Free or Reduced-Price Meals (FRPM), a widely used proxy for economic disadvantage in education research. Schools with higher FRPM percentages serve larger proportions of low-income students. To measure the environment around schools, satellite imagery was used to estimate vegetation levels through indicators such as NDVI (Normalized Difference Vegetation Index) and tree canopy cover.
+
+Across the data, a statistically significant negative correlation emerges: schools with higher shares of low-income students tend to have less surrounding vegetation. 

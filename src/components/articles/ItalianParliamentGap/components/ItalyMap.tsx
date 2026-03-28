@@ -40,7 +40,7 @@ const ItalyMap: React.FC<ItalyMapProps> = ({
 }, []);
   
   useEffect(() => {
-    d3.json("/data/it.json").then((data: any) => {
+    d3.json("/data/articles/is-italy-a-representative-democracy/it.json").then((data: any) => {
       setGeoData(data);
     });
   }, []);

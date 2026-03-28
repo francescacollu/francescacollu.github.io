@@ -1,0 +1,3 @@
+The reign of dominant names has collapsed. Mary ruled as the number one girls' name for 67 consecutive years, from 1880 to 1946. It was the name of mothers, grandmothers, and great-grandmothers. A dynasty.
+
+Fast forward to today. Liam, the current top boys' name, has held its position for just 6 years. The throne is no longer a throne, just a momentary perch before the next trend sweeps in. Names rise and fall faster than ever, reflecting a culture obsessed with novelty and terrified of being dated.

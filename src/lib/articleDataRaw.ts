@@ -105,5 +105,15 @@ export const articlesRaw: ArticleRaw[] = [
     date: "2025-11-19",
     language: "Italian"
   },
+  {
+    id: 9,
+    title: "Greenery in Silicon Valley Schools",
+    category: "Education",
+    image: "/images/greenery-in-silicon-valley-schools.png",
+    slug: "greenery-in-silicon-valley-schools",
+    excerpt: "",
+    date: "2026-03-27",
+    language: "English"
+  },
 ];
 

@@ -6,9 +6,14 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "sync:article-assets": "tsx scripts/sync-article-assets.ts",
+    "verify:assets": "tsx scripts/verify-article-assets.ts",
+    "prebuild": "npm run sync:article-assets",
+    "prestart": "npm run sync:article-assets",
+    "pretest": "npm run sync:article-assets",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "tsx scripts/generate-article-pages.ts",
+    "postbuild": "tsx scripts/generate-article-pages.ts && tsx scripts/verify-article-assets.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -20,11 +25,14 @@
     "ajv": "^8.12.0",
     "d3": "^7.9.0",
     "framer-motion": "^10.12.16",
+    "leaflet": "^1.9.4",
     "plotly.js": "^3.3.0",
     "react": "^18.2.0",
+    "react-compare-slider": "^4.0.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^4.12.0",
+    "react-leaflet": "^4.2.1",
     "react-markdown": "^10.1.0",
     "react-plotly.js": "^2.6.0",
     "react-router-dom": "^6.11.2",
@@ -32,6 +40,7 @@
     "react-scrollama": "^2.4.0"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^18.16.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",

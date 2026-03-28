@@ -1,0 +1,1 @@
+Netflix's catalogue still reflects a historical imbalance in gender representation. Women are better represented among main characters in recent titles than in the full cast or in older releases, and the share of female directors, while improving, remains low. Data-driven analyses like this one can help track whether the industry is moving toward greater balance over time.

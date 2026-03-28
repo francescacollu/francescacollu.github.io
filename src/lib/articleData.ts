@@ -2,6 +2,7 @@ import { Article } from '../components/ArticleCard';
 import ItalianParliamentGap from '../components/articles/ItalianParliamentGap';
 import MmsFinal from '../components/articles/mms_final';
 import VittimeAnzianeFemminicidio from '../components/articles/vittime-anziane-femminicidio';
+import GreeneryInSiliconValleySchools from '../components/articles/greenery-in-silicon-valley-schools';
 import { articlesRaw } from './articleDataRaw';
 
 // Article data with React components added
@@ -16,6 +17,8 @@ export const articles: Article[] = articlesRaw.map(article => {
     articleWithContent.content = MmsFinal;
   } else if (article.slug === 'ageismo-femminicidi') {
     articleWithContent.content = VittimeAnzianeFemminicidio;
+  } else if (article.slug === 'greenery-in-silicon-valley-schools') {
+    articleWithContent.content = GreeneryInSiliconValleySchools;
   }
   
   return articleWithContent;

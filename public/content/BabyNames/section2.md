@@ -1,0 +1,3 @@
+America now uses 16 times more distinct baby names than it did 140 years ago. In 1880, American parents drew from roughly 2,000 different names. By 2024, that number had swelled to over 32,000. This is a transformation from cultural conformity to radical individualism, documented one birth certificate at a time.
+
+The numbers tell a stark story. In the 1880s, the top name alone captured about 5% of all babies. By the 2020s, the most popular name accounts for less than 0.5%. What was once a cultural consensus has shattered into infinite variation.
