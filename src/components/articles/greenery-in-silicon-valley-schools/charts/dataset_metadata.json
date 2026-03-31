@@ -1,0 +1,17 @@
+{
+  "source_merged_csv": "C:\\Users\\collu\\Documents\\Projects\\US\\green_around_cali_schools\\outputs\\school_ndvi_nlcd_frpm_sv_100m.csv",
+  "source_frpm_merged_csv": "C:\\Users\\collu\\Documents\\Projects\\US\\green_around_cali_schools\\data\\cleaned\\public_schools_frpm_sv_merged.csv",
+  "metric_col": "greenery_index_ndvi_nlcd",
+  "bin_strategy": "equal_width_0_1",
+  "bin_width_pct": 10.0,
+  "files": {
+    "map_points": "map_points.json",
+    "scatter_greenery_vs_frpm": "scatter_greenery_vs_frpm.json",
+    "conditional_probability_greenery_bins": "conditional_probability_greenery_bins.json"
+  },
+  "counts": {
+    "map_points_rows": 298,
+    "scatter_rows": 298,
+    "conditional_rows": 20
+  }
+}
