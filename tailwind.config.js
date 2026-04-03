@@ -11,6 +11,7 @@ module.exports = {
         mono: ['Roboto Mono', 'monospace'],
         playfair: ['Playfair Display', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        typewriter: ['"Special Elite"', 'Courier New', 'Courier', 'monospace'],
       },
       container: {
         center: true,

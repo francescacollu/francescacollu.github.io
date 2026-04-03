@@ -12,6 +12,7 @@ export interface ArticleRaw {
   platform?: string;
   date?: string;
   language?: string;
+  peculiarities?: string;
 }
 
 export const articlesRaw: ArticleRaw[] = [
@@ -25,7 +26,8 @@ export const articlesRaw: ArticleRaw[] = [
     url: "https://medium.com/@colluf6/women-presence-in-netflix-f06eeb73bede",
     platform: "Medium",
     date: "2022-05-9",
-    language: "English"
+    language: "English",
+    peculiarities: "First-name gender inference"
   },
   {
     id: 2,
@@ -37,7 +39,8 @@ export const articlesRaw: ArticleRaw[] = [
     url: "https://medium.com/@colluf6/italian-politics-in-4-years-tweets-a1131de823ac",
     platform: "Medium",
     date: "2022-09-11",
-    language: "English"
+    language: "English",
+    peculiarities: "Twitter corpus (2018–2022), NLP (lemmatization, TTR)"
   },
   {
     id: 3,
@@ -49,7 +52,8 @@ export const articlesRaw: ArticleRaw[] = [
     url: "https://medium.com/@colluf6/le-voci-che-ascolto-in-tv-a88d683786ff",
     platform: "Medium",
     date: "2024-07-21",
-    language: "Italian"
+    language: "Italian",
+    peculiarities: "Web scraping (La7 RivediLa7), first-name gender inference"
   },
   {
     id: 4,
@@ -61,7 +65,8 @@ export const articlesRaw: ArticleRaw[] = [
     url: "https://medium.com/@colluf6/gender-in-the-spotlight-the-voices-i-hear-on-italian-television-talk-shows-0a0106d2a963",
     platform: "Medium",
     date: "2024-07-25",
-    language: "English"
+    language: "English",
+    peculiarities: "Web scraping (La7 RivediLa7), first-name gender inference"
   },
   {
     id: 5,
@@ -73,7 +78,8 @@ export const articlesRaw: ArticleRaw[] = [
     url: "https://medium.com/@colluf6/the-last-25-years-of-dog-fatalities-0041ca445f38",
     platform: "Medium",
     date: "2024-08-08",
-    language: "English"
+    language: "English",
+    peculiarities: "Wikipedia list extraction"
   },
   {
     id: 6,
@@ -83,7 +89,8 @@ export const articlesRaw: ArticleRaw[] = [
     slug: "is-italy-a-representative-democracy",
     excerpt: "Italy is a republic founded on representative democracy, yet this does not guarantee that all citizens are truly represented.",
     date: "2025-03-21",
-    language: "English"
+    language: "English",
+    peculiarities: "Scrollytelling, custom parliament & map visuals"
   },
   {
     id: 7,
@@ -93,7 +100,8 @@ export const articlesRaw: ArticleRaw[] = [
     slug: "mms-final",
     excerpt: "In Silicon Valley, visa rules bar many spouses of skilled foreign workers from working, wasting talent and causing personal hardship.",
     date: "2025-08-12",
-    language: "English"
+    language: "English",
+    peculiarities: "Scrollytelling, video interview production (editing and audio mixing)"
   },
   {
     id: 8,
@@ -103,7 +111,8 @@ export const articlesRaw: ArticleRaw[] = [
     slug: "ageismo-femminicidi",
     excerpt: "Un terzo delle vittime di femminicidio è una donna anziana, ma non trova uno spazio proporzionato sui giornali nazionali.",
     date: "2025-11-19",
-    language: "Italian"
+    language: "Italian",
+    peculiarities: "NUDM victim database, web scraping (Repubblica/Corriere)"
   },
   {
     id: 9,
@@ -113,7 +122,8 @@ export const articlesRaw: ArticleRaw[] = [
     slug: "greenery-in-silicon-valley-schools",
     excerpt: "In Silicon Valley, schools serving more low-income students tend to have less greenery, reflecting a subtle everyday divide.",
     date: "2026-03-27",
-    language: "English"
+    language: "English",
+    peculiarities: "NDVI analysis (Google Earth Engine), CDE data, NLCD tree canopy"
   },
 ];
 

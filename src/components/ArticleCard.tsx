@@ -12,6 +12,7 @@ export interface Article {
   platform?: string;
   date?: string; // Date when the article was added/published
   language?: string; // Language of the article (e.g., "English", "Italian")
+  peculiarities?: string;
   content?: React.ComponentType; // React component to render for hosted articles
 }
 
@@ -20,7 +21,7 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ article }: ArticleCardProps) {
-  const { title, category, image, slug, excerpt, url, platform, language } = article;
+  const { title, category, image, slug, excerpt, url, platform, language, peculiarities } = article;
   
   // If URL exists, use an anchor tag to external site, otherwise use Link to internal page
   const CardWrapper = url ? 
@@ -94,14 +95,23 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           )}
         </div>
         
-        {/* Title + excerpt on one semi-transparent panel */}
-        <div className="rounded-md bg-black/50 px-2 py-1.5 sm:px-3 sm:py-2 flex flex-col gap-2">
-          <h2 className="text-lg sm:text-xl font-playfair font-bold text-white line-clamp-3">
-            {title}
-          </h2>
-          <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
-            {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-          </p>
+        <div className="flex flex-col gap-2">
+          {/* Title + excerpt on one semi-transparent panel */}
+          <div className="rounded-md bg-black/50 px-2 py-1.5 sm:px-3 sm:py-2 flex flex-col gap-2">
+            <h2 className="text-lg sm:text-xl font-playfair font-bold text-white line-clamp-3">
+              {title}
+            </h2>
+            <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
+              {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+            </p>
+          </div>
+          {peculiarities?.trim() ? (
+            <div className="rounded-md bg-white/70 px-2 py-1.5 sm:px-3 sm:py-2">
+              <p className="font-typewriter font-bold text-xs sm:text-sm text-gray-900 overflow-hidden line-clamp-2">
+                {peculiarities.trim()}
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
     </CardWrapper>
