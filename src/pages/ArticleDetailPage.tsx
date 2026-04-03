@@ -1,5 +1,6 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
+import { HiArrowLeft } from 'react-icons/hi2';
 import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import { getArticleBySlug } from '../lib/articleData';
@@ -57,10 +58,30 @@ export default function ArticleDetailPage() {
   );
   
   if (article.content) {
+    const ArticleContent = article.content;
     return (
       <>
         {metaTags}
-        <article.content />
+        {!article.url && (
+          <Link
+            to="/articles"
+            aria-label="Back to articles"
+            title="Back to articles"
+            className="fixed top-4 left-4 z-50 flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-[#1e1e24] bg-[#fff8f0]/95 shadow-sm no-underline transition-colors duration-200"
+            style={{ color: '#1e1e24' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = '#92140c';
+              e.currentTarget.style.borderColor = '#92140c';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = '#1e1e24';
+              e.currentTarget.style.borderColor = '#1e1e24';
+            }}
+          >
+            <HiArrowLeft className="h-6 w-6 shrink-0" aria-hidden />
+          </Link>
+        )}
+        <ArticleContent />
       </>
     );
   }
