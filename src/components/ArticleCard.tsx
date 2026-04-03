@@ -94,15 +94,15 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           )}
         </div>
         
-        {/* Title - always visible */}
-        <h2 className="text-lg sm:text-xl font-playfair font-bold mb-2 text-white line-clamp-2">
-          {title}
-        </h2>
-        
-        {/* Excerpt - always visible */}
-        <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
-          {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-        </p>
+        {/* Title + excerpt on one semi-transparent panel */}
+        <div className="rounded-md bg-black/50 px-2 py-1.5 sm:px-3 sm:py-2 flex flex-col gap-2">
+          <h2 className="text-lg sm:text-xl font-playfair font-bold text-white line-clamp-3">
+            {title}
+          </h2>
+          <p className="text-gray-200 text-xs sm:text-sm overflow-hidden text-ellipsis line-clamp-3">
+            {excerpt || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+          </p>
+        </div>
       </div>
     </CardWrapper>
   );

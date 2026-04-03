@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import raw from './charts/frpm_vs_noneligible_conditional_greenery_index_bin_probability_sv_100m_2bins.json';
+import raw from './charts/frpm_conditional_bins_sv.json';
 
 interface Row {
   metric_col: string;

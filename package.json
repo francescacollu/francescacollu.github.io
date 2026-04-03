@@ -5,7 +5,7 @@
   "homepage": "https://francescacollu.github.io",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "node scripts/deploy-gh-pages.cjs",
     "sync:article-assets": "tsx scripts/sync-article-assets.ts",
     "verify:assets": "tsx scripts/verify-article-assets.ts",
     "prebuild": "npm run sync:article-assets",
