@@ -125,5 +125,44 @@ export const articlesRaw: ArticleRaw[] = [
     language: "English",
     peculiarities: "NDVI analysis (Google Earth Engine), CDE data, NLCD tree canopy"
   },
+  {
+    id: 10,
+    title: "Summer in Europe: Hotter Than Yesterday, Colder Than Tomorrow",
+    category: "Climate Change",
+    image: "/images/articles/summer-in-europe/summer-in-europe.png",
+    slug: "summer-in-europe-hotter-than-yesterday-colder-than-tomorrow",
+    excerpt: "Europe is warming twice as fast as the global average and this summer. Two record-breaking heatwaves in two months have pushed temperatures above seasonal norms and driven heat-related deaths into the thousands. This is the output of several converging physical processes, but with each passing summer, the window for a cooler tomorrow grows narrower.",
+    url: "https://www.fairobserver.com/more/environment/summer-in-europe-hotter-than-yesterday-colder-than-tomorrow/",
+    platform: "Fair Observer",
+    date: "2026-07-29",
+    language: "English",
+    peculiarities: ""
+  },
+  {
+    id: 11,
+    title: "Ceci N’Est Pas Une Amie, But Loneliness Is Real",
+    category: "Technology",
+    image: "/images/articles/ceci-nest-pas-une-amie/ceci-nest-pas-une-amie.png",
+    slug: "ceci-nest-pas-une-amie",
+    excerpt: "Despite promises that technology would bring people closer together, many retreat into the digital world the moment they pick up their smartphones. In the age of AI, human connection can become even more distant as people increasingly turn to AI companions for companionship and conversation. Yet the alternative may not be deeper relationships with other people, but no connection at all.",
+    url: "https://www.fairobserver.com/world-news/ceci-nest-pas-une-amie-but-loneliness-is-real/",
+    platform: "Fair Observer",
+    date: "2026-08-26",
+    language: "English",
+    peculiarities: ""
+  },
+  {
+    id: 12,
+    title: "In Trump’s Casino, the House Always Wins",
+    category: "Politics",
+    image: "/images/articles/trump-graft/trump-graft.png",
+    slug: "trump-graft",
+    excerpt: "During the first year of his second presidency, Donald Trump’s income has more than tripled. Whether that reflects profit from his institutional role or simple coincidence almost doesn’t matter. As both player and referee, he holds the power to shape the market his personal fortune depends on. That overlap raises a question about whether it is appropriate for him to keep controlling his personal business, but most of all, whether laws meant to prevent presidential conflicts of interest are adequate at all.",
+    url: "https://www.fairobserver.com/united-states/in-trumps-casino-the-house-always-wins/",
+    platform: "Fair Observer",
+    date: "2026-09-16",
+    language: "English",
+    peculiarities: ""
+  },
 ];
 
